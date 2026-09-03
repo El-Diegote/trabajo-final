@@ -60,7 +60,7 @@ async function main() {
         fontSize: 19,
         color: "263746",
         breakLine: true,
-        paraSpaceAfterPt: 12,
+        paraSpaceAfter: 12,
         valign: "top",
       }
     );
