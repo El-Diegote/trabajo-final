@@ -7,8 +7,10 @@
   "scripts": {
     "agente": "tsx src/agent.ts",
     "aprobar": "tsx src/approve.ts",
+    "auditar": "node scripts/auditar-repo.mjs",
     "check": "tsc --noEmit",
-    "test": "tsc && node --test dist/tests/*.test.js"
+    "test": "tsc && node --test dist/tests/*.test.js",
+    "ci": "npm run auditar && npm run check && npm test"
   },
   "dependencies": {
     "dotenv": "^16.5.0",
