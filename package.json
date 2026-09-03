@@ -8,7 +8,7 @@
     "agente": "tsx src/agent.ts",
     "aprobar": "tsx src/approve.ts",
     "check": "tsc --noEmit",
-    "test": "tsx --test tests/*.test.ts"
+    "test": "tsc && node --test dist/tests/*.test.js"
   },
   "dependencies": {
     "dotenv": "^16.5.0",
