@@ -1,0 +1,12 @@
+{
+  "titulo": "Decisiones estratégicas y propuesta de valor",
+  "materia": "Dirección de Empresas",
+  "perfil": "alumno",
+  "duracion_minutos": 10,
+  "estilo": "academico",
+  "objetivo": "Explicar cómo una empresa alinea actividades con su propuesta de valor.",
+  "instrucciones": "Cerrar con una pregunta para discusión.",
+  "fuentes": [
+    "ejemplos/caso-01/fuente.md"
+  ]
+}
