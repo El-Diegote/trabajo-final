@@ -56,6 +56,7 @@ Cada carpeta de corrida debe contener:
 
     npm test
     npm run check
+    npm run auditar
 
 ## Limitaciones actuales
 
@@ -69,5 +70,6 @@ Cada carpeta de corrida debe contener:
 - [Arquitectura](docs/ARQUITECTURA.md)
 - [Gobierno y riesgo](docs/GOBIERNO-Y-RIESGO.md)
 - [Análisis económico](docs/ANALISIS-ECONOMICO.md)
+- [Checklist de entrega](docs/CHECKLIST-ENTREGA.md)
 - [Plan de corridas](corridas/README.md)
 - [Decisiones](DECISIONES.md)
