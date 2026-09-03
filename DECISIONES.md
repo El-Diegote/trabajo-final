@@ -48,6 +48,16 @@ Historia real de construcción del sistema. Las fallas se conservan porque expli
 
 **Motivo:** entregar primero un sistema pequeño, real y comprobable. Los formatos adicionales se incorporarán solo si las corridas muestran que son necesarios.
 
+## 2026-09-03 - Controles automáticos en el repositorio
+
+**Decisión:** agregar una auditoría determinística y un flujo de integración continua para cada pull request.
+
+**Motivo:** la estructura obligatoria y las pruebas no deben depender de una revisión manual. La auditoría también informa cuántas corridas reales faltan sin fabricar evidencia.
+
+**Falla observada:** la primera ejecución de `npm install` intentó usar una carpeta de caché no disponible en el entorno; se repitió con una caché temporal y la instalación terminó correctamente. La ejecución inicial de pruebas con `tsx --test` intentó abrir un canal IPC no permitido; el script se reemplazó por compilación TypeScript seguida de `node --test`.
+
+**Resultado:** verificación de tipos aprobada y tres pruebas aprobadas.
+
 ## Pendientes que deben registrar una decisión
 
 - Modelo definitivo y comparación contra uno más pequeño.
