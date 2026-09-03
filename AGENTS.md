@@ -18,3 +18,17 @@ Código, documentación y mensajes del producto deben escribirse en español, sa
 ## Criterio de finalización
 
 Una tarea termina cuando el código, la documentación, las pruebas y la evidencia correspondiente son consistentes y reproducibles.
+
+## Code Review Rules
+
+### Integridad de corridas
+
+- Rechazar cambios que presenten ejemplos o salidas editadas como corridas reales. Una corrida debe conservar entrada, salida, herramientas, metadata y, si corresponde, aprobación.
+
+### Supervisión humana
+
+- Rechazar cualquier ruta que genere o publique el PPTX sin una aprobación humana registrada. La propuesta del agente debe permanecer en L2.
+
+### Secretos y datos
+
+- Rechazar claves, tokens o datos personales en archivos versionados. Usar variables de entorno y fuentes anonimizadas.
