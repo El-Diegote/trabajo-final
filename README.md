@@ -60,6 +60,18 @@ Cada carpeta de corrida debe contener:
     npm run check
     npm run auditar
 
+## App visual
+
+La carpeta pp/ contiene un tablero estático para revisar el entregable como una aplicación:
+
+    npm run app
+
+Alternativa sin npm:
+
+    python -m http.server 5173 -d app
+
+Luego abrir http://localhost:5173.
+
 ## Limitaciones actuales
 
 - La primera versión procesa fuentes textuales: TXT, MD, CSV, JSON y HTML.
@@ -74,5 +86,7 @@ Cada carpeta de corrida debe contener:
 - [Análisis económico](docs/ANALISIS-ECONOMICO.md)
 - [Checklist de entrega](docs/CHECKLIST-ENTREGA.md)
 - [Informe final](docs/INFORME-FINAL.md)
+- [Guía para agente evaluador](docs/EVALUACION-AGENTE.md)
 - [Plan de corridas](corridas/README.md)
+- [Fuentes reales anonimizadas](fuentes/README.md)
 - [Decisiones](DECISIONES.md)

@@ -88,3 +88,11 @@ Historia real de construcción del sistema. Las fallas se conservan porque expli
 **Fuente:** documentación oficial de OpenAI, `https://developers.openai.com/api/docs/pricing`, consultada el 3 de septiembre de 2026.
 
 **Pendiente:** recalcular y comparar costos con los tokens reales de las tres corridas cuando existan.
+
+## 2026-09-03 - Fuentes candidatas para corridas reales
+
+**Decisión:** tratar los tres PDF aportados por el usuario como fuentes candidatas, no como evidencia lista para versionar.
+
+**Motivo:** son técnicamente legibles y relevantes para liderazgo y gestión de equipos, pero el repositorio es público. Antes de ejecutar corridas reales deben convertirse en fuentes textuales anonimizadas y publicables, evitando subir papers completos, casos protegidos o datos personales innecesarios.
+
+**Pendiente:** preparar archivos `.md` en `fuentes/`, configurar `OPENAI_API_KEY` fuera del repositorio y ejecutar las tres corridas reales.
