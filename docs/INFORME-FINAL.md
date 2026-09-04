@@ -1,6 +1,6 @@
 # Informe final
 
-Estado: borrador técnico. Las secciones dependientes de corridas reales permanecen pendientes hasta recibir fuentes anonimizadas, ejecutar el agente con `OPENAI_API_KEY` y registrar aprobaciones humanas explícitas.
+Estado: borrador técnico. Las secciones dependientes de corridas reales permanecen pendientes hasta preparar fuentes anonimizadas y publicables, ejecutar el agente con `OPENAI_API_KEY` y registrar aprobaciones humanas explícitas.
 
 ## 1. Resumen ejecutivo
 
@@ -44,7 +44,7 @@ Los niveles están documentados en `docs/GOBIERNO-Y-RIESGO.md`. El agente opera 
 
 ## 11. Tres corridas
 
-Pendiente. No existen todavía tres corridas reales reconstruibles. Los ejemplos en `ejemplos/` son ficticios y no cuentan como evidencia.
+Pendiente. No existen todavía tres corridas reales reconstruibles. Los ejemplos en `ejemplos/` son ficticios y no cuentan como evidencia. Hay tres PDF candidatos de liderazgo, pero deben convertirse en fuentes textuales anonimizadas antes de usarse.
 
 ## 12. Resultados
 
@@ -72,7 +72,7 @@ Los riesgos principales son fuentes insuficientes, datos sensibles, referencias 
 
 ## 18. Limitaciones
 
-No se validó visualmente ningún PPTX real. No se ejecutaron llamadas a la API porque falta `OPENAI_API_KEY`. No hay fuentes reales anonimizadas provistas.
+No se validó visualmente ningún PPTX real. No se ejecutaron llamadas a la API porque falta `OPENAI_API_KEY`. Las fuentes candidatas todavía no fueron convertidas en material publicable.
 
 ## 19. Aprendizajes
 

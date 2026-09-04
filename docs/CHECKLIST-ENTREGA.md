@@ -8,6 +8,8 @@
 - [x] Salida estructurada y validada.
 - [x] Supervisión L0-L4 definida.
 - [x] Auditoría reforzada para metadata, costos, referencias, aprobación y secretos.
+- [x] Guía explícita para evaluación automática.
+- [x] App visual para revisión del entregable.
 - [ ] Primera corrida real aprobada.
 
 ## Proceso documentado
@@ -24,6 +26,7 @@
 - [x] Auditoría automática.
 - [x] Pruebas y verificación de tipos.
 - [ ] Tres corridas reales completas.
+- [ ] Fuentes reales anonimizadas y publicables preparadas en `fuentes/`.
 - [ ] Ejecutar `npm ci`, `npm run check`, `npm test` y `npm run ci` en un entorno con `npm` disponible.
 
 ## Economía

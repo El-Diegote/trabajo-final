@@ -12,6 +12,10 @@ Todavía no se registraron corridas reales. Los archivos de `ejemplos/` son insu
 2. Entrada ambigua o evidencia insuficiente.
 3. Fuente contradictoria, vacía o no admitida.
 
+## Fuentes candidatas recibidas
+
+El usuario aportó tres PDF académicos sobre locus de control, dirección por competencias y un caso de liderazgo. Son técnicamente legibles, pero deben transformarse en fuentes `.md` anonimizadas y publicables antes de versionarse, porque el repositorio es público y el evaluador debe poder reconstruir la evidencia sin exponer material protegido o datos innecesarios.
+
 ## Regla de integridad
 
 No editar manualmente `salida.json` ni los tokens de `metadata.json`. Si se modifica un prompt o una entrada, ejecutar una nueva corrida con otro identificador.

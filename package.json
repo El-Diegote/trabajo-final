@@ -7,6 +7,7 @@
   "scripts": {
     "agente": "tsx src/agent.ts",
     "aprobar": "tsx src/approve.ts",
+    "app": "node scripts/serve-app.mjs",
     "auditar": "node scripts/auditar-repo.mjs",
     "check": "tsc --noEmit",
     "test": "tsc && node --test dist/tests/*.test.js",

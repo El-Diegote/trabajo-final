@@ -62,11 +62,15 @@ Cada carpeta de corrida debe contener:
 
 ## App visual
 
-La carpeta `app/` contiene un tablero estático para revisar el entregable como una aplicación:
+La carpeta pp/ contiene un tablero estático para revisar el entregable como una aplicación:
+
+    npm run app
+
+Alternativa sin npm:
 
     python -m http.server 5173 -d app
 
-Luego abrir `http://localhost:5173`.
+Luego abrir http://localhost:5173.
 
 ## Limitaciones actuales
 
@@ -82,5 +86,7 @@ Luego abrir `http://localhost:5173`.
 - [Análisis económico](docs/ANALISIS-ECONOMICO.md)
 - [Checklist de entrega](docs/CHECKLIST-ENTREGA.md)
 - [Informe final](docs/INFORME-FINAL.md)
+- [Guía para agente evaluador](docs/EVALUACION-AGENTE.md)
 - [Plan de corridas](corridas/README.md)
+- [Fuentes reales anonimizadas](fuentes/README.md)
 - [Decisiones](DECISIONES.md)

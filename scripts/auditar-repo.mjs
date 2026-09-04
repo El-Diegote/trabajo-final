@@ -14,6 +14,8 @@ const obligatorios = [
   "docs/ANALISIS-ECONOMICO.md",
   "docs/CHECKLIST-ENTREGA.md",
   "docs/INFORME-FINAL.md",
+  "docs/EVALUACION-AGENTE.md",
+  "fuentes/README.md",
   "src/agent.ts",
   "src/schema.ts",
   "src/sources.ts",
