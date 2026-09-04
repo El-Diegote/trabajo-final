@@ -1,0 +1,29 @@
+{
+  "name": "ucema-deck-agent",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Sistema agéntico trazable para planificar presentaciones académicas.",
+  "scripts": {
+    "agente": "tsx src/agent.ts",
+    "aprobar": "tsx src/approve.ts",
+    "auditar": "node scripts/auditar-repo.mjs",
+    "check": "tsc --noEmit",
+    "test": "tsc && node --test dist/tests/*.test.js",
+    "ci": "npm run auditar && npm run check && npm test"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "openai": "^6.0.0",
+    "pptxgenjs": "^4.0.1",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.8.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
