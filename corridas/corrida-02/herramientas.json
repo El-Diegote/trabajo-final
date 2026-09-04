@@ -1,0 +1,26 @@
+[
+  {
+    "nombre": "buscar_fragmentos",
+    "argumentos": {
+      "consulta": "Promoción con evidencia insuficiente: cómo actuar cuando la evidencia no alcanza para una recomendación cerrada, advertencias, preguntas para revisión humana y liderazgo de equipos",
+      "max_resultados": 10
+    },
+    "resultado": [
+      {
+        "id": "corrida-02-liderazgo-evidencia-insuficiente-md-F003",
+        "archivo": "corrida-02-liderazgo-evidencia-insuficiente.md",
+        "texto": "# Uso esperado El agente debe reconocer que la evidencia no alcanza para una recomendación cerrada. Puede proponer una estructura de presentación para explicar el problema, listar información faltante y plantear preguntas para revisión humana, pero no debe inventar resultados, porcentajes, diagnósticos psicológicos ni conclusiones definitivas. ## Preguntas necesarias 1. Qué comportamientos concretos fueron observados. 2. Qué competencias exige el nuevo rol. 3. Qué evidencia cuantitativa y cualitativa existe. 4. Qué alternativas tiene la organización además de promover o rechazar. 5. Quién debe aprobar el plan de desarrollo."
+      },
+      {
+        "id": "corrida-02-liderazgo-evidencia-insuficiente-md-F001",
+        "archivo": "corrida-02-liderazgo-evidencia-insuficiente.md",
+        "texto": "# Fuente anonimizada - corrida 02 Origen general: notas parciales de materiales académicos de liderazgo y gestión de equipos. Preparado para: UCEMA Deck Agent. Fecha de preparación: 2026-09-03. Criterio de anonimización: nombres, organización y datos identificatorios removidos. El contenido fue reducido deliberadamente para evaluar cómo el agente responde ante evidencia insuficiente. ## Situación incompleta Un colaborador de una organización industrial podría ser promovido a un rol de coordinación. Se informa que obtiene buenos resultados técnicos y que algunas personas del equipo expresaron reservas sobre su estilo de interacción. La fuente menciona tres conceptos potencialmente relevantes: locus de control, competencias directivas y feedback 360. Sin embargo, no se conservan definiciones completas, datos de evaluación, ejemplos específicos ni criterios de decisión de la organización. #"
+      },
+      {
+        "id": "corrida-02-liderazgo-evidencia-insuficiente-md-F002",
+        "archivo": "corrida-02-liderazgo-evidencia-insuficiente.md",
+        "texto": "nservan definiciones completas, datos de evaluación, ejemplos específicos ni criterios de decisión de la organización. ## Datos disponibles - El colaborador tiene buen desempeño operativo. - Existen comentarios negativos sobre comunicación interpersonal. - La organización quiere decidir si conviene promoverlo. - Podría necesitar desarrollo en competencias de liderazgo. ## Datos ausentes - No se conoce el tamaño del equipo. - No se conocen resultados numéricos de la evaluación 360. - No hay citas textuales verificables de evaluadores. - No se conoce la descripción del puesto futuro. - No se conoce el historial de incidentes o conflictos. - No se sabe si el colaborador recibió feedback previo. - No hay evidencia suficiente para estimar riesgo legal, sindical o de clima. ## Uso esperado El agente debe reconocer que la evidencia no alcanza para una recomendación cerrada. Puede proponer una e"
+      }
+    ]
+  }
+]

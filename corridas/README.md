@@ -4,13 +4,13 @@ Esta carpeta contendrá la evidencia exacta de al menos tres ejecuciones reales.
 
 ## Estado
 
-Todavía no se registraron corridas reales. Los archivos de `ejemplos/` son insumos de prueba y no cuentan como evidencia.
+Se registraron tres corridas reales. Los archivos de `ejemplos/` son insumos de prueba y no cuentan como evidencia.
 
 ## Casos planificados
 
-1. Documento suficiente y legible.
-2. Entrada ambigua o evidencia insuficiente.
-3. Fuente contradictoria, vacía o no admitida.
+1. `corrida-01`: documento suficiente y legible.
+2. `corrida-02`: entrada ambigua o evidencia insuficiente.
+3. `corrida-03`: fuente contradictoria o difícil de interpretar.
 
 ## Fuentes preparadas
 
@@ -26,6 +26,6 @@ Las entradas listas para correr están en `entradas/`.
 
 No editar manualmente `salida.json` ni los tokens de `metadata.json`. Si se modifica un prompt o una entrada, ejecutar una nueva corrida con otro identificador.
 
-## Bloqueo actual
+## Intentos no versionados
 
-No se ejecutaron corridas reales en esta revisión porque `OPENAI_API_KEY` no está disponible en el entorno local. Las pruebas y ejemplos no cuentan como corridas reales.
+Los intentos técnicos descartados pueden conservarse localmente en carpetas `corridas/_*/`, ignoradas por Git. No cuentan como corridas finales de entrega.

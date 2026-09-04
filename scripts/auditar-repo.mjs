@@ -201,7 +201,10 @@ export async function auditar(root = process.cwd()) {
 
   const corridasDir = path.join(root, "corridas");
   const entradas = await readdir(corridasDir, { withFileTypes: true }).catch(() => []);
-  const corridas = entradas.filter((e) => e.isDirectory()).map((e) => e.name).sort();
+  const corridas = entradas
+    .filter((e) => e.isDirectory() && !e.name.startsWith("_"))
+    .map((e) => e.name)
+    .sort();
   if (corridas.length < 3) {
     advertencias.push(`Faltan ${3 - corridas.length} corrida(s) reales para la entrega final.`);
   }

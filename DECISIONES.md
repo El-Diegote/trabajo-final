@@ -108,3 +108,13 @@ Historia real de construcción del sistema. Las fallas se conservan porque expli
 **Test y retest:** se agregaron pruebas para fuentes preparadas, auditoría consistente, aprobación sin PPTX, `run_id` falso, costo inconsistente, herramientas ausentes, referencias inventadas y secretos versionados. La secuencia local equivalente de CI pasó dos veces con auditoría aprobada, TypeScript sin errores y 11 pruebas aprobadas.
 
 **Bloqueo restante:** no se ejecutaron corridas reales porque `OPENAI_API_KEY` no está disponible en el entorno local. No se debe pegar la clave en el chat.
+
+## 2026-09-04 - Corridas reales y costos finales
+
+**Decisión:** preservar localmente los tres intentos iniciales con costo cero en una carpeta ignorada por Git y ejecutar tres corridas finales nuevas en `corridas/corrida-01`, `corridas/corrida-02` y `corridas/corrida-03`.
+
+**Motivo:** los intentos iniciales registraron tokens reales, pero no tenían tarifas configuradas. Para no editar evidencia histórica y a la vez cumplir el análisis económico, se preservaron como intentos y se regeneraron corridas finales con `INPUT_USD_PER_MILLION=0.10` y `OUTPUT_USD_PER_MILLION=0.60`.
+
+**Resultado:** las tres corridas finales quedaron en estado `requiere_aprobacion`, usaron `buscar_fragmentos`, registraron metadata, tokens, tarifas y costos. `npm run ci` finalizó correctamente con auditoría aprobada, TypeScript sin errores y 11 pruebas aprobadas.
+
+**Decisión de prompt:** no se modificó el contrato v1 después de las corridas porque las tres respuestas cubrieron los escenarios esperados: caso normal, evidencia insuficiente y falla controlada.

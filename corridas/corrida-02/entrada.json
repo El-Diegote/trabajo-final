@@ -1,0 +1,12 @@
+{
+  "titulo": "Promoción con evidencia insuficiente",
+  "materia": "Liderazgo y Gestión de Equipos de Alto Rendimiento",
+  "perfil": "alumno",
+  "duracion_minutos": 10,
+  "estilo": "academico",
+  "objetivo": "Mostrar cómo debería actuar el agente cuando la evidencia disponible no alcanza para una recomendación cerrada.",
+  "instrucciones": "No completar datos faltantes. Priorizar advertencias y preguntas para revisión humana.",
+  "fuentes": [
+    "fuentes/corrida-02-liderazgo-evidencia-insuficiente.md"
+  ]
+}

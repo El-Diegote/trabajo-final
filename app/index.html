@@ -66,7 +66,7 @@
                 <dd>Verde</dd>
               </div>
               <div>
-                <dt>Fuentes</dt>
+                <dt>Corridas</dt>
                 <dd>3 / 3</dd>
               </div>
               <div>
@@ -79,7 +79,7 @@
                 <span class="tag danger">Pendiente</span>
                 <h2>Faltan fuentes reales y aprobación</h2>
               </div>
-              <p>Las fuentes ya están preparadas. Falta ejecutar corridas con API key y aprobar el PPTX cuando corresponda.</p>
+              <p>Las tres corridas ya existen. Falta aprobar una salida y generar el PPTX correspondiente.</p>
             </div>
           </div>
         </section>
@@ -132,21 +132,21 @@
                 <tbody>
                   <tr>
                     <td>Caso normal</td>
-                    <td><span class="tag warning">Pendiente</span></td>
+                    <td><span class="tag ok">Ejecutada</span></td>
                     <td>No generado</td>
-                    <td>Sin datos</td>
+                    <td>USD 0,00138090</td>
                   </tr>
                   <tr>
                     <td>Evidencia insuficiente</td>
-                    <td><span class="tag warning">Pendiente</span></td>
+                    <td><span class="tag ok">Ejecutada</span></td>
                     <td>No generado</td>
-                    <td>Sin datos</td>
+                    <td>USD 0,00114960</td>
                   </tr>
                   <tr>
                     <td>Falla controlada</td>
-                    <td><span class="tag warning">Pendiente</span></td>
+                    <td><span class="tag ok">Ejecutada</span></td>
                     <td>No generado</td>
-                    <td>Sin datos</td>
+                    <td>USD 0,00098430</td>
                   </tr>
                 </tbody>
               </table>
@@ -230,12 +230,12 @@
           <div class="section-heading">
             <p class="eyebrow">Costos</p>
             <h2>Análisis económico</h2>
-            <p class="muted">Tarifas base registradas para <code>gpt-5.6-luna</code>: USD 0,10 entrada y USD 0,60 salida por millón de tokens.</p>
+            <p class="muted">Promedio real con <code>gpt-5.6-luna</code>: USD 0,00117160 por corrida, usando las tres ejecuciones registradas.</p>
           </div>
           <div class="formula-card">
             <span>Fórmula</span>
             <strong>(input / 1M × tarifa input) + (output / 1M × tarifa output)</strong>
-            <p>El promedio, mínimo, máximo y proyección anual quedan pendientes hasta registrar tres corridas reales.</p>
+            <p>Con 15 corridas semanales, la proyección anual es USD 0,91384800. La comparación con un modelo mayor queda documentada como económica.</p>
           </div>
         </section>
 
@@ -249,7 +249,7 @@
             <label><input type="checkbox" checked disabled /> Herramienta real</label>
             <label><input type="checkbox" checked disabled /> Auditoría reforzada</label>
             <label><input type="checkbox" checked disabled /> CI en verde</label>
-            <label><input type="checkbox" disabled /> Tres corridas reales</label>
+            <label><input type="checkbox" checked disabled /> Tres corridas reales</label>
             <label><input type="checkbox" disabled /> PPTX aprobado</label>
           </div>
         </section>

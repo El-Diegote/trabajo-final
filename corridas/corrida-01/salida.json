@@ -1,0 +1,121 @@
+{
+  "status": "requiere_aprobacion",
+  "resumen": "Plan académico de 5 slides para una exposición de 12 minutos. La propuesta presenta el dilema de promoción, integra desempeño, locus de control y competencias directivas, y concluye con una recomendación prudente: reconocer el desempeño técnico y ejecutar un plan de desarrollo con indicadores observables antes de decidir la promoción. La evidencia disponible alcanza para un análisis cualitativo, pero no para una conclusión diagnóstica cuantificada.",
+  "slides": [
+    {
+      "numero": 1,
+      "tipo": "portada",
+      "titulo": "Promoción y desarrollo de liderazgo en una planta industrial",
+      "bullets": [
+        "Materia: Liderazgo y Gestión de Equipos de Alto Rendimiento",
+        "Análisis de un caso de promoción desde una perspectiva de desempeño y desarrollo directivo"
+      ],
+      "fuentes": [],
+      "nota_orador": "Presentar el tema y anticipar que la decisión no se evaluará únicamente por los resultados operativos, sino también por la capacidad de liderar y desarrollar al equipo."
+    },
+    {
+      "numero": 2,
+      "tipo": "objetivo",
+      "titulo": "El dilema de la promoción",
+      "bullets": [
+        "Candidato técnico de alto desempeño, con resultados sostenidos y conocimiento profundo de la operación.",
+        "Fortalezas visibles: resolución de problemas bajo presión, orientación a resultados y exigencia elevada.",
+        "Tensión central: premiar resultados inmediatos o postergar la promoción hasta observar cambios conductuales."
+      ],
+      "fuentes": [
+        {
+          "fragmento_id": "corrida-01-liderazgo-locus-competencias-caso-md-F001",
+          "archivo": "corrida-01-liderazgo-locus-competencias-caso.md"
+        },
+        {
+          "fragmento_id": "corrida-01-liderazgo-locus-competencias-caso-md-F004",
+          "archivo": "corrida-01-liderazgo-locus-competencias-caso.md"
+        }
+      ],
+      "nota_orador": "Hechos recuperados: el candidato presenta un desempeño técnico sólido y la organización enfrenta una tensión entre reconocer esos resultados y verificar su preparación para conducir. Sugerencia de diseño: representar la decisión como una balanza entre resultados y liderazgo relacional."
+    },
+    {
+      "numero": 3,
+      "tipo": "contenido",
+      "titulo": "Evaluar más allá del resultado operativo",
+      "bullets": [
+        "Las evaluaciones de clima, potencial y retroalimentación 360 describen interacciones tensas, comunicación brusca y baja tolerancia al error.",
+        "La decisión debe incorporar el impacto del candidato sobre el equipo.",
+        "Una promoción efectiva requiere analizar tres dimensiones: resultados, competencias actuales y potencial de desarrollo."
+      ],
+      "fuentes": [
+        {
+          "fragmento_id": "corrida-01-liderazgo-locus-competencias-caso-md-F002",
+          "archivo": "corrida-01-liderazgo-locus-competencias-caso.md"
+        },
+        {
+          "fragmento_id": "corrida-01-liderazgo-locus-competencias-caso-md-F003",
+          "archivo": "corrida-01-liderazgo-locus-competencias-caso.md"
+        }
+      ],
+      "nota_orador": "Hechos recuperados: existen señales de dificultad en la interacción y la fuente propone integrar resultados, competencias y potencial. Inferencia para el análisis: el alto desempeño técnico constituye una condición relevante, pero insuficiente para asumir autoridad formal sobre otras personas."
+    },
+    {
+      "numero": 4,
+      "tipo": "contenido",
+      "titulo": "Locus de control y competencias directivas",
+      "bullets": [
+        "Un locus de control interno equilibrado favorece el reconocimiento de la propia responsabilidad y el aprendizaje.",
+        "Cuando la atribución se vuelve rígida, puede aparecer una tendencia a responsabilizar a otros y ejercer un control excesivo.",
+        "Las competencias directivas incluyen escucha, feedback, formación de colaboradores y cuidado de los comportamientos necesarios para alcanzar objetivos.",
+        "Si los resultados se logran a costa del desgaste del equipo, es necesario intervenir antes de ampliar la autoridad formal."
+      ],
+      "fuentes": [
+        {
+          "fragmento_id": "corrida-01-liderazgo-locus-competencias-caso-md-F002",
+          "archivo": "corrida-01-liderazgo-locus-competencias-caso.md"
+        },
+        {
+          "fragmento_id": "corrida-01-liderazgo-locus-competencias-caso-md-F003",
+          "archivo": "corrida-01-liderazgo-locus-competencias-caso.md"
+        },
+        {
+          "fragmento_id": "corrida-01-liderazgo-locus-competencias-caso-md-F004",
+          "archivo": "corrida-01-liderazgo-locus-competencias-caso.md"
+        }
+      ],
+      "nota_orador": "Explicar que el locus de control se utiliza como marco interpretativo de las atribuciones, no como diagnóstico psicológico formal. Conectar el concepto con la conducta observada: responsabilizar a otros por fallas de coordinación puede limitar el aprendizaje y deteriorar la conducción del equipo."
+    },
+    {
+      "numero": 5,
+      "tipo": "cierre",
+      "titulo": "Recomendación: desarrollar antes de promover",
+      "bullets": [
+        "Separar el reconocimiento del desempeño técnico de la decisión de promoción.",
+        "Brindar feedback basado en evidencias concretas de la evaluación 360, evitando etiquetas personales.",
+        "Priorizar escucha activa, feedback constructivo y desarrollo de colaboradores.",
+        "Acordar indicadores observables: reuniones uno a uno, evaluación del equipo, menor escalamiento de conflictos y mayor percepción de apoyo.",
+        "Asignar coaching o mentoría y revisar la promoción solo después de evidenciar cambios sostenidos."
+      ],
+      "fuentes": [
+        {
+          "fragmento_id": "corrida-01-liderazgo-locus-competencias-caso-md-F004",
+          "archivo": "corrida-01-liderazgo-locus-competencias-caso.md"
+        },
+        {
+          "fragmento_id": "corrida-01-liderazgo-locus-competencias-caso-md-F005",
+          "archivo": "corrida-01-liderazgo-locus-competencias-caso.md"
+        }
+      ],
+      "nota_orador": "Recomendación derivada de la fuente: reconocer el aporte actual, pero condicionar la decisión de promoción a un proceso de desarrollo con metas e indicadores observables. Cerrar enfatizando que se trata de un plan razonado y prudente, no de una certeza diagnóstica."
+    }
+  ],
+  "advertencias": [
+    "La fuente es una síntesis de trabajo y no una reproducción literal de los materiales originales.",
+    "No se incluyen datos cuantitativos completos ni mediciones longitudinales; por lo tanto, el plan debe presentarse como análisis cualitativo.",
+    "No hay una evaluación psicológica formal ni autorización institucional. El locus de control debe abordarse como marco conceptual, no como diagnóstico individual.",
+    "La recomendación de postergar la promoción hasta observar cambios sostenidos es una conclusión razonada a partir de la evidencia disponible, no una decisión organizacional definitiva."
+  ],
+  "preguntas_para_usuario": [
+    "¿Se desea incorporar una diapositiva visual adicional con una matriz de evaluación de las tres dimensiones —resultados, competencias actuales y potencial de desarrollo—, manteniendo el límite aproximado de cinco slides?"
+  ],
+  "supervision": {
+    "nivel": "L2",
+    "accion_requerida": "revisar_y_aprobar"
+  }
+}

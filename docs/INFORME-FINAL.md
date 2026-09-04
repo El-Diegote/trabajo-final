@@ -1,6 +1,6 @@
 # Informe final
 
-Estado: borrador técnico. Las secciones dependientes de corridas reales permanecen pendientes hasta ejecutar el agente con `OPENAI_API_KEY` y registrar aprobaciones humanas explícitas.
+Estado: actualizado con tres corridas reales. La generación del PPTX sigue pendiente de aprobación humana explícita.
 
 ## 1. Resumen ejecutivo
 
@@ -44,23 +44,29 @@ Los niveles están documentados en `docs/GOBIERNO-Y-RIESGO.md`. El agente opera 
 
 ## 11. Tres corridas
 
-Pendiente. No existen todavía tres corridas reales reconstruibles. Los ejemplos en `ejemplos/` son ficticios y no cuentan como evidencia. Los tres PDF candidatos de liderazgo ya fueron convertidos en fuentes textuales anonimizadas y publicables.
+Se ejecutaron tres corridas reales reconstruibles en `corridas/`.
+
+- `corrida-01`: caso normal con evidencia suficiente para una recomendación prudente de desarrollo antes de promover.
+- `corrida-02`: evidencia insuficiente; el agente evita cerrar una recomendación y explicita preguntas.
+- `corrida-03`: falla controlada ante fuente contradictoria; el agente suspende juicio y solicita revisión.
+
+Los ejemplos en `ejemplos/` siguen siendo ficticios y no cuentan como evidencia.
 
 ## 12. Resultados
 
-Pendiente de corridas reales. La auditoría estructural se ejecutó correctamente y detecta que faltan tres corridas reales.
+La auditoría estructural se ejecutó correctamente y detecta tres corridas. Las tres salidas quedaron en estado `requiere_aprobacion`, usaron `buscar_fragmentos` y registraron tokens, costos y herramientas.
 
 ## 13. Fallas observadas
 
-Durante esta revisión, `npm ci` no pudo ejecutarse porque `npm` no está disponible en el entorno local. También se detectaron riesgos de rutas arbitrarias, referencias insuficientes y sobrescritura de aprobación, ya corregidos.
+Durante una revisión anterior, `npm ci` no pudo ejecutarse porque `npm` no estaba disponible en el entorno local. Después de instalar Node.js, `npm run ci` finalizó correctamente. También se detectaron riesgos de rutas arbitrarias, referencias insuficientes, costos sin tarifa y sobrescritura de aprobación; quedaron corregidos o documentados.
 
 ## 14. Iteraciones del prompt
 
-Pendiente de corridas reales. Los prompts iniciales están versionados y se ajustarán solo con evidencia de ejecución.
+No se modificaron los prompts después de las corridas porque las salidas cumplieron el objetivo esperado: caso normal, evidencia insuficiente y falla controlada. Se documentó la decisión de mantener el contrato v1.
 
 ## 15. Análisis económico
 
-La fórmula y tarifas base están documentadas en `docs/ANALISIS-ECONOMICO.md`. Falta completar costos reales, promedio, mínimo, máximo, proyección semanal/anual y comparación de calidad con corridas reales.
+La fórmula, tarifas base, costos reales, promedio, mínimo, máximo y proyección semanal/anual están documentados en `docs/ANALISIS-ECONOMICO.md`. La comparación con otro modelo es económica; no se inventó una evaluación cualitativa no ejecutada.
 
 ## 16. Gobierno
 
@@ -72,7 +78,7 @@ Los riesgos principales son fuentes insuficientes, datos sensibles, referencias 
 
 ## 18. Limitaciones
 
-No se validó visualmente ningún PPTX real. No se ejecutaron llamadas a la API porque falta `OPENAI_API_KEY`.
+No se validó visualmente ningún PPTX real porque todavía no hubo aprobación humana para generarlo.
 
 ## 19. Aprendizajes
 
@@ -80,4 +86,4 @@ Un agente único con herramienta determinística permite mostrar ciclo agéntico
 
 ## 20. Próximos pasos
 
-Configurar `OPENAI_API_KEY` fuera del repositorio, ejecutar tres corridas, solicitar aprobación humana para las corridas aprobables y completar economía, evaluación de rúbrica y cierre del PR.
+Solicitar aprobación humana para la corrida aprobable, generar y validar el PPTX, actualizar el checklist final y cerrar el PR.
