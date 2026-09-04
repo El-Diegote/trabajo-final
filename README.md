@@ -60,6 +60,14 @@ Cada carpeta de corrida debe contener:
     npm run check
     npm run auditar
 
+## App visual
+
+La carpeta `app/` contiene un tablero estático para revisar el entregable como una aplicación:
+
+    python -m http.server 5173 -d app
+
+Luego abrir `http://localhost:5173`.
+
 ## Limitaciones actuales
 
 - La primera versión procesa fuentes textuales: TXT, MD, CSV, JSON y HTML.

@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>UCEMA Deck Agent</title>
+    <meta
+      name="description"
+      content="Tablero visual para revisar el estado, las corridas, la evidencia y la aprobación de UCEMA Deck Agent."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Navegación principal">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true">UDA</div>
+          <div>
+            <strong>UCEMA Deck Agent</strong>
+            <span>Trabajo final</span>
+          </div>
+        </div>
+        <nav class="nav-list">
+          <a href="#resumen" class="active" data-section-link="resumen">Resumen</a>
+          <a href="#flujo" data-section-link="flujo">Flujo</a>
+          <a href="#corridas" data-section-link="corridas">Corridas</a>
+          <a href="#evidencia" data-section-link="evidencia">Evidencia</a>
+          <a href="#gobierno" data-section-link="gobierno">Gobierno</a>
+          <a href="#economia" data-section-link="economia">Economía</a>
+          <a href="#checklist" data-section-link="checklist">Checklist</a>
+        </nav>
+      </aside>
+
+      <main>
+        <section id="resumen" class="section hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Sistema agéntico verificable</p>
+            <h1>UCEMA Deck Agent</h1>
+            <p class="lead">
+              Convierte fuentes académicas anonimizadas en un plan de presentación trazable y mantiene bloqueada la generación del PowerPoint hasta la aprobación humana.
+            </p>
+            <div class="actions">
+              <button class="primary-action" type="button" data-action="preview">
+                <span aria-hidden="true">▶</span>
+                Previsualizar plan
+              </button>
+              <button class="secondary-action" type="button" data-action="review">
+                <span aria-hidden="true">✓</span>
+                Revisar checklist
+              </button>
+            </div>
+          </div>
+
+          <div class="status-panel" aria-label="Estado del entregable">
+            <div class="status-header">
+              <span class="pulse"></span>
+              <strong>Estado actual</strong>
+            </div>
+            <dl class="status-metrics">
+              <div>
+                <dt>PR</dt>
+                <dd>Mergeado</dd>
+              </div>
+              <div>
+                <dt>CI</dt>
+                <dd>Verde</dd>
+              </div>
+              <div>
+                <dt>Corridas</dt>
+                <dd>0 / 3</dd>
+              </div>
+              <div>
+                <dt>PPTX</dt>
+                <dd>Bloqueado</dd>
+              </div>
+            </dl>
+            <div class="run-card locked">
+              <div>
+                <span class="tag danger">Pendiente</span>
+                <h2>Faltan fuentes reales y aprobación</h2>
+              </div>
+              <p>No hay salida real ni archivo final mientras no existan corridas reconstruibles.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="flujo" class="section">
+          <div class="section-heading">
+            <p class="eyebrow">Ciclo agéntico</p>
+            <h2>De fuente a presentación</h2>
+          </div>
+          <div class="flow-board" aria-label="Flujo del agente">
+            <article>
+              <span>01</span>
+              <h3>Entrada</h3>
+              <p>Contexto, duración, perfil, estilo y fuentes textuales.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Herramienta</h3>
+              <p><code>buscar_fragmentos</code> recupera evidencia local identificable.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Plan</h3>
+              <p>Salida JSON validada con slides, advertencias y preguntas.</p>
+            </article>
+            <article>
+              <span>04</span>
+              <h3>Aprobación</h3>
+              <p>Una persona firma antes de generar <code>resultado.pptx</code>.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="corridas" class="section two-column">
+          <div>
+            <div class="section-heading">
+              <p class="eyebrow">Ejecuciones</p>
+              <h2>Corridas reales</h2>
+            </div>
+            <div class="table-card">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Caso</th>
+                    <th>Estado</th>
+                    <th>PPTX</th>
+                    <th>Costo</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Caso normal</td>
+                    <td><span class="tag warning">Pendiente</span></td>
+                    <td>No generado</td>
+                    <td>Sin datos</td>
+                  </tr>
+                  <tr>
+                    <td>Evidencia insuficiente</td>
+                    <td><span class="tag warning">Pendiente</span></td>
+                    <td>No generado</td>
+                    <td>Sin datos</td>
+                  </tr>
+                  <tr>
+                    <td>Falla controlada</td>
+                    <td><span class="tag warning">Pendiente</span></td>
+                    <td>No generado</td>
+                    <td>Sin datos</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <form class="control-panel" aria-label="Configuración de previsualización">
+            <label>
+              Perfil
+              <select id="perfil">
+                <option>alumno</option>
+                <option>docente</option>
+              </select>
+            </label>
+            <label>
+              Estilo
+              <select id="estilo">
+                <option>académico</option>
+                <option>ejecutivo</option>
+                <option>visual</option>
+              </select>
+            </label>
+            <label>
+              Duración: <output id="duracionSalida">10</output> min
+              <input id="duracion" type="range" min="5" max="30" value="10" step="5" />
+            </label>
+            <label class="toggle-row">
+              <input id="fuentesOk" type="checkbox" />
+              Fuentes anonimizadas
+            </label>
+            <label class="toggle-row">
+              <input id="aprobacionOk" type="checkbox" />
+              Aprobación humana L2
+            </label>
+            <button type="button" class="primary-action full" data-action="preview">Actualizar vista</button>
+          </form>
+        </section>
+
+        <section id="evidencia" class="section split-view">
+          <div class="section-heading">
+            <p class="eyebrow">Trazabilidad</p>
+            <h2>Plan demo</h2>
+          </div>
+          <div class="preview-shell">
+            <div class="slides-preview" id="slidesPreview" aria-live="polite"></div>
+            <aside class="evidence-panel">
+              <h3>Fragmentos</h3>
+              <ul id="fragmentList"></ul>
+            </aside>
+          </div>
+        </section>
+
+        <section id="gobierno" class="section">
+          <div class="section-heading">
+            <p class="eyebrow">Supervisión</p>
+            <h2>Niveles L0-L4</h2>
+          </div>
+          <div class="levels" aria-label="Niveles de supervisión">
+            <article><strong>L0</strong><span>Auditoría determinística</span></article>
+            <article><strong>L1</strong><span>Lectura y búsqueda local</span></article>
+            <article><strong>L2</strong><span>Plan y aprobación humana</span></article>
+            <article><strong>L3</strong><span>Uso o entrega responsable</span></article>
+            <article><strong>L4</strong><span>Aval o publicación institucional</span></article>
+          </div>
+        </section>
+
+        <section id="economia" class="section two-column">
+          <div class="section-heading">
+            <p class="eyebrow">Costos</p>
+            <h2>Análisis económico</h2>
+            <p class="muted">Tarifas base registradas para <code>gpt-5.6-luna</code>: USD 0,10 entrada y USD 0,60 salida por millón de tokens.</p>
+          </div>
+          <div class="formula-card">
+            <span>Fórmula</span>
+            <strong>(input / 1M × tarifa input) + (output / 1M × tarifa output)</strong>
+            <p>El promedio, mínimo, máximo y proyección anual quedan pendientes hasta registrar tres corridas reales.</p>
+          </div>
+        </section>
+
+        <section id="checklist" class="section">
+          <div class="section-heading">
+            <p class="eyebrow">Entrega</p>
+            <h2>Checklist visual</h2>
+          </div>
+          <div class="check-grid">
+            <label><input type="checkbox" checked disabled /> Contrato versionado</label>
+            <label><input type="checkbox" checked disabled /> Herramienta real</label>
+            <label><input type="checkbox" checked disabled /> Auditoría reforzada</label>
+            <label><input type="checkbox" checked disabled /> CI en verde</label>
+            <label><input type="checkbox" disabled /> Tres corridas reales</label>
+            <label><input type="checkbox" disabled /> PPTX aprobado</label>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
