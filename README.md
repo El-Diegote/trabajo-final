@@ -62,7 +62,7 @@ Cada carpeta de corrida debe contener:
 
 ## App visual
 
-La carpeta pp/ contiene un tablero estático para revisar el entregable como una aplicación:
+La carpeta `app/` contiene un tablero estático para revisar el entregable como una aplicación:
 
     npm run app
 
@@ -70,7 +70,7 @@ Alternativa sin npm:
 
     python -m http.server 5173 -d app
 
-Luego abrir http://localhost:5173.
+Luego abrir `http://localhost:5173`.
 
 ## Limitaciones actuales
 

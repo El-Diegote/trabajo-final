@@ -41,7 +41,7 @@ npm run ci
 
 ## Señales de incumplimiento actual
 
-Al 3 de septiembre de 2026, el sistema todavía no tiene tres corridas reales ni costos reales. Es una limitación declarada, no una evidencia fabricada.
+Al 3 de septiembre de 2026, el sistema tiene fuentes reales anonimizadas listas para correr, pero todavía no tiene tres corridas reales ni costos reales. Es una limitación declarada, no una evidencia fabricada.
 
 ## App visual
 

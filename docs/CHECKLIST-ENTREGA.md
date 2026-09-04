@@ -26,7 +26,7 @@
 - [x] Auditoría automática.
 - [x] Pruebas y verificación de tipos.
 - [ ] Tres corridas reales completas.
-- [ ] Fuentes reales anonimizadas y publicables preparadas en `fuentes/`.
+- [x] Fuentes reales anonimizadas y publicables preparadas en `fuentes/`.
 - [ ] Ejecutar `npm ci`, `npm run check`, `npm test` y `npm run ci` en un entorno con `npm` disponible.
 
 ## Economía

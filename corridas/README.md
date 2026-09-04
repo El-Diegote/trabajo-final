@@ -12,9 +12,15 @@ Todavía no se registraron corridas reales. Los archivos de `ejemplos/` son insu
 2. Entrada ambigua o evidencia insuficiente.
 3. Fuente contradictoria, vacía o no admitida.
 
-## Fuentes candidatas recibidas
+## Fuentes preparadas
 
-El usuario aportó tres PDF académicos sobre locus de control, dirección por competencias y un caso de liderazgo. Son técnicamente legibles, pero deben transformarse en fuentes `.md` anonimizadas y publicables antes de versionarse, porque el repositorio es público y el evaluador debe poder reconstruir la evidencia sin exponer material protegido o datos innecesarios.
+El usuario aportó tres PDF académicos sobre locus de control, dirección por competencias y un caso de liderazgo. Se transformaron en fuentes `.md` anonimizadas y publicables para evitar subir documentos completos o datos innecesarios al repositorio público:
+
+- `fuentes/corrida-01-liderazgo-locus-competencias-caso.md`
+- `fuentes/corrida-02-liderazgo-evidencia-insuficiente.md`
+- `fuentes/corrida-03-liderazgo-falla-controlada.md`
+
+Las entradas listas para correr están en `entradas/`.
 
 ## Regla de integridad
 
@@ -22,4 +28,4 @@ No editar manualmente `salida.json` ni los tokens de `metadata.json`. Si se modi
 
 ## Bloqueo actual
 
-No se ejecutaron corridas reales en esta revisión porque no hay fuentes reales anonimizadas provistas ni `OPENAI_API_KEY` disponible en el entorno local. Las pruebas y ejemplos no cuentan como corridas reales.
+No se ejecutaron corridas reales en esta revisión porque `OPENAI_API_KEY` no está disponible en el entorno local. Las pruebas y ejemplos no cuentan como corridas reales.

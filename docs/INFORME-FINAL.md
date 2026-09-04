@@ -1,6 +1,6 @@
 # Informe final
 
-Estado: borrador técnico. Las secciones dependientes de corridas reales permanecen pendientes hasta preparar fuentes anonimizadas y publicables, ejecutar el agente con `OPENAI_API_KEY` y registrar aprobaciones humanas explícitas.
+Estado: borrador técnico. Las secciones dependientes de corridas reales permanecen pendientes hasta ejecutar el agente con `OPENAI_API_KEY` y registrar aprobaciones humanas explícitas.
 
 ## 1. Resumen ejecutivo
 
@@ -44,7 +44,7 @@ Los niveles están documentados en `docs/GOBIERNO-Y-RIESGO.md`. El agente opera 
 
 ## 11. Tres corridas
 
-Pendiente. No existen todavía tres corridas reales reconstruibles. Los ejemplos en `ejemplos/` son ficticios y no cuentan como evidencia. Hay tres PDF candidatos de liderazgo, pero deben convertirse en fuentes textuales anonimizadas antes de usarse.
+Pendiente. No existen todavía tres corridas reales reconstruibles. Los ejemplos en `ejemplos/` son ficticios y no cuentan como evidencia. Los tres PDF candidatos de liderazgo ya fueron convertidos en fuentes textuales anonimizadas y publicables.
 
 ## 12. Resultados
 
@@ -72,7 +72,7 @@ Los riesgos principales son fuentes insuficientes, datos sensibles, referencias 
 
 ## 18. Limitaciones
 
-No se validó visualmente ningún PPTX real. No se ejecutaron llamadas a la API porque falta `OPENAI_API_KEY`. Las fuentes candidatas todavía no fueron convertidas en material publicable.
+No se validó visualmente ningún PPTX real. No se ejecutaron llamadas a la API porque falta `OPENAI_API_KEY`.
 
 ## 19. Aprendizajes
 
@@ -80,4 +80,4 @@ Un agente único con herramienta determinística permite mostrar ciclo agéntico
 
 ## 20. Próximos pasos
 
-Proveer tres fuentes reales anonimizadas, configurar `OPENAI_API_KEY` fuera del repositorio, ejecutar tres corridas, solicitar aprobación humana para las corridas aprobables y completar economía, evaluación de rúbrica y cierre del PR.
+Configurar `OPENAI_API_KEY` fuera del repositorio, ejecutar tres corridas, solicitar aprobación humana para las corridas aprobables y completar economía, evaluación de rúbrica y cierre del PR.

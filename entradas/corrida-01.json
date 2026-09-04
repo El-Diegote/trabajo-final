@@ -1,0 +1,12 @@
+{
+  "titulo": "Promoción y desarrollo de liderazgo en una planta industrial",
+  "materia": "Liderazgo y Gestión de Equipos de Alto Rendimiento",
+  "perfil": "alumno",
+  "duracion_minutos": 12,
+  "estilo": "academico",
+  "objetivo": "Explicar cómo evaluar una decisión de promoción integrando desempeño, locus de control y competencias directivas.",
+  "instrucciones": "Presentar el dilema, conectar conceptos y cerrar con una recomendación prudente de desarrollo antes de la promoción.",
+  "fuentes": [
+    "fuentes/corrida-01-liderazgo-locus-competencias-caso.md"
+  ]
+}

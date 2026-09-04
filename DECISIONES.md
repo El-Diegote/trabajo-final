@@ -96,3 +96,15 @@ Historia real de construcción del sistema. Las fallas se conservan porque expli
 **Motivo:** son técnicamente legibles y relevantes para liderazgo y gestión de equipos, pero el repositorio es público. Antes de ejecutar corridas reales deben convertirse en fuentes textuales anonimizadas y publicables, evitando subir papers completos, casos protegidos o datos personales innecesarios.
 
 **Pendiente:** preparar archivos `.md` en `fuentes/`, configurar `OPENAI_API_KEY` fuera del repositorio y ejecutar las tres corridas reales.
+
+## 2026-09-03 - Conversión anonimizada de fuentes y retest
+
+**Decisión:** convertir los tres PDF candidatos en fuentes Markdown breves, anonimizadas y publicables, sin copiar los documentos completos.
+
+**Motivo:** el repositorio es público y será leído por un agente evaluador. La evidencia debe ser reconstruible, pero no debe exponer material protegido, nombres propios innecesarios ni datos sensibles.
+
+**Resultado:** se crearon tres fuentes en `fuentes/` y tres entradas listas para ejecutar en `entradas/`, cubriendo caso normal, evidencia insuficiente y falla controlada.
+
+**Test y retest:** se agregaron pruebas para fuentes preparadas, auditoría consistente, aprobación sin PPTX, `run_id` falso, costo inconsistente, herramientas ausentes, referencias inventadas y secretos versionados. La secuencia local equivalente de CI pasó dos veces con auditoría aprobada, TypeScript sin errores y 11 pruebas aprobadas.
+
+**Bloqueo restante:** no se ejecutaron corridas reales porque `OPENAI_API_KEY` no está disponible en el entorno local. No se debe pegar la clave en el chat.
