@@ -67,16 +67,34 @@ function calcularCosto(uso: Usage) {
   };
 }
 
+function resolverDentroDelRepo(ruta: string, etiqueta: string): string {
+  const absoluta = path.resolve(ruta);
+  const relativa = path.relative(process.cwd(), absoluta);
+  if (relativa.startsWith("..") || path.isAbsolute(relativa)) {
+    throw new Error(`${etiqueta} fuera del repositorio: ${ruta}`);
+  }
+  return absoluta;
+}
+
+function resolverDirectorioDeCorrida(ruta: string): string {
+  const absoluta = resolverDentroDelRepo(ruta, "Directorio de salida");
+  const relativa = path.relative(path.resolve("corridas"), absoluta);
+  if (relativa.startsWith("..") || path.isAbsolute(relativa) || relativa === "") {
+    throw new Error("El directorio de salida debe ser una subcarpeta de corridas/.");
+  }
+  return absoluta;
+}
+
 async function main() {
   if (!process.env.OPENAI_API_KEY) {
     throw new Error("Falta OPENAI_API_KEY. Configurala fuera del repositorio.");
   }
 
-  const inputPath = path.resolve(argumento("--input"));
-  const outputDir = path.resolve(argumento("--output"));
+  const inputPath = resolverDentroDelRepo(argumento("--input"), "Entrada");
+  const outputDir = resolverDirectorioDeCorrida(argumento("--output"));
   const entradaRaw = JSON.parse(await readFile(inputPath, "utf8"));
   const entrada = EntradaSchema.parse(entradaRaw);
-  const fragmentos = await cargarFuentes(entrada.fuentes);
+  const fragmentos = await cargarFuentes(entrada.fuentes, path.dirname(inputPath));
   const systemPrompt = await readFile(path.resolve("prompts/system_prompt.md"), "utf8");
   const userTemplate = await readFile(path.resolve("prompts/user_prompt.md"), "utf8");
   const userPrompt =
@@ -138,6 +156,14 @@ async function main() {
       }
 
       const args = JSON.parse(llamada.arguments);
+      if (
+        typeof args.consulta !== "string" ||
+        !Number.isInteger(args.max_resultados) ||
+        args.max_resultados < 1 ||
+        args.max_resultados > 10
+      ) {
+        throw new Error("Argumentos inválidos para buscar_fragmentos.");
+      }
       const encontrados = buscarFragmentos(fragmentos, args.consulta, args.max_resultados);
       toolLog.push({ nombre: llamada.name, argumentos: args, resultado: encontrados });
 
@@ -157,6 +183,12 @@ async function main() {
   }
 
   if (!toolLog.length) throw new Error("El agente no utilizó la herramienta obligatoria.");
+  if (response.output.some((item: any) => item.type === "function_call")) {
+    throw new Error("El agente excedió el límite de iteraciones con herramientas.");
+  }
+  if (!response.output_text) {
+    throw new Error("El agente no produjo una salida estructurada final.");
+  }
 
   const salida = DeckPlanSchema.parse(JSON.parse(response.output_text));
   const ahora = new Date().toISOString();

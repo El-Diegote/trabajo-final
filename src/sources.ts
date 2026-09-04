@@ -9,6 +9,18 @@ export type Fragmento = {
 
 const EXTENSIONES = new Set([".txt", ".md", ".csv", ".json", ".html", ".htm"]);
 
+function asegurarRutaDentroDelRepo(ruta: string, baseDir: string): string {
+  const repoRoot = process.cwd();
+  const absoluta = path.resolve(baseDir, ruta);
+  const relativa = path.relative(repoRoot, absoluta);
+
+  if (relativa.startsWith("..") || path.isAbsolute(relativa)) {
+    throw new Error(`Fuente fuera del repositorio: ${ruta}`);
+  }
+
+  return absoluta;
+}
+
 function limpiar(texto: string): string {
   return texto
     .replace(/<script[\s\S]*?<\/script>/gi, " ")
@@ -41,11 +53,12 @@ function fragmentar(archivo: string, texto: string, largo = 900, solapamiento = 
   return resultado;
 }
 
-export async function cargarFuentes(rutas: string[]): Promise<Fragmento[]> {
+export async function cargarFuentes(rutas: string[], baseDir = process.cwd()): Promise<Fragmento[]> {
   const fragmentos: Fragmento[] = [];
+  const ids = new Set<string>();
 
   for (const ruta of rutas) {
-    const absoluta = path.resolve(ruta);
+    const absoluta = asegurarRutaDentroDelRepo(ruta, baseDir);
     const extension = path.extname(absoluta).toLowerCase();
     if (!EXTENSIONES.has(extension)) {
       throw new Error(`Formato no admitido en v1: ${ruta}`);
@@ -56,7 +69,10 @@ export async function cargarFuentes(rutas: string[]): Promise<Fragmento[]> {
 
     const prefijo = path.basename(ruta).replace(/[^a-z0-9]+/gi, "-").replace(/^-|-$/g, "");
     for (const fragmento of fragmentar(path.basename(ruta), contenido)) {
-      fragmentos.push({ ...fragmento, id: `${prefijo}-${fragmento.id}` });
+      const id = `${prefijo}-${fragmento.id}`;
+      if (ids.has(id)) throw new Error(`Fragmento duplicado: ${id}`);
+      ids.add(id);
+      fragmentos.push({ ...fragmento, id });
     }
   }
 

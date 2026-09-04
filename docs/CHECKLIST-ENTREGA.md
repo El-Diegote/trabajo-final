@@ -7,6 +7,7 @@
 - [x] Herramienta real de búsqueda sobre archivos.
 - [x] Salida estructurada y validada.
 - [x] Supervisión L0-L4 definida.
+- [x] Auditoría reforzada para metadata, costos, referencias, aprobación y secretos.
 - [ ] Primera corrida real aprobada.
 
 ## Proceso documentado
@@ -23,11 +24,13 @@
 - [x] Auditoría automática.
 - [x] Pruebas y verificación de tipos.
 - [ ] Tres corridas reales completas.
+- [ ] Ejecutar `npm ci`, `npm run check`, `npm test` y `npm run ci` en un entorno con `npm` disponible.
 
 ## Economía
 
 - [x] Fórmula de costo implementada.
 - [x] Tokens y tarifas guardados por corrida.
+- [x] Tarifas base de `gpt-5.6-luna` verificadas en documentación oficial el 3 de septiembre de 2026.
 - [ ] Completar promedio, costo semanal y anual con datos reales.
 - [ ] Comparar el modelo elegido con uno más pequeño.
 

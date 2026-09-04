@@ -35,6 +35,24 @@ export const DeckPlanSchema = z.object({
     nivel: z.literal("L2"),
     accion_requerida: z.literal("revisar_y_aprobar"),
   }),
+}).superRefine((plan, ctx) => {
+  plan.slides.forEach((slide, index) => {
+    if (slide.numero !== index + 1) {
+      ctx.addIssue({
+        code: z.ZodIssueCode.custom,
+        path: ["slides", index, "numero"],
+        message: "Los números de slide deben ser secuenciales desde 1.",
+      });
+    }
+
+    if (["contenido", "objetivo"].includes(slide.tipo) && slide.fuentes.length === 0) {
+      ctx.addIssue({
+        code: z.ZodIssueCode.custom,
+        path: ["slides", index, "fuentes"],
+        message: "Las slides de contenido u objetivo deben citar al menos una fuente.",
+      });
+    }
+  });
 });
 
 export type Entrada = z.infer<typeof EntradaSchema>;

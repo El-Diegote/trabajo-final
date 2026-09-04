@@ -33,9 +33,11 @@ El agente trabaja en L1 para leer y buscar fragmentos, y en L2 para proponer el 
 
 Requisitos: Node.js 20 o superior y una clave de OpenAI.
 
-    npm install
+    npm ci
     cp .env.example .env
     export OPENAI_API_KEY="..."
+    export INPUT_USD_PER_MILLION="0.10"
+    export OUTPUT_USD_PER_MILLION="0.60"
     npm run check
     npm run agente -- --input ejemplos/caso-01/entrada.json --output corridas/corrida-01
     npm run aprobar -- --run corridas/corrida-01 --por "Nombre y apellido"
@@ -71,5 +73,6 @@ Cada carpeta de corrida debe contener:
 - [Gobierno y riesgo](docs/GOBIERNO-Y-RIESGO.md)
 - [Análisis económico](docs/ANALISIS-ECONOMICO.md)
 - [Checklist de entrega](docs/CHECKLIST-ENTREGA.md)
+- [Informe final](docs/INFORME-FINAL.md)
 - [Plan de corridas](corridas/README.md)
 - [Decisiones](DECISIONES.md)

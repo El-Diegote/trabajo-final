@@ -1,4 +1,4 @@
-import { readFile, writeFile } from "node:fs/promises";
+import { access, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import pptxgen from "pptxgenjs";
 import { DeckPlanSchema } from "./schema.js";
@@ -11,10 +11,34 @@ function argumento(nombre: string): string {
   return process.argv[indice + 1];
 }
 
+async function existe(ruta: string): Promise<boolean> {
+  try {
+    await access(ruta);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+function resolverDirectorioDeCorrida(ruta: string): string {
+  const absoluta = path.resolve(ruta);
+  const corridas = path.resolve("corridas");
+  const relativa = path.relative(corridas, absoluta);
+  if (relativa.startsWith("..") || path.isAbsolute(relativa) || relativa === "") {
+    throw new Error("La aprobación solo puede ejecutarse sobre una subcarpeta de corridas/.");
+  }
+  return absoluta;
+}
+
 async function main() {
-  const runDir = path.resolve(argumento("--run"));
+  const runDir = resolverDirectorioDeCorrida(argumento("--run"));
   const aprobadoPor = argumento("--por").trim();
   if (aprobadoPor.length < 3) throw new Error("El responsable de aprobación no es válido.");
+
+  const salidaPptx = path.join(runDir, "resultado.pptx");
+  const aprobacionPath = path.join(runDir, "aprobacion.json");
+  if (await existe(salidaPptx)) throw new Error("La corrida ya contiene resultado.pptx.");
+  if (await existe(aprobacionPath)) throw new Error("La corrida ya contiene aprobacion.json.");
 
   const plan = DeckPlanSchema.parse(
     JSON.parse(await readFile(path.join(runDir, "salida.json"), "utf8"))
@@ -78,10 +102,9 @@ async function main() {
     slide.addNotes(item.nota_orador);
   }
 
-  const salidaPptx = path.join(runDir, "resultado.pptx");
   await pptx.writeFile({ fileName: salidaPptx });
   await writeFile(
-    path.join(runDir, "aprobacion.json"),
+    aprobacionPath,
     JSON.stringify(
       {
         decision: "aprobado",

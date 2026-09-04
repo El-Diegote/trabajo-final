@@ -64,3 +64,27 @@ Historia real de construcción del sistema. Las fallas se conservan porque expli
 - Resultado de cada corrida y cambios de prompt.
 - Incorporación o descarte de PDF/DOCX.
 - Tarifas verificadas al momento de calcular costos finales.
+
+## 2026-09-03 - Endurecimiento de auditoría y controles
+
+**Decisión:** reforzar validaciones sin cambiar la arquitectura de agente único.
+
+**Cambios:** se restringieron entradas, fuentes y aprobaciones al repositorio y a `corridas/`; se impidió sobrescribir `resultado.pptx` o `aprobacion.json`; se exigieron fuentes para slides de objetivo/contenido; se agregó validación de límite de iteraciones, salida final estructurada, costos, referencias y posibles secretos.
+
+**Motivo:** cerrar riesgos comprobables de rutas arbitrarias, aprobaciones repetidas, referencias inexistentes y evidencia incompleta antes de ejecutar corridas reales.
+
+**Falla observada:** `npm ci` no pudo ejecutarse porque `npm` no está disponible en el PATH local ni en el runtime empaquetado de Codex. El comando falló con: `The term 'npm' is not recognized as a name of a cmdlet, function, script file, or executable program.`
+
+**Resultado parcial:** la auditoría pura con Node sí se ejecutó correctamente y dejó solo la advertencia esperada de tres corridas reales pendientes.
+
+**Verificación alternativa:** se instaló temporalmente con `pnpm install --no-lockfile` para obtener `node_modules` gitignorado. Ese comando terminó con `[ERR_PNPM_IGNORED_BUILDS] Ignored build scripts: esbuild@0.28.2`, pero dejó disponibles `tsc` y las dependencias necesarias. Con el Node empaquetado de Codex en `PATH`, la secuencia equivalente `node scripts/auditar-repo.mjs`, `tsc --noEmit`, `tsc` y `node --test dist/tests/*.test.js` finalizó correctamente con 6 pruebas aprobadas.
+
+**Comandos npm bloqueados:** `npm run auditar`, `npm run check`, `npm test` y `npm run ci` fallaron por la misma causa: `npm` no está disponible en el entorno local.
+
+## 2026-09-03 - Tarifas base verificadas
+
+**Decisión:** mantener en `.env.example` las tarifas de `gpt-5.6-luna` estándar: USD 0,10 por millón de tokens de entrada y USD 0,60 por millón de tokens de salida.
+
+**Fuente:** documentación oficial de OpenAI, `https://developers.openai.com/api/docs/pricing`, consultada el 3 de septiembre de 2026.
+
+**Pendiente:** recalcular y comparar costos con los tokens reales de las tres corridas cuando existan.
