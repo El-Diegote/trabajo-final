@@ -94,7 +94,7 @@ async function main() {
   const outputDir = resolverDirectorioDeCorrida(argumento("--output"));
   const entradaRaw = JSON.parse(await readFile(inputPath, "utf8"));
   const entrada = EntradaSchema.parse(entradaRaw);
-  const fragmentos = await cargarFuentes(entrada.fuentes, path.dirname(inputPath));
+  const fragmentos = await cargarFuentes(entrada.fuentes);
   const systemPrompt = await readFile(path.resolve("prompts/system_prompt.md"), "utf8");
   const userTemplate = await readFile(path.resolve("prompts/user_prompt.md"), "utf8");
   const userPrompt =

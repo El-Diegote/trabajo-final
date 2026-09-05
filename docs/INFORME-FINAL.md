@@ -1,10 +1,10 @@
 # Informe final
 
-Estado: borrador técnico. Las secciones dependientes de corridas reales permanecen pendientes hasta preparar fuentes anonimizadas y publicables, ejecutar el agente con `OPENAI_API_KEY` y registrar aprobaciones humanas explícitas.
+Estado: actualizado con tres corridas reales. La generación del PPTX sigue pendiente de aprobación humana explícita.
 
 ## 1. Resumen ejecutivo
 
-UCEMA Deck Agent es un sistema agéntico de línea de comandos que transforma fuentes académicas textuales en un plan de presentación estructurado, trazable y sujeto a revisión humana. La generación del PowerPoint queda bloqueada hasta registrar una aprobación.
+UCEMA Deck Agent es un sistema agéntico de línea de comandos que transforma fuentes académicas textuales en un plan de presentación estructurado, trazable y sujeto a revisión humana. La versión entregable incluye tres corridas reales, costos calculados, test/retest, auditoría automática y una app visual para revisar el estado del proyecto. La generación del PowerPoint queda bloqueada hasta registrar una aprobación.
 
 ## 2. Problema real
 
@@ -44,35 +44,47 @@ Los niveles están documentados en `docs/GOBIERNO-Y-RIESGO.md`. El agente opera 
 
 ## 11. Tres corridas
 
-Pendiente. No existen todavía tres corridas reales reconstruibles. Los ejemplos en `ejemplos/` son ficticios y no cuentan como evidencia. Hay tres PDF candidatos de liderazgo, pero deben convertirse en fuentes textuales anonimizadas antes de usarse.
+Se ejecutaron tres corridas reales reconstruibles en `corridas/`.
+
+| Corrida | Escenario | Resultado observado | Tokens entrada | Tokens salida | Costo USD |
+|---|---|---|---:|---:|---:|
+| `corrida-01` | Caso normal con evidencia suficiente | Recomendación prudente: reconocer desempeño y desarrollar antes de promover. | 4.155 | 1.609 | 0,00138090 |
+| `corrida-02` | Evidencia insuficiente | No inventa conclusión; arma estructura, faltantes y preguntas. | 2.646 | 1.475 | 0,00114960 |
+| `corrida-03` | Fuente contradictoria | Falla segura; suspende juicio y solicita revisión humana. | 2.445 | 1.233 | 0,00098430 |
+
+Los ejemplos en `ejemplos/` siguen siendo ficticios y no cuentan como evidencia.
 
 ## 12. Resultados
 
-Pendiente de corridas reales. La auditoría estructural se ejecutó correctamente y detecta que faltan tres corridas reales.
+La auditoría estructural se ejecutó correctamente y detecta tres corridas. Las tres salidas quedaron en estado `requiere_aprobacion`, usaron `buscar_fragmentos`, registraron tokens, costos, herramientas y referencias a fragmentos versionados. Ninguna generó PPTX porque no existe todavía una firma humana.
 
 ## 13. Fallas observadas
 
-Durante esta revisión, `npm ci` no pudo ejecutarse porque `npm` no está disponible en el entorno local. También se detectaron riesgos de rutas arbitrarias, referencias insuficientes y sobrescritura de aprobación, ya corregidos.
+Durante una revisión anterior, `npm ci` no pudo ejecutarse porque `npm` no estaba disponible en el entorno local. Después de instalar Node.js, `npm run ci` finalizó correctamente. También se detectaron riesgos de rutas arbitrarias, referencias insuficientes, costos sin tarifa y sobrescritura de aprobación; quedaron corregidos o documentados.
 
-## 14. Iteraciones del prompt
+## 14. Iteraciones del prompt y retest
 
-Pendiente de corridas reales. Los prompts iniciales están versionados y se ajustarán solo con evidencia de ejecución.
+Antes de ejecutar las corridas finales se endureció el sistema: fuentes dentro del repositorio, rechazo de rutas arbitrarias, referencias obligatorias para slides de objetivo/contenido, control de secretos, validación de costos y bloqueo de aprobaciones repetidas. Las pruebas pasaron antes y después de esos ajustes.
+
+No se modificaron los prompts después de las corridas finales porque las salidas cumplieron el objetivo esperado: caso normal, evidencia insuficiente y falla controlada. Se documentó la decisión de mantener el contrato v1 para no mover el criterio de evaluación después de observar resultados.
 
 ## 15. Análisis económico
 
-La fórmula y tarifas base están documentadas en `docs/ANALISIS-ECONOMICO.md`. Falta completar costos reales, promedio, mínimo, máximo, proyección semanal/anual y comparación de calidad con corridas reales.
+La fórmula, tarifas base, costos reales, promedio, mínimo, máximo y proyección semanal/anual están documentados en `docs/ANALISIS-ECONOMICO.md`. La comparación con otro modelo es económica; no se inventó una evaluación cualitativa no ejecutada.
 
 ## 16. Gobierno
 
-La aprobación humana es obligatoria antes del PPTX. El sistema no autoaprueba, no publica y no declara aval institucional.
+La aprobación humana es obligatoria antes del PPTX. El sistema no autoaprueba, no publica, no autentica usuarios y no declara aval institucional. La firma queda registrada en `aprobacion.json` solo si una persona decide convertir una salida en archivo PowerPoint.
 
 ## 17. Riesgos
 
 Los riesgos principales son fuentes insuficientes, datos sensibles, referencias inexistentes, costos inesperados y uso indebido del entregable. Los controles están en `docs/GOBIERNO-Y-RIESGO.md` y `scripts/auditar-repo.mjs`.
 
+La defensa específica contra ingeniería social y prompt injection está documentada en `docs/SEGURIDAD-ANTI-INGENIERIA-SOCIAL.md`. El principio operativo es que las fuentes son evidencia no confiable: pueden informar el contenido, pero no pueden modificar reglas, pedir secretos, simular aprobación ni cambiar el nivel de supervisión.
+
 ## 18. Limitaciones
 
-No se validó visualmente ningún PPTX real. No se ejecutaron llamadas a la API porque falta `OPENAI_API_KEY`. Las fuentes candidatas todavía no fueron convertidas en material publicable.
+No se validó visualmente ningún PPTX real porque todavía no hubo aprobación humana para generarlo.
 
 ## 19. Aprendizajes
 
@@ -80,4 +92,4 @@ Un agente único con herramienta determinística permite mostrar ciclo agéntico
 
 ## 20. Próximos pasos
 
-Proveer tres fuentes reales anonimizadas, configurar `OPENAI_API_KEY` fuera del repositorio, ejecutar tres corridas, solicitar aprobación humana para las corridas aprobables y completar economía, evaluación de rúbrica y cierre del PR.
+Solicitar aprobación humana para la corrida elegida, generar y validar el PPTX, registrar el firmante y cerrar el PR. Estos pasos son deliberadamente posteriores al análisis agéntico porque pertenecen al control humano del entregable.

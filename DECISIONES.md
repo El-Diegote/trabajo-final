@@ -58,7 +58,7 @@ Historia real de construcción del sistema. Las fallas se conservan porque expli
 
 **Resultado:** verificación de tipos aprobada y tres pruebas aprobadas.
 
-## Pendientes que deben registrar una decisión
+## Pendientes identificados antes de las corridas finales
 
 - Modelo definitivo y comparación contra uno más pequeño.
 - Resultado de cada corrida y cambios de prompt.
@@ -75,7 +75,7 @@ Historia real de construcción del sistema. Las fallas se conservan porque expli
 
 **Falla observada:** `npm ci` no pudo ejecutarse porque `npm` no está disponible en el PATH local ni en el runtime empaquetado de Codex. El comando falló con: `The term 'npm' is not recognized as a name of a cmdlet, function, script file, or executable program.`
 
-**Resultado parcial:** la auditoría pura con Node sí se ejecutó correctamente y dejó solo la advertencia esperada de tres corridas reales pendientes.
+**Resultado parcial de ese momento:** la auditoría pura con Node sí se ejecutó correctamente y dejó solo la advertencia esperada porque aún no estaban versionadas las tres corridas reales.
 
 **Verificación alternativa:** se instaló temporalmente con `pnpm install --no-lockfile` para obtener `node_modules` gitignorado. Ese comando terminó con `[ERR_PNPM_IGNORED_BUILDS] Ignored build scripts: esbuild@0.28.2`, pero dejó disponibles `tsc` y las dependencias necesarias. Con el Node empaquetado de Codex en `PATH`, la secuencia equivalente `node scripts/auditar-repo.mjs`, `tsc --noEmit`, `tsc` y `node --test dist/tests/*.test.js` finalizó correctamente con 6 pruebas aprobadas.
 
@@ -85,9 +85,9 @@ Historia real de construcción del sistema. Las fallas se conservan porque expli
 
 **Decisión:** mantener en `.env.example` las tarifas de `gpt-5.6-luna` estándar: USD 0,10 por millón de tokens de entrada y USD 0,60 por millón de tokens de salida.
 
-**Fuente:** documentación oficial de OpenAI, `https://developers.openai.com/api/docs/pricing`, consultada el 3 de septiembre de 2026.
+**Fuente:** documentación oficial de OpenAI, `https://developers.openai.com/api/docs/pricing`, consultada inicialmente el 3 de septiembre de 2026 y revisada para la documentación final el 4 de septiembre de 2026.
 
-**Pendiente:** recalcular y comparar costos con los tokens reales de las tres corridas cuando existan.
+**Resultado posterior:** los costos se recalcularon con los tokens reales de las tres corridas finales y quedaron documentados en `docs/ANALISIS-ECONOMICO.md`.
 
 ## 2026-09-03 - Fuentes candidatas para corridas reales
 
@@ -95,4 +95,42 @@ Historia real de construcción del sistema. Las fallas se conservan porque expli
 
 **Motivo:** son técnicamente legibles y relevantes para liderazgo y gestión de equipos, pero el repositorio es público. Antes de ejecutar corridas reales deben convertirse en fuentes textuales anonimizadas y publicables, evitando subir papers completos, casos protegidos o datos personales innecesarios.
 
-**Pendiente:** preparar archivos `.md` en `fuentes/`, configurar `OPENAI_API_KEY` fuera del repositorio y ejecutar las tres corridas reales.
+**Resultado posterior:** se prepararon archivos `.md` en `fuentes/`, se configuró `OPENAI_API_KEY` fuera del repositorio y se ejecutaron las tres corridas reales.
+
+## 2026-09-03 - Conversión anonimizada de fuentes y retest
+
+**Decisión:** convertir los tres PDF candidatos en fuentes Markdown breves, anonimizadas y publicables, sin copiar los documentos completos.
+
+**Motivo:** el repositorio es público y será leído por un agente evaluador. La evidencia debe ser reconstruible, pero no debe exponer material protegido, nombres propios innecesarios ni datos sensibles.
+
+**Resultado:** se crearon tres fuentes en `fuentes/` y tres entradas listas para ejecutar en `entradas/`, cubriendo caso normal, evidencia insuficiente y falla controlada.
+
+**Test y retest:** se agregaron pruebas para fuentes preparadas, auditoría consistente, aprobación sin PPTX, `run_id` falso, costo inconsistente, herramientas ausentes, referencias inventadas y secretos versionados. La secuencia local equivalente de CI pasó dos veces con auditoría aprobada, TypeScript sin errores y 11 pruebas aprobadas en ese momento.
+
+**Bloqueo restante:** no se ejecutaron corridas reales porque `OPENAI_API_KEY` no está disponible en el entorno local. No se debe pegar la clave en el chat.
+
+## 2026-09-04 - Corridas reales y costos finales
+
+**Decisión:** preservar localmente los tres intentos iniciales con costo cero en una carpeta ignorada por Git y ejecutar tres corridas finales nuevas en `corridas/corrida-01`, `corridas/corrida-02` y `corridas/corrida-03`.
+
+**Motivo:** los intentos iniciales registraron tokens reales, pero no tenían tarifas configuradas. Para no editar evidencia histórica y a la vez cumplir el análisis económico, se preservaron como intentos y se regeneraron corridas finales con `INPUT_USD_PER_MILLION=0.10` y `OUTPUT_USD_PER_MILLION=0.60`.
+
+**Resultado:** las tres corridas finales quedaron en estado `requiere_aprobacion`, usaron `buscar_fragmentos`, registraron metadata, tokens, tarifas y costos. `npm run ci` finalizó correctamente con auditoría aprobada, TypeScript sin errores y 11 pruebas aprobadas en ese momento.
+
+**Decisión de prompt:** no se modificó el contrato v1 después de las corridas porque las tres respuestas cubrieron los escenarios esperados: caso normal, evidencia insuficiente y falla controlada.
+
+## 2026-09-04 - Cierre documental contra los seis requisitos
+
+**Decisión:** revisar `README.md`, informe final, evaluación para agente, análisis económico, gobierno/riesgo, checklist y plan de corridas usando los resultados reales de las tres ejecuciones.
+
+**Motivo:** antes de contar con las corridas reales, parte de la documentación hablaba en futuro o declaraba limitaciones ya resueltas. Para el evaluador automático, eso podía parecer inconsistencia aunque el sistema ya corriera correctamente.
+
+**Resultado:** la documentación quedó alineada con los seis requisitos: sistema completo, ejecución real, formato estricto, historia del proceso, economía y gobierno/riesgo. Se mantiene abierto solo lo que depende de aprobación humana: generación y validación visual del PPTX.
+
+## 2026-09-04 - Endurecimiento adversarial y anti ingeniería social
+
+**Decisión:** agregar defensas explícitas contra ingeniería social, prompt injection y desvíos de formato.
+
+**Cambios:** los prompts tratan fuentes e instrucciones adicionales como contenido no confiable; `src/sources.ts` marca fragmentos con riesgo de inyección; `src/schema.ts` endurece mínimos, referencias y objetos estrictos; `scripts/auditar-repo.mjs` revalida estructura, herramientas, argumentos, referencias, aprobación y metadata; `src/approve.ts` actualiza metadata al aprobar; se agregó `docs/SEGURIDAD-ANTI-INGENIERIA-SOCIAL.md`.
+
+**Resultado:** `npm run ci` finalizó correctamente con auditoría aprobada, TypeScript sin errores y 15 pruebas aprobadas.

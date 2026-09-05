@@ -1,0 +1,118 @@
+{
+  "status": "requiere_aprobacion",
+  "resumen": "Plan académico de 5 slides para una exposición de 10 minutos. La presentación muestra que el desempeño técnico y los comentarios negativos sobre la comunicación no alcanzan, por sí solos, para recomendar una promoción. Propone explicitar la evidencia disponible, identificar los datos faltantes y formular preguntas para la revisión humana, sin emitir una conclusión definitiva.",
+  "slides": [
+    {
+      "numero": 1,
+      "tipo": "portada",
+      "titulo": "Promoción con evidencia insuficiente",
+      "bullets": [
+        "Liderazgo y Gestión de Equipos de Alto Rendimiento",
+        "Objetivo: mostrar cómo actuar cuando la evidencia no permite una recomendación cerrada",
+        "Duración estimada: 10 minutos"
+      ],
+      "fuentes": [],
+      "nota_orador": "Presentar el problema como un caso de toma de decisiones bajo información incompleta. La portada no agrega hechos sobre el caso."
+    },
+    {
+      "numero": 2,
+      "tipo": "objetivo",
+      "titulo": "Qué debe hacer el agente ante evidencia insuficiente",
+      "bullets": [
+        "Reconocer explícitamente que la evidencia no alcanza para recomendar o rechazar la promoción.",
+        "Separar la información disponible de los datos ausentes.",
+        "Proponer preguntas y próximos pasos para la revisión humana.",
+        "Evitar resultados, porcentajes, diagnósticos psicológicos y conclusiones definitivas no respaldadas."
+      ],
+      "fuentes": [
+        {
+          "fragmento_id": "corrida-02-liderazgo-evidencia-insuficiente-md-F003",
+          "archivo": "corrida-02-liderazgo-evidencia-insuficiente.md"
+        }
+      ],
+      "nota_orador": "La regla central es preservar la incertidumbre. La estructura de la presentación es una sugerencia de diseño basada en el uso esperado de la fuente."
+    },
+    {
+      "numero": 3,
+      "tipo": "contenido",
+      "titulo": "Situación y evidencia disponible",
+      "bullets": [
+        "Se evalúa si un colaborador de una organización industrial podría pasar a un rol de coordinación.",
+        "La evidencia disponible indica buen desempeño operativo o técnico.",
+        "Existen comentarios negativos o reservas sobre la comunicación y el estilo de interacción.",
+        "La organización debe decidir si conviene promoverlo y podría requerir desarrollo en competencias de liderazgo.",
+        "Se mencionan locus de control, competencias directivas y feedback 360, pero no se conservan definiciones completas ni datos de evaluación."
+      ],
+      "fuentes": [
+        {
+          "fragmento_id": "corrida-02-liderazgo-evidencia-insuficiente-md-F001",
+          "archivo": "corrida-02-liderazgo-evidencia-insuficiente.md"
+        },
+        {
+          "fragmento_id": "corrida-02-liderazgo-evidencia-insuficiente-md-F002",
+          "archivo": "corrida-02-liderazgo-evidencia-insuficiente.md"
+        }
+      ],
+      "nota_orador": "Distinguir hechos recuperados de interpretaciones. No presentar los comentarios negativos como una medición objetiva ni asumir que el buen desempeño técnico predice el desempeño en coordinación."
+    },
+    {
+      "numero": 4,
+      "tipo": "visual",
+      "titulo": "Matriz de evidencia: disponible versus faltante",
+      "bullets": [
+        "Disponible: desempeño operativo, reservas sobre la comunicación y necesidad organizacional de decidir.",
+        "Faltante: descripción del puesto futuro y competencias requeridas.",
+        "Faltante: resultados numéricos de la evaluación 360, citas verificables y ejemplos concretos de conductas observadas.",
+        "Faltante: historial de incidentes o conflictos y antecedentes de feedback recibido.",
+        "Faltante: información suficiente para estimar riesgos legales, sindicales o de clima.",
+        "Conclusión metodológica: la base actual no permite cerrar la recomendación."
+      ],
+      "fuentes": [
+        {
+          "fragmento_id": "corrida-02-liderazgo-evidencia-insuficiente-md-F002",
+          "archivo": "corrida-02-liderazgo-evidencia-insuficiente.md"
+        },
+        {
+          "fragmento_id": "corrida-02-liderazgo-evidencia-insuficiente-md-F003",
+          "archivo": "corrida-02-liderazgo-evidencia-insuficiente.md"
+        }
+      ],
+      "nota_orador": "Sugerencia visual: dos columnas, “evidencia disponible” y “evidencia faltante”, sin utilizar semáforos ni porcentajes no provistos por la fuente. La conclusión metodológica es una inferencia explícitamente respaldada por el uso esperado del material."
+    },
+    {
+      "numero": 5,
+      "tipo": "cierre",
+      "titulo": "Preguntas para la revisión humana",
+      "bullets": [
+        "¿Qué comportamientos concretos fueron observados?",
+        "¿Qué competencias exige el nuevo rol de coordinación?",
+        "¿Qué evidencia cuantitativa y cualitativa existe?",
+        "¿Qué alternativas tiene la organización además de promover o rechazar?",
+        "¿Quién debe aprobar el plan de desarrollo?",
+        "Hasta responder estas preguntas, corresponde mantener la decisión abierta y no emitir una recomendación cerrada."
+      ],
+      "fuentes": [
+        {
+          "fragmento_id": "corrida-02-liderazgo-evidencia-insuficiente-md-F003",
+          "archivo": "corrida-02-liderazgo-evidencia-insuficiente.md"
+        }
+      ],
+      "nota_orador": "Cerrar enfatizando que la salida responsable no es completar los vacíos, sino hacerlos visibles y derivar la decisión a revisión humana. La frase final es una síntesis operativa del criterio de la fuente, no una decisión sobre el colaborador."
+    }
+  ],
+  "advertencias": [
+    "La evidencia no alcanza para recomendar ni rechazar la promoción.",
+    "No hay definiciones completas de locus de control, competencias directivas ni feedback 360; por lo tanto, no deben desarrollarse como conceptos teóricos específicos sin fuentes adicionales.",
+    "No se dispone de resultados numéricos, citas verificables, descripción del puesto futuro ni ejemplos concretos de conductas.",
+    "La fuente no permite estimar riesgos legales, sindicales o de clima.",
+    "No se identifican contradicciones internas explícitas; sí existe información parcial y deliberadamente incompleta."
+  ],
+  "preguntas_para_usuario": [
+    "¿Deseás incorporar bibliografía académica adicional para definir locus de control, competencias directivas o feedback 360?",
+    "¿La revisión humana debe incluir un responsable o rol institucional específico, si esa información está disponible?"
+  ],
+  "supervision": {
+    "nivel": "L2",
+    "accion_requerida": "revisar_y_aprobar"
+  }
+}

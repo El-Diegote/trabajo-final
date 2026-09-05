@@ -67,7 +67,7 @@
               </div>
               <div>
                 <dt>Corridas</dt>
-                <dd>0 / 3</dd>
+                <dd>3 / 3</dd>
               </div>
               <div>
                 <dt>PPTX</dt>
@@ -77,9 +77,9 @@
             <div class="run-card locked">
               <div>
                 <span class="tag danger">Pendiente</span>
-                <h2>Faltan fuentes reales y aprobación</h2>
+                <h2>Falta aprobación humana</h2>
               </div>
-              <p>No hay salida real ni archivo final mientras no existan corridas reconstruibles.</p>
+              <p>Las tres corridas ya existen. Falta aprobar una salida y generar el PPTX correspondiente.</p>
             </div>
           </div>
         </section>
@@ -132,21 +132,21 @@
                 <tbody>
                   <tr>
                     <td>Caso normal</td>
-                    <td><span class="tag warning">Pendiente</span></td>
+                    <td><span class="tag ok">Ejecutada</span></td>
                     <td>No generado</td>
-                    <td>Sin datos</td>
+                    <td>USD 0,00138090</td>
                   </tr>
                   <tr>
                     <td>Evidencia insuficiente</td>
-                    <td><span class="tag warning">Pendiente</span></td>
+                    <td><span class="tag ok">Ejecutada</span></td>
                     <td>No generado</td>
-                    <td>Sin datos</td>
+                    <td>USD 0,00114960</td>
                   </tr>
                   <tr>
                     <td>Falla controlada</td>
-                    <td><span class="tag warning">Pendiente</span></td>
+                    <td><span class="tag ok">Ejecutada</span></td>
                     <td>No generado</td>
-                    <td>Sin datos</td>
+                    <td>USD 0,00098430</td>
                   </tr>
                 </tbody>
               </table>
@@ -189,12 +189,12 @@
           <div class="section-heading">
             <p class="eyebrow">Material real</p>
             <h2>Fuentes candidatas</h2>
-            <p class="muted">Los tres PDF aportados son legibles y sirven como base temática, pero todavía no son evidencia lista para el repo público.</p>
+            <p class="muted">Los tres PDF aportados fueron convertidos en fuentes .md anonimizadas y publicables para preparar las corridas reales.</p>
           </div>
           <div class="formula-card">
             <span>Antes de correr</span>
-            <strong>Convertir a fuentes .md anonimizadas y publicables</strong>
-            <p>La corrida real debe conservar evidencia suficiente sin subir papers completos, casos protegidos ni nombres innecesarios.</p>
+            <strong>Configurar OPENAI_API_KEY y ejecutar las tres entradas</strong>
+            <p>Las corridas deben guardar salida, herramientas, metadata, tokens y costos sin editar manualmente la evidencia.</p>
           </div>
         </section>
 
@@ -230,12 +230,12 @@
           <div class="section-heading">
             <p class="eyebrow">Costos</p>
             <h2>Análisis económico</h2>
-            <p class="muted">Tarifas base registradas para <code>gpt-5.6-luna</code>: USD 0,10 entrada y USD 0,60 salida por millón de tokens.</p>
+            <p class="muted">Promedio real con <code>gpt-5.6-luna</code>: USD 0,00117160 por corrida, usando las tres ejecuciones registradas.</p>
           </div>
           <div class="formula-card">
             <span>Fórmula</span>
             <strong>(input / 1M × tarifa input) + (output / 1M × tarifa output)</strong>
-            <p>El promedio, mínimo, máximo y proyección anual quedan pendientes hasta registrar tres corridas reales.</p>
+            <p>Con 15 corridas semanales, la proyección anual es USD 0,91384800. La comparación con un modelo mayor queda documentada como económica.</p>
           </div>
         </section>
 
@@ -249,7 +249,7 @@
             <label><input type="checkbox" checked disabled /> Herramienta real</label>
             <label><input type="checkbox" checked disabled /> Auditoría reforzada</label>
             <label><input type="checkbox" checked disabled /> CI en verde</label>
-            <label><input type="checkbox" disabled /> Tres corridas reales</label>
+            <label><input type="checkbox" checked disabled /> Tres corridas reales</label>
             <label><input type="checkbox" disabled /> PPTX aprobado</label>
           </div>
         </section>

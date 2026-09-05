@@ -13,12 +13,14 @@ Una fuente puede usarse en una corrida real si cumple estas condiciones:
 - conserva suficiente evidencia para reconstruir la decisión del agente;
 - está en un formato admitido por la versión actual: `.txt`, `.md`, `.csv`, `.json`, `.html` o `.htm`.
 
-## Uso de los tres PDF candidatos
+## Fuentes preparadas desde los PDF candidatos
 
-Los tres PDF aportados sirven como base temática para una corrida de liderazgo y gestión de equipos, pero no deben versionarse completos. La ruta recomendada es crear archivos `.md` anonimizados y breves con extractos o notas permitidas, por ejemplo:
+Los tres PDF aportados sirven como base temática para corridas de liderazgo y gestión de equipos, pero no deben versionarse completos. Se prepararon archivos `.md` anonimizados y breves:
 
 - `fuentes/corrida-01-liderazgo-locus-competencias-caso.md`
 - `fuentes/corrida-02-liderazgo-evidencia-insuficiente.md`
 - `fuentes/corrida-03-falla-controlada.md`
 
-Cada archivo debe indicar origen general del material, fecha de preparación, criterio de anonimización, contenido textual usable y limitaciones conocidas.
+Corrección de nombre: la tercera fuente versionada es `fuentes/corrida-03-liderazgo-falla-controlada.md`.
+
+Cada archivo indica origen general del material, fecha de preparación, criterio de anonimización, contenido textual usable y limitaciones conocidas.

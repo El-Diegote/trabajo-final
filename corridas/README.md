@@ -1,25 +1,35 @@
 # Corridas reales
 
-Esta carpeta contendrá la evidencia exacta de al menos tres ejecuciones reales.
+Esta carpeta contiene la evidencia exacta de tres ejecuciones reales.
 
 ## Estado
 
-Todavía no se registraron corridas reales. Los archivos de `ejemplos/` son insumos de prueba y no cuentan como evidencia.
+Se registraron tres corridas reales. Los archivos de `ejemplos/` son insumos de prueba y no cuentan como evidencia.
 
-## Casos planificados
+## Casos ejecutados
 
-1. Documento suficiente y legible.
-2. Entrada ambigua o evidencia insuficiente.
-3. Fuente contradictoria, vacía o no admitida.
+| Corrida | Escenario | Estado | Tokens totales | Costo USD |
+|---|---|---|---:|---:|
+| `corrida-01` | Documento suficiente y legible | `requiere_aprobacion` | 5.764 | 0,00138090 |
+| `corrida-02` | Entrada ambigua o evidencia insuficiente | `requiere_aprobacion` | 4.121 | 0,00114960 |
+| `corrida-03` | Fuente contradictoria o difícil de interpretar | `requiere_aprobacion` | 3.678 | 0,00098430 |
 
-## Fuentes candidatas recibidas
+Cada carpeta incluye `entrada.json`, `salida.json`, `herramientas.json` y `metadata.json`.
 
-El usuario aportó tres PDF académicos sobre locus de control, dirección por competencias y un caso de liderazgo. Son técnicamente legibles, pero deben transformarse en fuentes `.md` anonimizadas y publicables antes de versionarse, porque el repositorio es público y el evaluador debe poder reconstruir la evidencia sin exponer material protegido o datos innecesarios.
+## Fuentes preparadas
+
+El usuario aportó tres PDF académicos sobre locus de control, dirección por competencias y un caso de liderazgo. Se transformaron en fuentes `.md` anonimizadas y publicables para evitar subir documentos completos o datos innecesarios al repositorio público:
+
+- `fuentes/corrida-01-liderazgo-locus-competencias-caso.md`
+- `fuentes/corrida-02-liderazgo-evidencia-insuficiente.md`
+- `fuentes/corrida-03-liderazgo-falla-controlada.md`
+
+Las entradas usadas están en `entradas/`.
 
 ## Regla de integridad
 
 No editar manualmente `salida.json` ni los tokens de `metadata.json`. Si se modifica un prompt o una entrada, ejecutar una nueva corrida con otro identificador.
 
-## Bloqueo actual
+## Intentos no versionados
 
-No se ejecutaron corridas reales en esta revisión porque no hay fuentes reales anonimizadas provistas ni `OPENAI_API_KEY` disponible en el entorno local. Las pruebas y ejemplos no cuentan como corridas reales.
+Los intentos técnicos descartados pueden conservarse localmente en carpetas `corridas/_*/`, ignoradas por Git. No cuentan como corridas finales de entrega.
