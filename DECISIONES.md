@@ -105,7 +105,7 @@ Historia real de construcción del sistema. Las fallas se conservan porque expli
 
 **Resultado:** se crearon tres fuentes en `fuentes/` y tres entradas listas para ejecutar en `entradas/`, cubriendo caso normal, evidencia insuficiente y falla controlada.
 
-**Test y retest:** se agregaron pruebas para fuentes preparadas, auditoría consistente, aprobación sin PPTX, `run_id` falso, costo inconsistente, herramientas ausentes, referencias inventadas y secretos versionados. La secuencia local equivalente de CI pasó dos veces con auditoría aprobada, TypeScript sin errores y 11 pruebas aprobadas.
+**Test y retest:** se agregaron pruebas para fuentes preparadas, auditoría consistente, aprobación sin PPTX, `run_id` falso, costo inconsistente, herramientas ausentes, referencias inventadas y secretos versionados. La secuencia local equivalente de CI pasó dos veces con auditoría aprobada, TypeScript sin errores y 11 pruebas aprobadas en ese momento.
 
 **Bloqueo restante:** no se ejecutaron corridas reales porque `OPENAI_API_KEY` no está disponible en el entorno local. No se debe pegar la clave en el chat.
 
@@ -115,7 +115,7 @@ Historia real de construcción del sistema. Las fallas se conservan porque expli
 
 **Motivo:** los intentos iniciales registraron tokens reales, pero no tenían tarifas configuradas. Para no editar evidencia histórica y a la vez cumplir el análisis económico, se preservaron como intentos y se regeneraron corridas finales con `INPUT_USD_PER_MILLION=0.10` y `OUTPUT_USD_PER_MILLION=0.60`.
 
-**Resultado:** las tres corridas finales quedaron en estado `requiere_aprobacion`, usaron `buscar_fragmentos`, registraron metadata, tokens, tarifas y costos. `npm run ci` finalizó correctamente con auditoría aprobada, TypeScript sin errores y 11 pruebas aprobadas.
+**Resultado:** las tres corridas finales quedaron en estado `requiere_aprobacion`, usaron `buscar_fragmentos`, registraron metadata, tokens, tarifas y costos. `npm run ci` finalizó correctamente con auditoría aprobada, TypeScript sin errores y 11 pruebas aprobadas en ese momento.
 
 **Decisión de prompt:** no se modificó el contrato v1 después de las corridas porque las tres respuestas cubrieron los escenarios esperados: caso normal, evidencia insuficiente y falla controlada.
 
@@ -126,3 +126,11 @@ Historia real de construcción del sistema. Las fallas se conservan porque expli
 **Motivo:** antes de contar con las corridas reales, parte de la documentación hablaba en futuro o declaraba limitaciones ya resueltas. Para el evaluador automático, eso podía parecer inconsistencia aunque el sistema ya corriera correctamente.
 
 **Resultado:** la documentación quedó alineada con los seis requisitos: sistema completo, ejecución real, formato estricto, historia del proceso, economía y gobierno/riesgo. Se mantiene abierto solo lo que depende de aprobación humana: generación y validación visual del PPTX.
+
+## 2026-09-04 - Endurecimiento adversarial y anti ingeniería social
+
+**Decisión:** agregar defensas explícitas contra ingeniería social, prompt injection y desvíos de formato.
+
+**Cambios:** los prompts tratan fuentes e instrucciones adicionales como contenido no confiable; `src/sources.ts` marca fragmentos con riesgo de inyección; `src/schema.ts` endurece mínimos, referencias y objetos estrictos; `scripts/auditar-repo.mjs` revalida estructura, herramientas, argumentos, referencias, aprobación y metadata; `src/approve.ts` actualiza metadata al aprobar; se agregó `docs/SEGURIDAD-ANTI-INGENIERIA-SOCIAL.md`.
+
+**Resultado:** `npm run ci` finalizó correctamente con auditoría aprobada, TypeScript sin errores y 15 pruebas aprobadas.

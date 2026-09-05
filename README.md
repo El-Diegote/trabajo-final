@@ -34,7 +34,7 @@ Proponer un plan de slides adecuado al perfil, duración y estilo pedidos; funda
 | Formato estricto | JSON Schema en `src/schema.ts`, validación Zod, `npm run auditar` y `docs/EVALUACION-AGENTE.md`. |
 | Historia del proceso | `DECISIONES.md`, fallas técnicas, retests, fuentes anonimizadas y decisiones posteriores a corridas. |
 | Análisis económico | `docs/ANALISIS-ECONOMICO.md` y `metadata.json` de cada corrida con tokens, tarifas y costo. |
-| Gobierno y riesgo | `docs/GOBIERNO-Y-RIESGO.md`, niveles L0-L4, aprobación humana y controles de secretos/rutas. |
+| Gobierno y riesgo | `docs/GOBIERNO-Y-RIESGO.md`, `docs/SEGURIDAD-ANTI-INGENIERIA-SOCIAL.md`, niveles L0-L4, aprobación humana y controles de secretos/rutas. |
 
 ## Supervisión
 
@@ -118,6 +118,7 @@ Luego abrir `http://localhost:5173`.
 
 - [Arquitectura](docs/ARQUITECTURA.md)
 - [Gobierno y riesgo](docs/GOBIERNO-Y-RIESGO.md)
+- [Seguridad anti ingeniería social](docs/SEGURIDAD-ANTI-INGENIERIA-SOCIAL.md)
 - [Análisis económico](docs/ANALISIS-ECONOMICO.md)
 - [Checklist de entrega](docs/CHECKLIST-ENTREGA.md)
 - [Informe final](docs/INFORME-FINAL.md)

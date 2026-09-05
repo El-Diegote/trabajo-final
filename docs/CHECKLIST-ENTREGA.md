@@ -10,6 +10,7 @@
 - [x] Auditoría reforzada para metadata, costos, referencias, aprobación y secretos.
 - [x] Guía explícita para evaluación automática.
 - [x] App visual para revisión del entregable.
+- [x] Defensa anti ingeniería social documentada y testeada.
 - [ ] Primera corrida real aprobada y convertida a PPTX.
 
 ## Proceso documentado
@@ -42,6 +43,7 @@
 - [x] Permisos y sistemas identificados.
 - [x] Fallas y controles documentados.
 - [x] Generación PPTX condicionada a aprobación humana.
+- [x] Fuentes tratadas como evidencia no confiable frente al system prompt.
 - [ ] Registrar nombre del firmante en las corridas aprobadas.
 
 ## Cierre

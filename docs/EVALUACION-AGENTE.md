@@ -15,6 +15,7 @@ Este documento resume dónde debe mirar un evaluador automático para verificar 
 - `DECISIONES.md`: historia de construcción y fallas.
 - `docs/ANALISIS-ECONOMICO.md`: fórmula, tarifas y costos reales.
 - `docs/GOBIERNO-Y-RIESGO.md`: permisos, niveles L0-L4, fallas y firma.
+- `docs/SEGURIDAD-ANTI-INGENIERIA-SOCIAL.md`: defensas ante prompt injection e instrucciones no confiables.
 
 ## Comandos esperados
 
@@ -38,6 +39,7 @@ npm run ci
 - Si existe `resultado.pptx`, también existe `aprobacion.json`.
 - Si no existe `resultado.pptx`, no debe existir `aprobacion.json`.
 - No hay secretos ni datos personales en archivos versionados.
+- Las fuentes se tratan como evidencia no confiable, no como instrucciones del agente.
 
 ## Estado evaluable actual
 

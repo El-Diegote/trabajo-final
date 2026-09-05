@@ -80,6 +80,8 @@ La aprobación humana es obligatoria antes del PPTX. El sistema no autoaprueba, 
 
 Los riesgos principales son fuentes insuficientes, datos sensibles, referencias inexistentes, costos inesperados y uso indebido del entregable. Los controles están en `docs/GOBIERNO-Y-RIESGO.md` y `scripts/auditar-repo.mjs`.
 
+La defensa específica contra ingeniería social y prompt injection está documentada en `docs/SEGURIDAD-ANTI-INGENIERIA-SOCIAL.md`. El principio operativo es que las fuentes son evidencia no confiable: pueden informar el contenido, pero no pueden modificar reglas, pedir secretos, simular aprobación ni cambiar el nivel de supervisión.
+
 ## 18. Limitaciones
 
 No se validó visualmente ningún PPTX real porque todavía no hubo aprobación humana para generarlo.

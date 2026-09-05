@@ -37,12 +37,17 @@ async function main() {
 
   const salidaPptx = path.join(runDir, "resultado.pptx");
   const aprobacionPath = path.join(runDir, "aprobacion.json");
+  const metadataPath = path.join(runDir, "metadata.json");
   if (await existe(salidaPptx)) throw new Error("La corrida ya contiene resultado.pptx.");
   if (await existe(aprobacionPath)) throw new Error("La corrida ya contiene aprobacion.json.");
 
   const plan = DeckPlanSchema.parse(
     JSON.parse(await readFile(path.join(runDir, "salida.json"), "utf8"))
   );
+  const metadata = JSON.parse(await readFile(metadataPath, "utf8"));
+  if (metadata.estado_humano && metadata.estado_humano !== "pendiente") {
+    throw new Error("La corrida no está pendiente de aprobación humana.");
+  }
 
   const pptx = new pptxgen();
   pptx.layout = "LAYOUT_WIDE";
@@ -103,19 +108,18 @@ async function main() {
   }
 
   await pptx.writeFile({ fileName: salidaPptx });
+  const aprobacion = {
+    decision: "aprobado",
+    aprobado_por: aprobadoPor,
+    fecha: new Date().toISOString(),
+    nivel: "L2",
+    archivo_generado: "resultado.pptx",
+  };
+
+  await writeFile(aprobacionPath, JSON.stringify(aprobacion, null, 2) + "\n");
   await writeFile(
-    aprobacionPath,
-    JSON.stringify(
-      {
-        decision: "aprobado",
-        aprobado_por: aprobadoPor,
-        fecha: new Date().toISOString(),
-        nivel: "L2",
-        archivo_generado: "resultado.pptx",
-      },
-      null,
-      2
-    ) + "\n"
+    metadataPath,
+    JSON.stringify({ ...metadata, estado_humano: "aprobado", aprobacion }, null, 2) + "\n"
   );
 
   console.log(`PPTX generado después de aprobación: ${salidaPptx}`);

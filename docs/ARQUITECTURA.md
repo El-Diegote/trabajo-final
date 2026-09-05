@@ -22,6 +22,7 @@ La versión 1 es un sistema de línea de comandos con un único agente especiali
 - Los fragmentos recuperados tienen identificadores únicos por archivo.
 - El agente falla si no usa `buscar_fragmentos`, si excede el límite de iteraciones o si no produce salida estructurada.
 - Las slides de objetivo y contenido deben citar fuentes.
+- Los fragmentos recuperados pueden marcarse con `riesgo_inyeccion`; las fuentes nunca tienen autoridad para cambiar el contrato del agente.
 - La aprobación solo se ejecuta sobre `corridas/` y no sobrescribe `resultado.pptx` ni `aprobacion.json`.
 - `scripts/auditar-repo.mjs` inspecciona estructura, JSON, metadata, costos, referencias, aprobación/PPTX y posibles secretos sin modificar archivos.
 

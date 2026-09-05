@@ -8,33 +8,35 @@ export const EntradaSchema = z.object({
   estilo: z.enum(["academico", "ejecutivo", "visual"]),
   objetivo: z.string().min(10),
   instrucciones: z.string(),
-  fuentes: z.array(z.string()).min(1),
-});
+  fuentes: z.array(z.string().min(1)).min(1),
+}).strict();
 
 export const FuenteRefSchema = z.object({
-  fragmento_id: z.string(),
-  archivo: z.string(),
-});
+  fragmento_id: z.string().regex(/^[A-Za-z0-9._-]+-F\d{3}$/),
+  archivo: z.string().min(1).refine((valor) => !valor.includes("/") && !valor.includes("\\") && !valor.includes(".."), {
+    message: "La referencia de archivo debe ser un nombre versionado, no una ruta.",
+  }),
+}).strict();
 
 export const SlideSchema = z.object({
   numero: z.number().int().positive(),
   tipo: z.enum(["portada", "objetivo", "contenido", "visual", "cierre"]),
-  titulo: z.string(),
-  bullets: z.array(z.string()),
+  titulo: z.string().min(3),
+  bullets: z.array(z.string().min(1)).min(1),
   fuentes: z.array(FuenteRefSchema),
-  nota_orador: z.string(),
-});
+  nota_orador: z.string().min(1),
+}).strict();
 
 export const DeckPlanSchema = z.object({
   status: z.literal("requiere_aprobacion"),
-  resumen: z.string(),
+  resumen: z.string().min(20),
   slides: z.array(SlideSchema).min(4),
-  advertencias: z.array(z.string()),
-  preguntas_para_usuario: z.array(z.string()),
+  advertencias: z.array(z.string().min(1)),
+  preguntas_para_usuario: z.array(z.string().min(1)),
   supervision: z.object({
     nivel: z.literal("L2"),
     accion_requerida: z.literal("revisar_y_aprobar"),
-  }),
+  }).strict(),
 }).superRefine((plan, ctx) => {
   plan.slides.forEach((slide, index) => {
     if (slide.numero !== index + 1) {
@@ -71,7 +73,7 @@ export const deckPlanJsonSchema = {
   ],
   properties: {
     status: { type: "string", enum: ["requiere_aprobacion"] },
-    resumen: { type: "string" },
+    resumen: { type: "string", minLength: 20 },
     slides: {
       type: "array",
       minItems: 4,
@@ -85,8 +87,8 @@ export const deckPlanJsonSchema = {
             type: "string",
             enum: ["portada", "objetivo", "contenido", "visual", "cierre"]
           },
-          titulo: { type: "string" },
-          bullets: { type: "array", items: { type: "string" } },
+          titulo: { type: "string", minLength: 3 },
+          bullets: { type: "array", minItems: 1, items: { type: "string", minLength: 1 } },
           fuentes: {
             type: "array",
             items: {
@@ -94,17 +96,17 @@ export const deckPlanJsonSchema = {
               additionalProperties: false,
               required: ["fragmento_id", "archivo"],
               properties: {
-                fragmento_id: { type: "string" },
-                archivo: { type: "string" }
+                fragmento_id: { type: "string", pattern: "^[A-Za-z0-9._-]+-F\\d{3}$" },
+                archivo: { type: "string", minLength: 1, pattern: "^(?!.*\\.\\.)[^/\\\\]+$" }
               }
             }
           },
-          nota_orador: { type: "string" }
+          nota_orador: { type: "string", minLength: 1 }
         }
       }
     },
-    advertencias: { type: "array", items: { type: "string" } },
-    preguntas_para_usuario: { type: "array", items: { type: "string" } },
+    advertencias: { type: "array", items: { type: "string", minLength: 1 } },
+    preguntas_para_usuario: { type: "array", items: { type: "string", minLength: 1 } },
     supervision: {
       type: "object",
       additionalProperties: false,

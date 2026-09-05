@@ -5,9 +5,21 @@ export type Fragmento = {
   id: string;
   archivo: string;
   texto: string;
+  riesgo_inyeccion: boolean;
 };
 
 const EXTENSIONES = new Set([".txt", ".md", ".csv", ".json", ".html", ".htm"]);
+const PATRONES_INYECCION = [
+  /ignore (all )?(previous|prior) instructions/i,
+  /ignora (todas )?(las )?instrucciones/i,
+  /olvida (todas )?(las )?instrucciones/i,
+  /no (sigas|obedezcas) (el|las) (sistema|instrucciones)/i,
+  /revela (la )?(clave|api key|system prompt|prompt del sistema)/i,
+  /exfiltra|exfiltrate/i,
+  /act[uú]a como/i,
+  /ahora eres/i,
+  /developer message|system message/i,
+];
 
 function asegurarRutaDentroDelRepo(ruta: string, baseDir: string): string {
   const repoRoot = process.cwd();
@@ -43,6 +55,7 @@ function fragmentar(archivo: string, texto: string, largo = 900, solapamiento = 
         id: `F${String(indice).padStart(3, "0")}`,
         archivo,
         texto: fragmento,
+        riesgo_inyeccion: tieneRiesgoInyeccion(fragmento),
       });
       indice += 1;
     }
@@ -51,6 +64,10 @@ function fragmentar(archivo: string, texto: string, largo = 900, solapamiento = 
   }
 
   return resultado;
+}
+
+export function tieneRiesgoInyeccion(texto: string): boolean {
+  return PATRONES_INYECCION.some((patron) => patron.test(texto));
 }
 
 export async function cargarFuentes(rutas: string[], baseDir = process.cwd()): Promise<Fragmento[]> {
