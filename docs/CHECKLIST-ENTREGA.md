@@ -46,8 +46,8 @@
 
 ## Cierre
 
-- [ ] Revisar que la repo sea pública.
+- [x] Revisar que la repo sea pública.
 - [x] Ejecutar `npm run ci` sin errores.
-- [ ] Verificar que no existan secretos ni datos personales.
-- [ ] Abrir los tres PPTX y controlar visualmente su contenido.
-- [ ] Confirmar que los enlaces del README funcionen.
+- [x] Verificar que no existan secretos ni datos personales versionados.
+- [ ] Abrir el PPTX aprobado y controlar visualmente su contenido.
+- [x] Confirmar que los enlaces internos del README apunten a archivos versionados.

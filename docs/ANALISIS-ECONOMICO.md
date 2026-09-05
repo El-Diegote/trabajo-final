@@ -57,6 +57,12 @@ Costo semanal estimado con `gpt-5.6-luna`: USD 0,01757400.
 
 Costo anual estimado con 52 semanas: USD 0,91384800.
 
+## Lectura de negocio
+
+El costo directo de inferencia no es el principal riesgo económico en esta escala. El valor está en reducir tiempo de lectura, armado de estructura y revisión de consistencia, manteniendo trazabilidad de fuentes. El costo relevante pasa a ser el tiempo humano de revisión y la calidad de las fuentes preparadas.
+
+Con los datos observados, el sistema permite varias iteraciones académicas por menos de un dólar anual en el supuesto usado. Esa conclusión depende del modelo, de las tarifas vigentes y del tamaño de las fuentes; por eso cada corrida guarda tarifas y tokens en su propia metadata.
+
 ## Comparación de modelo
 
 Con los mismos tokens observados, `gpt-5.6-terra` costaría aproximadamente diez veces más que `gpt-5.6-luna`, porque sus tarifas publicadas son USD 1,00 por millón de tokens de entrada y USD 6,00 por millón de tokens de salida.
@@ -73,6 +79,8 @@ No se ejecutó una comparación empírica de calidad contra `gpt-5.6-terra`; por
 - cantidad de slides adecuada;
 - advertencias ante evidencia insuficiente;
 - aprobación humana registrada.
+
+En la entrega actual, los primeros cinco criterios se cumplieron en las tres corridas. El sexto solo aplica después de que una persona apruebe una corrida para generar el PPTX.
 
 ## Pendiente
 

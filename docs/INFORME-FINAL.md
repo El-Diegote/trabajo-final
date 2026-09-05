@@ -4,7 +4,7 @@ Estado: actualizado con tres corridas reales. La generación del PPTX sigue pend
 
 ## 1. Resumen ejecutivo
 
-UCEMA Deck Agent es un sistema agéntico de línea de comandos que transforma fuentes académicas textuales en un plan de presentación estructurado, trazable y sujeto a revisión humana. La generación del PowerPoint queda bloqueada hasta registrar una aprobación.
+UCEMA Deck Agent es un sistema agéntico de línea de comandos que transforma fuentes académicas textuales en un plan de presentación estructurado, trazable y sujeto a revisión humana. La versión entregable incluye tres corridas reales, costos calculados, test/retest, auditoría automática y una app visual para revisar el estado del proyecto. La generación del PowerPoint queda bloqueada hasta registrar una aprobación.
 
 ## 2. Problema real
 
@@ -46,23 +46,27 @@ Los niveles están documentados en `docs/GOBIERNO-Y-RIESGO.md`. El agente opera 
 
 Se ejecutaron tres corridas reales reconstruibles en `corridas/`.
 
-- `corrida-01`: caso normal con evidencia suficiente para una recomendación prudente de desarrollo antes de promover.
-- `corrida-02`: evidencia insuficiente; el agente evita cerrar una recomendación y explicita preguntas.
-- `corrida-03`: falla controlada ante fuente contradictoria; el agente suspende juicio y solicita revisión.
+| Corrida | Escenario | Resultado observado | Tokens entrada | Tokens salida | Costo USD |
+|---|---|---|---:|---:|---:|
+| `corrida-01` | Caso normal con evidencia suficiente | Recomendación prudente: reconocer desempeño y desarrollar antes de promover. | 4.155 | 1.609 | 0,00138090 |
+| `corrida-02` | Evidencia insuficiente | No inventa conclusión; arma estructura, faltantes y preguntas. | 2.646 | 1.475 | 0,00114960 |
+| `corrida-03` | Fuente contradictoria | Falla segura; suspende juicio y solicita revisión humana. | 2.445 | 1.233 | 0,00098430 |
 
 Los ejemplos en `ejemplos/` siguen siendo ficticios y no cuentan como evidencia.
 
 ## 12. Resultados
 
-La auditoría estructural se ejecutó correctamente y detecta tres corridas. Las tres salidas quedaron en estado `requiere_aprobacion`, usaron `buscar_fragmentos` y registraron tokens, costos y herramientas.
+La auditoría estructural se ejecutó correctamente y detecta tres corridas. Las tres salidas quedaron en estado `requiere_aprobacion`, usaron `buscar_fragmentos`, registraron tokens, costos, herramientas y referencias a fragmentos versionados. Ninguna generó PPTX porque no existe todavía una firma humana.
 
 ## 13. Fallas observadas
 
 Durante una revisión anterior, `npm ci` no pudo ejecutarse porque `npm` no estaba disponible en el entorno local. Después de instalar Node.js, `npm run ci` finalizó correctamente. También se detectaron riesgos de rutas arbitrarias, referencias insuficientes, costos sin tarifa y sobrescritura de aprobación; quedaron corregidos o documentados.
 
-## 14. Iteraciones del prompt
+## 14. Iteraciones del prompt y retest
 
-No se modificaron los prompts después de las corridas porque las salidas cumplieron el objetivo esperado: caso normal, evidencia insuficiente y falla controlada. Se documentó la decisión de mantener el contrato v1.
+Antes de ejecutar las corridas finales se endureció el sistema: fuentes dentro del repositorio, rechazo de rutas arbitrarias, referencias obligatorias para slides de objetivo/contenido, control de secretos, validación de costos y bloqueo de aprobaciones repetidas. Las pruebas pasaron antes y después de esos ajustes.
+
+No se modificaron los prompts después de las corridas finales porque las salidas cumplieron el objetivo esperado: caso normal, evidencia insuficiente y falla controlada. Se documentó la decisión de mantener el contrato v1 para no mover el criterio de evaluación después de observar resultados.
 
 ## 15. Análisis económico
 
@@ -70,7 +74,7 @@ La fórmula, tarifas base, costos reales, promedio, mínimo, máximo y proyecci�
 
 ## 16. Gobierno
 
-La aprobación humana es obligatoria antes del PPTX. El sistema no autoaprueba, no publica y no declara aval institucional.
+La aprobación humana es obligatoria antes del PPTX. El sistema no autoaprueba, no publica, no autentica usuarios y no declara aval institucional. La firma queda registrada en `aprobacion.json` solo si una persona decide convertir una salida en archivo PowerPoint.
 
 ## 17. Riesgos
 
@@ -86,4 +90,4 @@ Un agente único con herramienta determinística permite mostrar ciclo agéntico
 
 ## 20. Próximos pasos
 
-Solicitar aprobación humana para la corrida aprobable, generar y validar el PPTX, actualizar el checklist final y cerrar el PR.
+Solicitar aprobación humana para la corrida elegida, generar y validar el PPTX, registrar el firmante y cerrar el PR. Estos pasos son deliberadamente posteriores al análisis agéntico porque pertenecen al control humano del entregable.
