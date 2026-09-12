@@ -1,0 +1,183 @@
+{
+  "status": "requiere_aprobacion",
+  "resumen": "Plan de 7 slides para 15 minutos, organizado en tres movimientos: elegir mejor, sostener mejor y escalar mejor. La propuesta integra presencia y movimiento Slow, diseño de hábitos y delegación efectiva en un marco práctico, sin incorporar datos cuantitativos no presentes en las fuentes.",
+  "slides": [
+    {
+      "numero": 1,
+      "tipo": "portada",
+      "titulo": "Gestión del tiempo: presencia, hábitos y delegación",
+      "bullets": [
+        "Materia: Gestión del Tiempo",
+        "Estructura: elegir mejor · sostener mejor · escalar mejor",
+        "Enfoque: mejorar resultados sin aumentar la sobrecarga"
+      ],
+      "fuentes": [],
+      "nota_orador": "Presentar la tesis general: gestionar el tiempo no significa simplemente hacer más cosas en menos tiempo, sino mejorar la calidad de las decisiones, sostener conductas útiles y ampliar la capacidad de acción mediante otros."
+    },
+    {
+      "numero": 2,
+      "tipo": "objetivo",
+      "titulo": "Una mirada integradora sobre la gestión del tiempo",
+      "bullets": [
+        "Elegir mejor: desacelerar para identificar prioridades relevantes.",
+        "Sostener mejor: convertir prioridades en hábitos observables y repetibles.",
+        "Escalar mejor: delegar con contexto, autonomía, recursos y seguimiento."
+      ],
+      "fuentes": [
+        {
+          "fragmento_id": "corrida-06-gestion-tiempo-integrada-md-F001",
+          "archivo": "corrida-06-gestion-tiempo-integrada.md"
+        },
+        {
+          "fragmento_id": "corrida-06-gestion-tiempo-integrada-md-F005",
+          "archivo": "corrida-06-gestion-tiempo-integrada.md"
+        }
+      ],
+      "nota_orador": "Hecho recuperado: las fuentes proponen una gestión del tiempo más amplia que la mera velocidad. Sugerencia de diseño: presentar los tres movimientos como un recorrido visual de izquierda a derecha."
+    },
+    {
+      "numero": 3,
+      "tipo": "visual",
+      "titulo": "El marco de los tres movimientos",
+      "bullets": [
+        "1. Elegir mejor → presencia, atención y prioridades.",
+        "2. Sostener mejor → señales, facilidad y satisfacción.",
+        "3. Escalar mejor → responsabilidad, autonomía y checkpoints.",
+        "Resultado buscado: concentrar energía en prioridades relevantes."
+      ],
+      "fuentes": [
+        {
+          "fragmento_id": "corrida-06-gestion-tiempo-integrada-md-F005",
+          "archivo": "corrida-06-gestion-tiempo-integrada.md"
+        },
+        {
+          "fragmento_id": "corrida-04-gestion-tiempo-habitos-md-F006",
+          "archivo": "corrida-04-gestion-tiempo-habitos.md"
+        },
+        {
+          "fragmento_id": "corrida-05-delegacion-lideres-md-F003",
+          "archivo": "corrida-05-delegacion-lideres.md"
+        }
+      ],
+      "nota_orador": "Sugerencia de diseño: usar una flecha o camino con tres estaciones. La conexión entre los conceptos es una síntesis propuesta para la presentación, basada en los marcos recuperados."
+    },
+    {
+      "numero": 4,
+      "tipo": "contenido",
+      "titulo": "Elegir mejor: presencia y movimiento Slow",
+      "bullets": [
+        "La velocidad constante puede producir eficiencia aparente, pero también agotamiento, menor reflexión y pérdida de foco.",
+        "El enfoque Slow propone hacer menos cosas con mayor calidad y atención.",
+        "El monotasking ayuda a evitar la fragmentación asociada al multitasking.",
+        "La presencia permite identificar prioridades y asignar el tiempo con mayor conciencia."
+      ],
+      "fuentes": [
+        {
+          "fragmento_id": "corrida-06-presencia-slow-md-F001",
+          "archivo": "corrida-06-presencia-slow.md"
+        },
+        {
+          "fragmento_id": "corrida-06-presencia-slow-md-F002",
+          "archivo": "corrida-06-presencia-slow.md"
+        },
+        {
+          "fragmento_id": "corrida-06-presencia-slow-md-F003",
+          "archivo": "corrida-06-presencia-slow.md"
+        }
+      ],
+      "nota_orador": "Hechos recuperados: la fuente vincula presencia, atención y calidad de resultados, y presenta el monotasking como estrategia de concentración. Aplicación sugerida: antes de iniciar una tarea, decidir cuál es la prioridad y trabajar en ella sin alternar continuamente."
+    },
+    {
+      "numero": 5,
+      "tipo": "contenido",
+      "titulo": "Sostener mejor: diseñar hábitos que funcionen",
+      "bullets": [
+        "Una intención general no alcanza: la conducta debe ser concreta, observable y repetible.",
+        "Diseñar el hábito implica trabajar sobre señales, atractivo, facilidad y satisfacción.",
+        "Ejemplos posibles: revisar prioridades antes del correo, bloquear concentración o cerrar el día con una lista breve.",
+        "El foco está en construir sistemas, no solo en declarar objetivos."
+      ],
+      "fuentes": [
+        {
+          "fragmento_id": "corrida-04-gestion-tiempo-habitos-md-F001",
+          "archivo": "corrida-04-gestion-tiempo-habitos.md"
+        },
+        {
+          "fragmento_id": "corrida-04-gestion-tiempo-habitos-md-F002",
+          "archivo": "corrida-04-gestion-tiempo-habitos.md"
+        },
+        {
+          "fragmento_id": "corrida-04-gestion-tiempo-habitos-md-F006",
+          "archivo": "corrida-04-gestion-tiempo-habitos.md"
+        }
+      ],
+      "nota_orador": "Hecho recuperado: las fuentes diferencian objetivos de sistemas y proponen diseñar condiciones que aumenten la probabilidad de una conducta. Sugerencia práctica: formular una acción pequeña con momento, señal de inicio y forma de seguimiento."
+    },
+    {
+      "numero": 6,
+      "tipo": "contenido",
+      "titulo": "Escalar mejor: delegar sin abandonar ni controlar todo",
+      "bullets": [
+        "Delegar permite concentrarse en prioridades, desarrollar al equipo y reducir cuellos de botella.",
+        "Una delegación efectiva aclara propósito, expectativas, responsabilidad y nivel de autonomía.",
+        "También requiere recursos, checkpoints y seguimiento ajustado a la situación.",
+        "El equilibrio evita dos extremos: micromanagement y abandono."
+      ],
+      "fuentes": [
+        {
+          "fragmento_id": "corrida-05-delegacion-lideres-md-F001",
+          "archivo": "corrida-05-delegacion-lideres.md"
+        },
+        {
+          "fragmento_id": "corrida-05-delegacion-lideres-md-F003",
+          "archivo": "corrida-05-delegacion-lideres.md"
+        },
+        {
+          "fragmento_id": "corrida-06-gestion-tiempo-integrada-md-F005",
+          "archivo": "corrida-06-gestion-tiempo-integrada.md"
+        }
+      ],
+      "nota_orador": "Hechos recuperados: delegar implica ampliar el impacto a través de otras personas y no equivale a desprenderse sin control. Aplicación sugerida: para cada tarea delegada, explicitar resultado esperado, margen de decisión, recursos disponibles y momento de revisión."
+    },
+    {
+      "numero": 7,
+      "tipo": "cierre",
+      "titulo": "De hacer más a gestionar mejor",
+      "bullets": [
+        "Elegir mejor: recuperar atención y distinguir velocidad de avance.",
+        "Sostener mejor: transformar prioridades en conductas diseñadas.",
+        "Escalar mejor: ampliar capacidad mediante delegación responsable.",
+        "Pregunta de cierre: ¿qué prioridad, hábito o responsabilidad puedo rediseñar esta semana?"
+      ],
+      "fuentes": [
+        {
+          "fragmento_id": "corrida-06-gestion-tiempo-integrada-md-F001",
+          "archivo": "corrida-06-gestion-tiempo-integrada.md"
+        },
+        {
+          "fragmento_id": "corrida-06-gestion-tiempo-integrada-md-F005",
+          "archivo": "corrida-06-gestion-tiempo-integrada.md"
+        },
+        {
+          "fragmento_id": "corrida-04-gestion-tiempo-habitos-md-F006",
+          "archivo": "corrida-04-gestion-tiempo-habitos.md"
+        }
+      ],
+      "nota_orador": "La pregunta final es una sugerencia didáctica para convertir la integración conceptual en un próximo paso. No se presenta como resultado medido, sino como disparador de aplicación personal."
+    }
+  ],
+  "advertencias": [
+    "Las fuentes recuperadas son síntesis conceptuales y no contienen mediciones empíricas propias del participante; por eso el plan no incluye porcentajes, tiempos de mejora ni otras métricas cuantitativas.",
+    "La afirmación sobre la mejora de resultados debe presentarse como marco conceptual y orientación práctica, no como resultado causal demostrado por datos cuantitativos en estas fuentes.",
+    "No se identificaron contradicciones relevantes entre las fuentes consultadas.",
+    "No se detectaron instrucciones dirigidas al agente ni intentos de modificar las reglas de elaboración."
+  ],
+  "preguntas_para_usuario": [
+    "¿Deseás que el cierre priorice una actividad individual de aplicación, una discusión grupal o una reflexión sobre un caso concreto?",
+    "¿La delegación debe abordarse desde la perspectiva de un alumno que trabaja en equipo o desde una perspectiva general de liderazgo?"
+  ],
+  "supervision": {
+    "nivel": "L2",
+    "accion_requerida": "revisar_y_aprobar"
+  }
+}

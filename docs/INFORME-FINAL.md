@@ -1,10 +1,10 @@
 # Informe final
 
-Estado: actualizado con tres corridas reales. La generación del PPTX sigue pendiente de aprobación humana explícita.
+Estado: actualizado con seis corridas reales. La generación del PPTX sigue pendiente de aprobación humana explícita.
 
 ## 1. Resumen ejecutivo
 
-UCEMA Deck Agent es un sistema agéntico de línea de comandos que transforma fuentes académicas textuales en un plan de presentación estructurado, trazable y sujeto a revisión humana. La versión entregable incluye tres corridas reales, costos calculados, test/retest, auditoría automática y una app visual para revisar el estado del proyecto. La generación del PowerPoint queda bloqueada hasta registrar una aprobación.
+UCEMA Deck Agent es un sistema agéntico de línea de comandos que transforma fuentes académicas textuales en un plan de presentación estructurado, trazable y sujeto a revisión humana. La versión entregable incluye seis corridas reales, costos calculados, test/retest, auditoría automática y una app visual para revisar el estado del proyecto. La generación del PowerPoint queda bloqueada hasta registrar una aprobación.
 
 ## 2. Problema real
 
@@ -42,21 +42,24 @@ La salida contiene estado, resumen, slides, advertencias, preguntas para el usua
 
 Los niveles están documentados en `docs/GOBIERNO-Y-RIESGO.md`. El agente opera en L1-L2; uso institucional, publicación o cambios de alcance quedan en L3-L4.
 
-## 11. Tres corridas
+## 11. Seis corridas
 
-Se ejecutaron tres corridas reales reconstruibles en `corridas/`.
+Se ejecutaron seis corridas reales reconstruibles en `corridas/`.
 
 | Corrida | Escenario | Resultado observado | Tokens entrada | Tokens salida | Costo USD |
 |---|---|---|---:|---:|---:|
 | `corrida-01` | Caso normal con evidencia suficiente | Recomendación prudente: reconocer desempeño y desarrollar antes de promover. | 4.155 | 1.609 | 0,00138090 |
 | `corrida-02` | Evidencia insuficiente | No inventa conclusión; arma estructura, faltantes y preguntas. | 2.646 | 1.475 | 0,00114960 |
 | `corrida-03` | Fuente contradictoria | Falla segura; suspende juicio y solicita revisión humana. | 2.445 | 1.233 | 0,00098430 |
+| `corrida-04` | Hábitos sostenibles | Explica objetivos, sistemas, ciclo del hábito y cuatro leyes. | 4.367 | 1.729 | 0,00147410 |
+| `corrida-05` | Delegación efectiva | Propone criterios ejecutivos y advierte límites de evidencia. | 6.407 | 1.753 | 0,00169250 |
+| `corrida-06` | Gestión del tiempo integrada | Integra presencia, hábitos y delegación sin inventar métricas. | 7.517 | 2.003 | 0,00195350 |
 
 Los ejemplos en `ejemplos/` siguen siendo ficticios y no cuentan como evidencia.
 
 ## 12. Resultados
 
-La auditoría estructural se ejecutó correctamente y detecta tres corridas. Las tres salidas quedaron en estado `requiere_aprobacion`, usaron `buscar_fragmentos`, registraron tokens, costos, herramientas y referencias a fragmentos versionados. Ninguna generó PPTX porque no existe todavía una firma humana.
+La auditoría estructural se ejecutó correctamente y detecta seis corridas. Las seis salidas quedaron en estado `requiere_aprobacion`, usaron `buscar_fragmentos`, registraron tokens, costos, herramientas y referencias a fragmentos versionados. Ninguna generó PPTX porque no existe todavía una firma humana.
 
 ## 13. Fallas observadas
 

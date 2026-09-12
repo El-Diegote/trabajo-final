@@ -1,0 +1,57 @@
+# Fuente preparada - corrida 05
+
+Origen general: materiales academicos de Gestion del Tiempo y liderazgo sobre delegacion efectiva, basados en dos articulos de Harvard Business Review.
+
+Preparado para: UCEMA Deck Agent.
+
+Fecha de preparacion: 2026-09-12.
+
+Criterio de preparacion: sintesis breve y publicable de los PDFs aportados por el usuario. No reproduce los documentos completos. Se conservan ideas suficientes para reconstruir la decision del agente.
+
+## Contexto
+
+Los materiales presentan la delegacion como una transicion critica del liderazgo. Un gerente puede ser valorado al inicio por seguir ejecutando tareas tacticas, pero cuando crecen las responsabilidades, el limite de impacto depende de activar a otras personas.
+
+Delegar no significa desprenderse sin control ni repartir tareas menores. Implica ampliar la presencia del lider a traves de las acciones de otros, de modo que las personas adecuadas trabajen sobre las prioridades adecuadas.
+
+## Problema principal
+
+Muchos lideres saben que deberian delegar, pero no lo hacen. Las resistencias frecuentes son miedo a perder control, deseo de seguridad, temor a parecer menos trabajador, habito de resolver personalmente y dificultad para distinguir entre estar involucrado y ser esencial.
+
+Cuando un lider retiene demasiado trabajo, su impacto se diluye. Puede estar ocupado sin ser mas productivo. Una pregunta diagnostica del material es: si el lider tuviera que ausentarse una semana inesperadamente, sus iniciativas avanzarian igual. Si la respuesta es no o no se sabe, probablemente el lider esta mas involucrado que esencial.
+
+## Por que delegar
+
+Delegar bien permite que el lider se concentre en prioridades mas importantes, desarrolle a su equipo y construya una cultura donde la delegacion forma parte del modo de operar. Tambien reduce cuellos de botella y crea capacidad organizacional.
+
+La delegacion efectiva exige pasar de hacer a liderar. El lider sigue siendo relevante, pero su valor aparece en dar proposito, contexto, criterios, recursos y seguimiento, no en ser intermediario obligatorio de cada decision.
+
+## Principios para delegar bien
+
+Los materiales destacan varias practicas:
+
+1. Comprender la resistencia propia antes de delegar. El lider debe explicitar que teme que ocurra y probar pequenos experimentos de bajo riesgo.
+2. Definir de que es responsable cada persona y cuanta autonomia tiene. La autonomia puede incluir tarea, equipo, tecnica y tiempo, pero debe aclararse donde existe y donde todavia no.
+3. Describir resultados deseados con detalle. Esto incluye que se espera, por que importa, como encaja en el panorama general y como se medira si esta bien hecho.
+4. Asegurar recursos. La persona delegada puede necesitar capacitacion, tiempo, presupuesto, prioridades ajustadas, informacion o ayuda de otros.
+5. Establecer puntos de control e hitos. El seguimiento evita dos extremos: micromanagement o abandono.
+6. Permitir enfoques nuevos. Delegar exige soltar el apego a la forma historica de hacer las cosas y reconocer soluciones diferentes que funcionan.
+7. Crear un ambiente motivador. El lider debe saber cuando animar, entrenar, intervenir, dar un paso atras, ajustar expectativas, estar disponible y celebrar avances.
+8. Tolerar riesgos y errores como aprendizaje. Los errores no deben usarse automaticamente como prueba de que delegar fue mala idea.
+
+## Cuatro estrategias complementarias
+
+Otro material propone cuatro estrategias para preparar una delegacion efectiva:
+
+1. Comenzar con las razones. Las personas se comprometen mas cuando entienden por que algo importa y como encajan en el resultado.
+2. Confirmar expectativas. El lider debe verificar que el trabajo esperado fue comunicado con claridad.
+3. Preguntar cuanta participacion necesitan. No todos requieren el mismo nivel de acompanamiento.
+4. Practicar decir no. El lider debe evitar aceptar nuevas solicitudes que diluyan su impacto o lo devuelvan a tareas que no corresponden a su rol.
+
+## Riesgos
+
+Delegar mal puede generar confusion, perdida de calidad, desmotivacion o sobrecarga del equipo. La solucion no es retener todo, sino delegar con contexto, autonomia delimitada, recursos y checkpoints.
+
+## Limitaciones
+
+La fuente es conceptual y de buenas practicas. No incluye datos internos de una organizacion particular ni resultados medidos de una intervencion. Las recomendaciones deben presentarse como criterios de liderazgo y no como garantia automatica de productividad.

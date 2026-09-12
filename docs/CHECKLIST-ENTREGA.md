@@ -27,7 +27,7 @@
 - [x] Instalación fijada con `package-lock.json`.
 - [x] Auditoría automática.
 - [x] Pruebas y verificación de tipos.
-- [x] Tres corridas reales completas.
+- [x] Seis corridas reales completas.
 - [x] Fuentes reales anonimizadas y publicables preparadas en `fuentes/`.
 - [x] Ejecutar `npm run ci` sin errores.
 

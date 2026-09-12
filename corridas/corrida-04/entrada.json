@@ -1,0 +1,12 @@
+{
+  "titulo": "Habitos sostenibles para gestionar mejor el tiempo",
+  "materia": "Gestion del Tiempo",
+  "perfil": "alumno",
+  "duracion_minutos": 10,
+  "estilo": "academico",
+  "objetivo": "Explicar como convertir una intencion de mejora en un sistema de habitos concretos, observables y sostenibles para gestionar mejor el tiempo.",
+  "instrucciones": "Preparar una presentacion clara para clase. Diferenciar objetivos, sistemas, ciclo del habito y cuatro leyes de cambio de conducta. Incluir advertencias si la fuente no permite afirmar resultados empiricos.",
+  "fuentes": [
+    "fuentes/corrida-04-gestion-tiempo-habitos.md"
+  ]
+}

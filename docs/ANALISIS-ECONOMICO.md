@@ -1,6 +1,6 @@
 # Análisis económico
 
-Estado: actualizado con tres corridas reales ejecutadas el 4 de septiembre de 2026. No se reemplazaron tokens, costos ni aprobaciones por ejemplos.
+Estado: actualizado con seis corridas reales. Las primeras tres se ejecutaron el 4 de septiembre de 2026 y las tres pruebas adicionales con PDFs reales de Gestión del Tiempo se ejecutaron el 12 de septiembre de 2026. No se reemplazaron tokens, costos ni aprobaciones por ejemplos.
 
 ## Fórmula
 
@@ -40,22 +40,25 @@ Cada corrida guarda el modelo, tokens, tarifas aplicadas y costo calculado.
 | `corrida-01` | Caso normal | 4.155 | 1.609 | 0,00138090 |
 | `corrida-02` | Evidencia insuficiente | 2.646 | 1.475 | 0,00114960 |
 | `corrida-03` | Falla controlada | 2.445 | 1.233 | 0,00098430 |
+| `corrida-04` | Hábitos sostenibles | 4.367 | 1.729 | 0,00147410 |
+| `corrida-05` | Delegación efectiva | 6.407 | 1.753 | 0,00169250 |
+| `corrida-06` | Gestión del tiempo integrada | 7.517 | 2.003 | 0,00195350 |
 
-Total de las tres corridas: USD 0,00351480.
+Total de las seis corridas: USD 0,00863490.
 
-Promedio por corrida: USD 0,00117160.
+Promedio por corrida: USD 0,00143915.
 
 Mínimo: USD 0,00098430.
 
-Máximo: USD 0,00138090.
+Máximo: USD 0,00195350.
 
 ## Proyección operativa
 
 Supuesto de volumen: 15 corridas por semana. El supuesto equivale a tres casos académicos con hasta cinco iteraciones semanales entre prueba, revisión y ajuste.
 
-Costo semanal estimado con `gpt-5.6-luna`: USD 0,01757400.
+Costo semanal estimado con `gpt-5.6-luna`: USD 0,02158725.
 
-Costo anual estimado con 52 semanas: USD 0,91384800.
+Costo anual estimado con 52 semanas: USD 1,12253700.
 
 ## Lectura de negocio
 
@@ -67,9 +70,9 @@ Con los datos observados, el sistema permite varias iteraciones académicas por 
 
 Con los mismos tokens observados, `gpt-5.6-terra` costaría aproximadamente diez veces más que `gpt-5.6-luna`, porque sus tarifas publicadas son USD 1,00 por millón de tokens de entrada y USD 6,00 por millón de tokens de salida.
 
-Promedio estimado por corrida con `gpt-5.6-terra`: USD 0,01171600.
+Promedio estimado por corrida con `gpt-5.6-terra`: USD 0,01439150.
 
-No se ejecutó una comparación empírica de calidad contra `gpt-5.6-terra`; por lo tanto, no se afirma superioridad cualitativa. La elección actual de `gpt-5.6-luna` se justifica porque las tres corridas cumplieron el esquema, usaron herramienta real, registraron trazabilidad y respondieron con advertencias ante evidencia insuficiente o contradictoria.
+No se ejecutó una comparación empírica de calidad contra `gpt-5.6-terra`; por lo tanto, no se afirma superioridad cualitativa. La elección actual de `gpt-5.6-luna` se justifica porque las seis corridas cumplieron el esquema, usaron herramienta real, registraron trazabilidad y respondieron con advertencias ante evidencia insuficiente, contradictoria o conceptual.
 
 ## Criterios mínimos de calidad
 
@@ -80,7 +83,7 @@ No se ejecutó una comparación empírica de calidad contra `gpt-5.6-terra`; por
 - advertencias ante evidencia insuficiente;
 - aprobación humana registrada.
 
-En la entrega actual, los primeros cinco criterios se cumplieron en las tres corridas. El sexto solo aplica después de que una persona apruebe una corrida para generar el PPTX.
+En la entrega actual, los primeros cinco criterios se cumplieron en las seis corridas. El sexto solo aplica después de que una persona apruebe una corrida para generar el PPTX.
 
 ## Pendiente
 

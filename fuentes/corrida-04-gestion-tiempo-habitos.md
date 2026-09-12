@@ -1,0 +1,62 @@
+# Fuente preparada - corrida 04
+
+Origen general: material academico de Gestion del Tiempo sobre diseno de habitos sostenibles, basado en ideas de James Clear y su libro Habitos Atomicos.
+
+Preparado para: UCEMA Deck Agent.
+
+Fecha de preparacion: 2026-09-12.
+
+Criterio de preparacion: sintesis breve y publicable del PDF aportado por el usuario. No reproduce el documento completo. Se conservan ideas suficientes para reconstruir la propuesta del agente.
+
+## Contexto
+
+El material explica que mejorar la gestion del tiempo no depende solo de comprender herramientas, sino de transformar aprendizajes en conductas concretas, observables y sostenibles. Entre saber que convendria hacer y sostenerlo en la practica hay una distancia que debe trabajarse mediante implementacion.
+
+El proyecto de implementacion de la materia busca que cada participante elija aprendizajes relevantes para su gestion personal y los traduzca en acciones repetibles. El foco no esta en declarar una intencion general, como organizarse mejor, sino en disenar condiciones que aumenten la probabilidad de que una conducta ocurra.
+
+## Habitos, resultados y sistemas
+
+Los habitos se presentan como conductas que, por repeticion, se vuelven progresivamente automaticas. Una accion aislada puede parecer menor, pero la repeticion acumulada durante semanas o meses puede modificar una trayectoria.
+
+En gestion del tiempo, pequenos habitos cotidianos producen efectos importantes. Revisar el correo cada diez minutos fragmenta la atencion. Dedicar unos minutos al inicio del dia para revisar prioridades puede mejorar la calidad de las decisiones posteriores.
+
+El material diferencia objetivos y sistemas. Un objetivo define el resultado buscado, por ejemplo trabajar con mayor foco. Un sistema describe los procesos recurrentes que pueden producirlo: organizar la agenda, manejar notificaciones, definir momentos de correo, proteger bloques de concentracion y revisar prioridades.
+
+Los objetivos dan direccion, pero no alcanzan por si solos. El cambio sostenible depende de construir sistemas que hagan repetible la conducta correcta. Para el proyecto de implementacion, esto implica pasar de frases generales a comportamientos especificos, observables y evaluables.
+
+## Identidad y repeticion
+
+El material sostiene que los habitos mas solidos no solo producen resultados, sino que refuerzan una identidad. Cada repeticion funciona como evidencia de una forma de verse a uno mismo. Planificar regularmente refuerza la identidad de persona que planifica; proteger bloques de foco refuerza la identidad de persona que cuida lo importante.
+
+La identidad no cambia por una accion aislada, sino por evidencia acumulada. Por eso conviene disenar habitos pequenos, posibles y consistentes.
+
+## Ciclo del habito
+
+El ciclo del habito se explica con cuatro etapas: senal, deseo, respuesta y recompensa.
+
+La senal es el disparador de la conducta. Puede ser una hora, un lugar, una emocion, una persona, un objeto o una conducta anterior.
+
+El deseo es la fuerza motivacional. No se desea siempre la conducta en si misma, sino el cambio de estado que promete. Revisar el telefono puede responder al deseo de novedad o conexion; planificar puede responder al deseo de claridad y control.
+
+La respuesta es la conducta concreta. Para que ocurra debe ser posible y facil en relacion con la motivacion, las capacidades y el contexto. Si requiere demasiados pasos o decisiones, disminuye su probabilidad.
+
+La recompensa es el resultado inmediato. Satisface el deseo y le ensena al cerebro si la conducta merece repetirse.
+
+## Cuatro leyes de cambio de conducta
+
+El material traduce el ciclo del habito en cuatro leyes practicas:
+
+1. Hacerlo obvio: definir con claridad cuando y donde empieza la conducta. Una intencion como "voy a organizarme mejor" debe transformarse en una formula observable, por ejemplo dedicar diez minutos a las 8:30 en el escritorio para revisar agenda y definir tres prioridades.
+2. Hacerlo atractivo: aumentar el valor percibido de la conducta. Planificar puede reinterpretarse como empezar el dia sabiendo que tres cosas no se quieren sacrificar.
+3. Hacerlo facil: reducir friccion, pasos y dificultad. La conducta debe ser pequena, disponible y simple de iniciar.
+4. Hacerlo satisfactorio: generar una consecuencia inmediata que favorezca la repeticion. El registro visible del avance o una pequena recompensa ayudan a sostener el circuito.
+
+## Aplicacion a gestion del tiempo
+
+Una mejora de gestion del tiempo deberia traducirse en un diseno conductual concreto. Ejemplos posibles son: revisar prioridades antes de abrir el correo, bloquear espacios de concentracion, quitar notificaciones durante trabajo profundo, preparar una revision semanal o cerrar el dia con una lista breve para el dia siguiente.
+
+El material advierte que las intenciones ambiguas fallan porque dependen de recordar, tener ganas o encontrar un espacio disponible. El diseno del entorno reduce esa dependencia.
+
+## Limitaciones
+
+La fuente es conceptual y metodologica. No contiene datos empiricos propios del participante ni mediciones de antes y despues. Cualquier recomendacion debe presentarse como diseno razonado de implementacion, no como garantia de resultado.

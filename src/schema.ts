@@ -97,7 +97,7 @@ export const deckPlanJsonSchema = {
               required: ["fragmento_id", "archivo"],
               properties: {
                 fragmento_id: { type: "string", pattern: "^[A-Za-z0-9._-]+-F\\d{3}$" },
-                archivo: { type: "string", minLength: 1, pattern: "^(?!.*\\.\\.)[^/\\\\]+$" }
+                archivo: { type: "string", minLength: 1, pattern: "^[^/\\\\]+$" }
               }
             }
           },

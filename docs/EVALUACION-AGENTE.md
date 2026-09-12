@@ -29,7 +29,7 @@ npm run ci
 
 ## Señales de cumplimiento fuerte
 
-- Existen tres subcarpetas en `corridas/`.
+- Existen al menos tres subcarpetas en `corridas/`; la versión actual incluye seis corridas reales.
 - Cada corrida contiene `entrada.json`, `salida.json`, `metadata.json` y `herramientas.json`.
 - `metadata.json.run_id` coincide con el nombre de carpeta.
 - `salida.json.status` es `requiere_aprobacion`.
@@ -44,13 +44,16 @@ npm run ci
 
 ## Estado evaluable actual
 
-Al 4 de septiembre de 2026, el sistema tiene tres corridas reales versionadas y auditables:
+Al 12 de septiembre de 2026, el sistema tiene seis corridas reales versionadas y auditables:
 
 | Corrida | Escenario | Estado | Slides | Costo USD |
 |---|---|---|---:|---:|
 | `corrida-01` | Caso normal con evidencia suficiente | `requiere_aprobacion` | 5 | 0,00138090 |
 | `corrida-02` | Evidencia insuficiente | `requiere_aprobacion` | 5 | 0,00114960 |
 | `corrida-03` | Falla controlada por contradicción | `requiere_aprobacion` | 5 | 0,00098430 |
+| `corrida-04` | Hábitos sostenibles para gestión del tiempo | `requiere_aprobacion` | 6 | 0,00147410 |
+| `corrida-05` | Delegación efectiva para liderazgo | `requiere_aprobacion` | 6 | 0,00169250 |
+| `corrida-06` | Integración de presencia, hábitos y delegación | `requiere_aprobacion` | 7 | 0,00195350 |
 
 La ausencia de `resultado.pptx` no es incumplimiento mientras no exista `aprobacion.json`: es el control humano previsto. Si una corrida está aprobada, ambos archivos deben existir juntos.
 
@@ -59,7 +62,7 @@ La ausencia de `resultado.pptx` no es incumplimiento mientras no exista `aprobac
 | Requisito | Prueba rápida |
 |---|---|
 | Sistema completo | Revisar que existan prompts, agente, herramienta, esquema, aprobación, app y docs. |
-| Corre de verdad | Ejecutar `npm run auditar` y verificar `herramientas.json` + `metadata.json` en tres corridas. |
+| Corre de verdad | Ejecutar `npm run auditar` y verificar `herramientas.json` + `metadata.json` en las corridas versionadas. |
 | Formato estricto | Ejecutar `npm run check`, `npm test` y confirmar salidas contra `src/schema.ts`. |
 | Historia del proceso | Leer `DECISIONES.md` y buscar fallas, cambios, retests y decisión de prompt posterior a corridas. |
 | Análisis económico | Recalcular costos desde tokens y tarifas guardadas en `metadata.json`. |

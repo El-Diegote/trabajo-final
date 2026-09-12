@@ -1,0 +1,12 @@
+{
+  "titulo": "Delegar bien para ampliar el impacto del liderazgo",
+  "materia": "Gestion del Tiempo",
+  "perfil": "alumno",
+  "duracion_minutos": 12,
+  "estilo": "ejecutivo",
+  "objetivo": "Presentar por que delegar es una habilidad central de gestion del tiempo y liderazgo, y proponer criterios practicos para delegar sin caer en micromanagement ni abandono.",
+  "instrucciones": "Usar las fuentes disponibles para construir una narrativa aplicable a mandos medios y nuevos lideres. Separar causas de resistencia, principios de delegacion y riesgos.",
+  "fuentes": [
+    "fuentes/corrida-05-delegacion-lideres.md"
+  ]
+}

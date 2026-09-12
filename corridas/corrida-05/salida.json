@@ -1,0 +1,146 @@
+{
+  "status": "requiere_aprobacion",
+  "resumen": "Plan ejecutivo de 6 slides para una exposición de 12 minutos. La narrativa presenta la delegación como una palanca de gestión del tiempo y ampliación del impacto del liderazgo; luego aborda las resistencias habituales, propone un método práctico de delegación y diferencia el seguimiento saludable del micromanagement y el abandono. La evidencia disponible alcanza para cubrir el objetivo general, aunque no incluye ejemplos sectoriales, métricas de resultados ni el desarrollo completo de la sección de riesgos.",
+  "slides": [
+    {
+      "numero": 1,
+      "tipo": "portada",
+      "titulo": "Delegar bien para ampliar el impacto del liderazgo",
+      "bullets": [
+        "Gestión del Tiempo",
+        "Aplicación para mandos medios y nuevos líderes",
+        "Idea central: pasar de hacer más a activar mejor a otras personas"
+      ],
+      "fuentes": [],
+      "nota_orador": "Presentar la delegación no como una simple distribución de tareas, sino como una transición desde la ejecución individual hacia un liderazgo con mayor alcance."
+    },
+    {
+      "numero": 2,
+      "tipo": "objetivo",
+      "titulo": "Por qué la delegación es una habilidad de gestión del tiempo",
+      "bullets": [
+        "Liberar tiempo para prioridades de mayor impacto",
+        "Reducir cuellos de botella y dependencia del líder",
+        "Desarrollar capacidades en el equipo",
+        "Ampliar la presencia del líder mediante las acciones de otras personas"
+      ],
+      "fuentes": [
+        {
+          "fragmento_id": "corrida-05-delegacion-lideres-md-F002",
+          "archivo": "corrida-05-delegacion-lideres.md"
+        },
+        {
+          "fragmento_id": "corrida-05-delegacion-lideres-md-F003",
+          "archivo": "corrida-05-delegacion-lideres.md"
+        }
+      ],
+      "nota_orador": "Distinguir entre estar ocupado y ser productivo. La fuente plantea que retener demasiado trabajo puede diluir el impacto del líder, aunque no proporciona métricas cuantitativas para dimensionar ese efecto."
+    },
+    {
+      "numero": 3,
+      "tipo": "contenido",
+      "titulo": "El primer obstáculo: por qué los líderes se resisten a delegar",
+      "bullets": [
+        "Miedo a perder control o seguridad",
+        "Temor a parecer menos trabajador",
+        "Hábito de resolver personalmente",
+        "Dificultad para distinguir entre estar involucrado y ser esencial",
+        "Pregunta diagnóstica: si el líder se ausentara una semana, ¿las iniciativas avanzarían igual?"
+      ],
+      "fuentes": [
+        {
+          "fragmento_id": "corrida-05-delegacion-lideres-md-F002",
+          "archivo": "corrida-05-delegacion-lideres.md"
+        }
+      ],
+      "nota_orador": "Usar la pregunta diagnóstica como herramienta de reflexión para mandos medios y nuevos líderes. La interpretación de que existe dependencia excesiva debe presentarse como una inferencia basada en el material, no como un diagnóstico definitivo."
+    },
+    {
+      "numero": 4,
+      "tipo": "contenido",
+      "titulo": "Principios para delegar sin perder claridad",
+      "bullets": [
+        "Definir responsabilidades y nivel de autonomía",
+        "Explicar resultados esperados, propósito y criterios de calidad",
+        "Asegurar tiempo, información, capacitación y otros recursos",
+        "Permitir enfoques nuevos, sin imponer la forma histórica de trabajar",
+        "Acordar hitos y puntos de control desde el inicio"
+      ],
+      "fuentes": [
+        {
+          "fragmento_id": "corrida-05-delegacion-lideres-md-F003",
+          "archivo": "corrida-05-delegacion-lideres.md"
+        },
+        {
+          "fragmento_id": "corrida-05-delegacion-lideres-md-F004",
+          "archivo": "corrida-05-delegacion-lideres.md"
+        }
+      ],
+      "nota_orador": "Proponer una secuencia práctica: qué resultado se busca, quién es responsable, qué autonomía tiene, qué recursos necesita y cuándo se revisará el avance. El seguimiento debe funcionar como coordinación, no como supervisión permanente."
+    },
+    {
+      "numero": 5,
+      "tipo": "contenido",
+      "titulo": "El equilibrio crítico: ni micromanagement ni abandono",
+      "bullets": [
+        "Ajustar el nivel de acompañamiento a las necesidades de cada persona",
+        "Preguntar cuánta participación requiere quien recibe la tarea",
+        "Intervenir para entrenar, destrabar o ajustar expectativas cuando sea necesario",
+        "Dar un paso atrás cuando existan claridad, recursos y avance suficiente",
+        "Aceptar riesgos y errores como oportunidades de aprendizaje, sin ignorar sus consecuencias"
+      ],
+      "fuentes": [
+        {
+          "fragmento_id": "corrida-05-delegacion-lideres-md-F004",
+          "archivo": "corrida-05-delegacion-lideres.md"
+        },
+        {
+          "fragmento_id": "corrida-05-delegacion-lideres-md-F005",
+          "archivo": "corrida-05-delegacion-lideres.md"
+        }
+      ],
+      "nota_orador": "Presentar el seguimiento como un continuo: demasiada intervención puede convertirse en micromanagement; demasiado poca, en abandono. La fuente respalda la necesidad de hitos y acompañamiento adaptable, pero no ofrece una frecuencia universal de reuniones o controles."
+    },
+    {
+      "numero": 6,
+      "tipo": "cierre",
+      "titulo": "Una práctica ejecutiva para empezar esta semana",
+      "bullets": [
+        "Elegir una responsabilidad concreta que hoy dependa demasiado del líder",
+        "Explicitar el propósito, el resultado esperado y la autonomía disponible",
+        "Confirmar recursos y expectativas",
+        "Acordar un primer hito de revisión",
+        "Evaluar si la delegación liberó capacidad sin transferir confusión"
+      ],
+      "fuentes": [
+        {
+          "fragmento_id": "corrida-05-delegacion-lideres-md-F003",
+          "archivo": "corrida-05-delegacion-lideres.md"
+        },
+        {
+          "fragmento_id": "corrida-05-delegacion-lideres-md-F004",
+          "archivo": "corrida-05-delegacion-lideres.md"
+        },
+        {
+          "fragmento_id": "corrida-05-delegacion-lideres-md-F005",
+          "archivo": "corrida-05-delegacion-lideres.md"
+        }
+      ],
+      "nota_orador": "Cerrar con una acción de bajo riesgo, coherente con la recomendación de experimentar gradualmente. La última pregunta funciona como criterio de revisión, formulado como sugerencia de aplicación y no como una métrica validada por la fuente."
+    }
+  ],
+  "advertencias": [
+    "La fuente disponible es una síntesis breve y no reproduce los documentos académicos completos; por lo tanto, no se incorporan citas textuales, autores ni referencias bibliográficas adicionales.",
+    "La sección de riesgos aparece parcialmente truncada en el fragmento recuperado F005. El plan incluye únicamente riesgos y controles respaldados por los fragmentos disponibles: confusión, pérdida de calidad, desmotivación potencial, micromanagement, abandono y dependencia excesiva del líder.",
+    "No se recuperaron datos cuantitativos, casos organizacionales ni ejemplos específicos de industrias; cualquier ejemplo adicional requeriría nuevas fuentes o aprobación para incorporar material externo.",
+    "Las recomendaciones de aplicación para mandos medios y nuevos líderes son una adaptación de diseño basada en la evidencia recuperada, no afirmaciones empíricas independientes."
+  ],
+  "preguntas_para_usuario": [
+    "¿Deseás incorporar un caso breve —real o hipotético— para ilustrar una delegación con micromanagement y otra con abandono? La fuente disponible no aporta casos desarrollados.",
+    "¿Querés que el cierre incluya una herramienta visual, como una matriz de autonomía y seguimiento? Sería una propuesta de diseño derivada de los principios recuperados, no un instrumento explícito de la fuente."
+  ],
+  "supervision": {
+    "nivel": "L2",
+    "accion_requerida": "revisar_y_aprobar"
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "status": "requiere_aprobacion",
+  "resumen": "Plan académico de 6 slides para una exposición de 10 minutos. La presentación parte de la diferencia entre intención, objetivos y sistemas; explica el ciclo del hábito; desarrolla las cuatro leyes del cambio de conducta; y cierra con una aplicación concreta a la gestión del tiempo. La evidencia disponible alcanza para cumplir el objetivo conceptual y metodológico, pero no permite afirmar resultados empíricos garantizados.",
+  "slides": [
+    {
+      "numero": 1,
+      "tipo": "portada",
+      "titulo": "Hábitos sostenibles para gestionar mejor el tiempo",
+      "bullets": [
+        "Materia: Gestión del Tiempo",
+        "Del propósito general a conductas concretas, observables y sostenibles"
+      ],
+      "fuentes": [],
+      "nota_orador": "Presentar el tema y anticipar la idea central: gestionar mejor el tiempo no depende solamente de querer organizarse, sino de diseñar conductas que puedan repetirse."
+    },
+    {
+      "numero": 2,
+      "tipo": "objetivo",
+      "titulo": "De una intención general a un sistema repetible",
+      "bullets": [
+        "Objetivo de la presentación: explicar cómo transformar una intención de mejora en un sistema de hábitos concretos.",
+        "Diferenciar objetivos —el resultado buscado— de sistemas —los procesos recurrentes que pueden producirlo—.",
+        "Pregunta guía: ¿qué conducta específica debería repetirse para gestionar mejor el tiempo?"
+      ],
+      "fuentes": [
+        {
+          "fragmento_id": "corrida-04-gestion-tiempo-habitos-md-F002",
+          "archivo": "corrida-04-gestion-tiempo-habitos.md"
+        },
+        {
+          "fragmento_id": "corrida-04-gestion-tiempo-habitos-md-F003",
+          "archivo": "corrida-04-gestion-tiempo-habitos.md"
+        }
+      ],
+      "nota_orador": "Hecho recuperado: la fuente sostiene que las intenciones generales no alcanzan y que el foco debe ponerse en acciones repetibles. Inferencia didáctica: esta distinción organiza el resto de la exposición."
+    },
+    {
+      "numero": 3,
+      "tipo": "contenido",
+      "titulo": "Objetivos y sistemas: dos niveles de planificación",
+      "bullets": [
+        "Objetivo: trabajar con mayor foco u organizarse mejor.",
+        "Sistema: organizar la agenda, manejar notificaciones, definir momentos para revisar el correo y proteger bloques de concentración.",
+        "Un sistema convierte una aspiración en comportamientos específicos, observables y evaluables.",
+        "Ejemplo: en lugar de “organizarme mejor”, revisar la agenda y definir tres prioridades al inicio del día."
+      ],
+      "fuentes": [
+        {
+          "fragmento_id": "corrida-04-gestion-tiempo-habitos-md-F002",
+          "archivo": "corrida-04-gestion-tiempo-habitos.md"
+        },
+        {
+          "fragmento_id": "corrida-04-gestion-tiempo-habitos-md-F003",
+          "archivo": "corrida-04-gestion-tiempo-habitos.md"
+        },
+        {
+          "fragmento_id": "corrida-04-gestion-tiempo-habitos-md-F005",
+          "archivo": "corrida-04-gestion-tiempo-habitos.md"
+        }
+      ],
+      "nota_orador": "Distinguir explícitamente el resultado deseado del proceso que se repite. La formulación de diez minutos a las 8:30 en el escritorio funciona como ejemplo de conducta observable; no debe presentarse como una prescripción universal."
+    },
+    {
+      "numero": 4,
+      "tipo": "visual",
+      "titulo": "El ciclo del hábito: de la señal a la repetición",
+      "bullets": [
+        "Señal: disparador como una hora, un lugar, una emoción, un objeto o una conducta anterior.",
+        "Deseo: motivación asociada al cambio de estado buscado, por ejemplo claridad y control.",
+        "Respuesta: conducta concreta; su probabilidad aumenta cuando es posible y fácil.",
+        "Recompensa: resultado inmediato que satisface el deseo y favorece —o no— la repetición."
+      ],
+      "fuentes": [
+        {
+          "fragmento_id": "corrida-04-gestion-tiempo-habitos-md-F004",
+          "archivo": "corrida-04-gestion-tiempo-habitos.md"
+        },
+        {
+          "fragmento_id": "corrida-04-gestion-tiempo-habitos-md-F005",
+          "archivo": "corrida-04-gestion-tiempo-habitos.md"
+        }
+      ],
+      "nota_orador": "Sugerencia de diseño: representar las cuatro etapas en un circuito circular con flechas. Hecho recuperado: la fuente describe estas etapas y explica que una conducta demasiado compleja o con muchos pasos tiene menor probabilidad de ocurrir."
+    },
+    {
+      "numero": 5,
+      "tipo": "contenido",
+      "titulo": "Las cuatro leyes del cambio de conducta",
+      "bullets": [
+        "Hacerlo obvio: definir con claridad cuándo, dónde y cómo comienza la conducta.",
+        "Hacerlo atractivo: aumentar el valor percibido; por ejemplo, asociar la planificación con proteger lo importante del día.",
+        "Hacerlo fácil: reducir fricción, pasos y dificultad; comenzar con una conducta pequeña y disponible.",
+        "Hacerlo satisfactorio: incorporar una consecuencia inmediata, como un registro visible del avance."
+      ],
+      "fuentes": [
+        {
+          "fragmento_id": "corrida-04-gestion-tiempo-habitos-md-F005",
+          "archivo": "corrida-04-gestion-tiempo-habitos.md"
+        },
+        {
+          "fragmento_id": "corrida-04-gestion-tiempo-habitos-md-F006",
+          "archivo": "corrida-04-gestion-tiempo-habitos.md"
+        }
+      ],
+      "nota_orador": "Presentar las leyes como criterios de diseño, no como garantías de éxito. Puede usarse una tabla de cuatro filas: ley, pregunta de diseño y ejemplo aplicado a la gestión del tiempo."
+    },
+    {
+      "numero": 6,
+      "tipo": "cierre",
+      "titulo": "Aplicación: diseñar un hábito de gestión del tiempo",
+      "bullets": [
+        "Elegir una conducta concreta: revisar prioridades antes de abrir el correo o cerrar el día con una lista breve para el día siguiente.",
+        "Definir la señal: momento y lugar específicos.",
+        "Reducir la fricción: preparar la agenda, limitar notificaciones y proteger el bloque de concentración.",
+        "Observar la repetición y ajustar el sistema; la fuente propone un diseño razonado, no una garantía de resultado."
+      ],
+      "fuentes": [
+        {
+          "fragmento_id": "corrida-04-gestion-tiempo-habitos-md-F006",
+          "archivo": "corrida-04-gestion-tiempo-habitos.md"
+        },
+        {
+          "fragmento_id": "corrida-04-gestion-tiempo-habitos-md-F007",
+          "archivo": "corrida-04-gestion-tiempo-habitos.md"
+        }
+      ],
+      "nota_orador": "Cerrar con la idea de que una mejora sostenible se construye mediante evidencia acumulada de pequeñas repeticiones. La aplicación es una propuesta de diseño basada en la fuente, no una medición del desempeño del estudiante."
+    }
+  ],
+  "advertencias": [
+    "La única fuente disponible es conceptual y metodológica; no contiene datos empíricos propios del participante ni mediciones de antes y después.",
+    "No debe afirmarse que estos hábitos producen resultados garantizados ni que mejoran objetivamente el rendimiento en todos los casos.",
+    "La fuente menciona ideas basadas en James Clear y su libro Hábitos Atómicos, pero el material recuperado es una síntesis y no el documento completo; no se agregan citas textuales ni referencias bibliográficas externas.",
+    "Los ejemplos de horarios, duración y conductas son ilustrativos y deben adaptarse al contexto del alumno."
+  ],
+  "preguntas_para_usuario": [
+    "¿Querés que el cierre incluya un ejercicio breve para que los alumnos diseñen su propio hábito durante la clase?",
+    "¿La presentación debe incorporar una referencia bibliográfica formal a James Clear o alcanza con trabajar exclusivamente con la fuente proporcionada?"
+  ],
+  "supervision": {
+    "nivel": "L2",
+    "accion_requerida": "revisar_y_aprobar"
+  }
+}

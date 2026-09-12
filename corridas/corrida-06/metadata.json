@@ -1,0 +1,25 @@
+{
+  "run_id": "corrida-06",
+  "fecha": "2026-09-12T12:02:48.583Z",
+  "modelo": "gpt-5.6-luna",
+  "prompt_version": "v1.1",
+  "prompt_sha256": "7b373ffc750f231477965405cd2c799ad1dcc64305ac6e4b3ffa439a643db7f6",
+  "uso": {
+    "input_tokens": 7517,
+    "output_tokens": 2003,
+    "total_tokens": 9520
+  },
+  "costo": {
+    "moneda": "USD",
+    "tarifa_entrada_por_millon": 0.1,
+    "tarifa_salida_por_millon": 0.6,
+    "costo_estimado": 0.0019535
+  },
+  "herramientas_usadas": [
+    "buscar_fragmentos",
+    "buscar_fragmentos",
+    "buscar_fragmentos",
+    "buscar_fragmentos"
+  ],
+  "estado_humano": "pendiente"
+}

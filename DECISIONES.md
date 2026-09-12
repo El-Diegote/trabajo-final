@@ -144,3 +144,15 @@ Historia real de construcción del sistema. Las fallas se conservan porque expli
 **Resultado esperado:** futuras corridas registrarán `prompt_version` `v1.1` y un nuevo `prompt_sha256`. Las corridas existentes conservan su metadata original porque no deben editarse a posteriori.
 
 **Verificación:** `npm run ci` finalizó correctamente con auditoría aprobada, TypeScript sin errores y 16 pruebas aprobadas.
+
+## 2026-09-12 - Pruebas adicionales con PDFs reales de Gestión del Tiempo
+
+**Decisión:** preparar nuevas fuentes breves y publicables a partir de cuatro PDFs reales aportados por el usuario sobre hábitos, presencia, movimiento Slow y delegación. No se versionaron los PDFs completos.
+
+**Motivo:** probar que el agente generaliza a materiales reales distintos de las tres corridas originales y detectar fallas antes de la entrega final.
+
+**Falla observada:** la primera ejecución de `corrida-04` falló porque la API rechazó el JSON Schema por usar un patrón regex con lookahead en `archivo`. La validación fuerte ya existía en Zod y en la auditoría, pero el schema enviado al modelo necesitaba un patrón compatible.
+
+**Ajuste:** se reemplazó el patrón JSON Schema por uno compatible con la API (`^[^/\\]+$`) y se mantuvo la validación de rutas inseguras en `FuenteRefSchema` y `scripts/auditar-repo.mjs`.
+
+**Resultado:** se ejecutaron `corrida-04`, `corrida-05` y `corrida-06` con `gpt-5.6-luna`, todas en estado `requiere_aprobacion`, con uso real de `buscar_fragmentos`, tokens y costos registrados. Las corridas cubren hábitos sostenibles, delegación efectiva e integración de presencia, hábitos y delegación.

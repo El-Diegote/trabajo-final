@@ -4,7 +4,7 @@ Sistema agéntico para transformar materiales académicos reales en una propuest
 
 ## Estado
 
-Versión 1 verificable. El agente, el contrato, la salida estructurada, el registro de corridas, el control humano, la auditoría, los tests y la app visual están implementados. El repositorio público contiene tres corridas reales ejecutadas el 4 de septiembre de 2026 con fuentes anonimizadas y costos registrados. La generación de PPTX sigue bloqueada hasta aprobación humana explícita.
+Versión 1 verificable. El agente, el contrato, la salida estructurada, el registro de corridas, el control humano, la auditoría, los tests y la app visual están implementados. El repositorio público contiene seis corridas reales: tres ejecutadas el 4 de septiembre de 2026 y tres pruebas adicionales ejecutadas el 12 de septiembre de 2026 con PDFs reales de Gestión del Tiempo transformados en fuentes breves, anonimizadas y publicables. La generación de PPTX sigue bloqueada hasta aprobación humana explícita.
 
 ## Problema real
 
@@ -30,7 +30,7 @@ Proponer un plan de slides adecuado al perfil, duración y estilo pedidos; funda
 | Requisito | Evidencia en el repositorio |
 |---|---|
 | Sistema completo | `src/agent.ts`, `src/sources.ts`, `src/schema.ts`, `src/approve.ts`, prompts, auditoría y app visual. |
-| Corre de verdad | `corridas/corrida-01`, `corridas/corrida-02`, `corridas/corrida-03` con entrada, salida, herramientas y metadata reales. |
+| Corre de verdad | `corridas/corrida-01` a `corridas/corrida-06` con entrada, salida, herramientas y metadata reales. |
 | Formato estricto | JSON Schema en `src/schema.ts`, validación Zod, `npm run auditar` y `docs/EVALUACION-AGENTE.md`. |
 | Historia del proceso | `DECISIONES.md`, fallas técnicas, retests, fuentes anonimizadas y decisiones posteriores a corridas. |
 | Análisis económico | `docs/ANALISIS-ECONOMICO.md` y `metadata.json` de cada corrida con tokens, tarifas y costo. |
@@ -77,11 +77,14 @@ Cada carpeta de corrida debe contener:
 - `fuentes/` o referencias a archivos versionados y anonimizados;
 - `resultado.pptx`: solamente después de la aprobación.
 
-Las tres corridas finales ya versionadas se ejecutan desde:
+Las corridas versionadas se ejecutan desde:
 
     npm run agente -- --input entradas/corrida-01.json --output corridas/corrida-01
     npm run agente -- --input entradas/corrida-02.json --output corridas/corrida-02
     npm run agente -- --input entradas/corrida-03.json --output corridas/corrida-03
+    npm run agente -- --input entradas/corrida-04.json --output corridas/corrida-04
+    npm run agente -- --input entradas/corrida-05.json --output corridas/corrida-05
+    npm run agente -- --input entradas/corrida-06.json --output corridas/corrida-06
 
 Si se vuelve a correr una de ellas, hacerlo en una carpeta nueva para no sobrescribir evidencia histórica. Para generar un PPTX luego de revisión humana:
 

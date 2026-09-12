@@ -1,0 +1,158 @@
+[
+  {
+    "nombre": "buscar_fragmentos",
+    "argumentos": {
+      "consulta": "presencia movimiento Slow gestión del tiempo elegir mejor sostener mejor escalar mejor",
+      "max_resultados": 5
+    },
+    "resultado": [
+      {
+        "id": "corrida-06-gestion-tiempo-integrada-md-F001",
+        "archivo": "corrida-06-gestion-tiempo-integrada.md",
+        "texto": "# Fuente preparada - corrida 06 Origen general: materiales academicos de Gestion del Tiempo sobre presencia, movimiento Slow, habitos sostenibles y delegacion efectiva. Preparado para: UCEMA Deck Agent. Fecha de preparacion: 2026-09-12. Criterio de preparacion: integracion breve y publicable de cuatro PDFs reales aportados por el usuario. No reproduce los documentos completos. Se conservan ideas suficientes para reconstruir la propuesta del agente. ## Tesis integradora La gestion del tiempo no se reduce a hacer mas cosas en menos tiempo. Los materiales revisados proponen una mirada mas amplia: mejorar resultados requiere transitar el presente con mayor calidad, disenar habitos sostenibles y delegar mejor para concentrar energia en prioridades relevantes. ## Presencia y movimiento Slow El material sobre transito por el presente sostiene que la velocidad constante puede deteriorar la calid",
+        "riesgo_inyeccion": false
+      },
+      {
+        "id": "corrida-06-presencia-slow-md-F001",
+        "archivo": "corrida-06-presencia-slow.md",
+        "texto": "# Fuente preparada auxiliar - presencia y movimiento Slow Origen general: material academico de Gestion del Tiempo sobre transito por el presente, movimiento Slow y calidad de resultados. Preparado para: UCEMA Deck Agent. Fecha de preparacion: 2026-09-12. Criterio de preparacion: sintesis breve y publicable del PDF aportado por el usuario. No reproduce el documento completo. ## Idea central La calidad del transito por el presente impacta en la calidad de los resultados. Un ritmo de vida dominado por velocidad, conexion permanente y respuesta constante a estimulos puede generar eficiencia aparente, pero tambien agotamiento, menor reflexion y perdida de foco. ## Movimiento Slow El movimiento Slow se presenta como reaccion a la cultura de la velocidad. Su premisa es que lentitud no equivale a pereza ni ineficiencia, sino a calidad, disfrute y plenitud. Propone desacelerar, prestar atencion",
+        "riesgo_inyeccion": false
+      },
+      {
+        "id": "corrida-06-gestion-tiempo-integrada-md-F002",
+        "archivo": "corrida-06-gestion-tiempo-integrada.md",
+        "texto": "movimiento Slow El material sobre transito por el presente sostiene que la velocidad constante puede deteriorar la calidad de los resultados. La cultura de la inmediatez empuja a hacer mas, responder mas rapido y permanecer conectado, pero ese ritmo puede llevar a agotamiento, baja reflexion y perdida de foco. El movimiento Slow se presenta como alternativa a la vida acelerada. La lentitud no se entiende como pereza, sino como calidad, atencion y plenitud. Invita a desacelerar, prestar atencion a los detalles, tomar decisiones con mayor conciencia y hacer menos cosas con mayor calidad. Una practica asociada es el monotasking. Concentrarse en una sola tarea evita los costos del multitasking, que fragmenta la atencion, aumenta errores y puede prolongar el tiempo de finalizacion. El monotasking facilita concentracion, creatividad, sensacion de logro y mejor calidad. La presencia permite ide",
+        "riesgo_inyeccion": false
+      },
+      {
+        "id": "corrida-06-presencia-slow-md-F002",
+        "archivo": "corrida-06-presencia-slow.md",
+        "texto": "ntitud no equivale a pereza ni ineficiencia, sino a calidad, disfrute y plenitud. Propone desacelerar, prestar atencion a los detalles y tomar decisiones con mayor conciencia. En gestion del tiempo, el enfoque Slow invita a dejar de intentar hacer mas en menos tiempo y comenzar a hacer menos, pero con mayor calidad y atencion. Esto ayuda a evitar estres y agotamiento, y permite construir resultados mas solidos. ## Monotasking Una estrategia destacada es el monotasking: concentrarse en una tarea a la vez. El material contrasta esta practica con el multitasking, que puede disminuir concentracion, aumentar errores y extender el tiempo necesario para completar tareas. El monotasking facilita inmersion en la actividad, creatividad, calidad y satisfaccion al terminar una tarea antes de pasar a la siguiente. ## Presencia La presencia implica vivir y trabajar con atencion al momento actual, sin",
+        "riesgo_inyeccion": false
+      },
+      {
+        "id": "corrida-06-presencia-slow-md-F003",
+        "archivo": "corrida-06-presencia-slow.md",
+        "texto": "a antes de pasar a la siguiente. ## Presencia La presencia implica vivir y trabajar con atencion al momento actual, sin quedar capturado por ansiedad futura o rumiacion pasada. Estar presente ayuda a identificar prioridades, establecer objetivos significativos y asignar el tiempo de manera mas eficaz. La calma y la atencion cultivadas en el presente aumentan la capacidad de concentracion y dan una perspectiva mas amplia frente a desafios. ## Resultados a largo plazo El enfoque Slow no solo mejora la gestion diaria del tiempo. Tambien puede mejorar la calidad de aprendizaje, analisis, colaboracion y solucion de problemas. Al desacelerar, una persona puede profundizar, hacer conexiones relevantes y evitar decisiones superficiales. ## Limitaciones La fuente es reflexiva y conceptual. No contiene mediciones empiricas propias del participante. Cualquier recomendacion debe formularse como orie",
+        "riesgo_inyeccion": false
+      }
+    ]
+  },
+  {
+    "nombre": "buscar_fragmentos",
+    "argumentos": {
+      "consulta": "diseño de hábitos gestión del tiempo hábitos evidencia práctica",
+      "max_resultados": 5
+    },
+    "resultado": [
+      {
+        "id": "corrida-04-gestion-tiempo-habitos-md-F001",
+        "archivo": "corrida-04-gestion-tiempo-habitos.md",
+        "texto": "# Fuente preparada - corrida 04 Origen general: material academico de Gestion del Tiempo sobre diseno de habitos sostenibles, basado en ideas de James Clear y su libro Habitos Atomicos. Preparado para: UCEMA Deck Agent. Fecha de preparacion: 2026-09-12. Criterio de preparacion: sintesis breve y publicable del PDF aportado por el usuario. No reproduce el documento completo. Se conservan ideas suficientes para reconstruir la propuesta del agente. ## Contexto El material explica que mejorar la gestion del tiempo no depende solo de comprender herramientas, sino de transformar aprendizajes en conductas concretas, observables y sostenibles. Entre saber que convendria hacer y sostenerlo en la practica hay una distancia que debe trabajarse mediante implementacion. El proyecto de implementacion de la materia busca que cada participante elija aprendizajes relevantes para su gestion personal y los",
+        "riesgo_inyeccion": false
+      },
+      {
+        "id": "corrida-06-presencia-slow-md-F002",
+        "archivo": "corrida-06-presencia-slow.md",
+        "texto": "ntitud no equivale a pereza ni ineficiencia, sino a calidad, disfrute y plenitud. Propone desacelerar, prestar atencion a los detalles y tomar decisiones con mayor conciencia. En gestion del tiempo, el enfoque Slow invita a dejar de intentar hacer mas en menos tiempo y comenzar a hacer menos, pero con mayor calidad y atencion. Esto ayuda a evitar estres y agotamiento, y permite construir resultados mas solidos. ## Monotasking Una estrategia destacada es el monotasking: concentrarse en una tarea a la vez. El material contrasta esta practica con el multitasking, que puede disminuir concentracion, aumentar errores y extender el tiempo necesario para completar tareas. El monotasking facilita inmersion en la actividad, creatividad, calidad y satisfaccion al terminar una tarea antes de pasar a la siguiente. ## Presencia La presencia implica vivir y trabajar con atencion al momento actual, sin",
+        "riesgo_inyeccion": false
+      },
+      {
+        "id": "corrida-04-gestion-tiempo-habitos-md-F002",
+        "archivo": "corrida-04-gestion-tiempo-habitos.md",
+        "texto": "e implementacion de la materia busca que cada participante elija aprendizajes relevantes para su gestion personal y los traduzca en acciones repetibles. El foco no esta en declarar una intencion general, como organizarse mejor, sino en disenar condiciones que aumenten la probabilidad de que una conducta ocurra. ## Habitos, resultados y sistemas Los habitos se presentan como conductas que, por repeticion, se vuelven progresivamente automaticas. Una accion aislada puede parecer menor, pero la repeticion acumulada durante semanas o meses puede modificar una trayectoria. En gestion del tiempo, pequenos habitos cotidianos producen efectos importantes. Revisar el correo cada diez minutos fragmenta la atencion. Dedicar unos minutos al inicio del dia para revisar prioridades puede mejorar la calidad de las decisiones posteriores. El material diferencia objetivos y sistemas. Un objetivo define el",
+        "riesgo_inyeccion": false
+      },
+      {
+        "id": "corrida-04-gestion-tiempo-habitos-md-F006",
+        "archivo": "corrida-04-gestion-tiempo-habitos.md",
+        "texto": "definir tres prioridades. 2. Hacerlo atractivo: aumentar el valor percibido de la conducta. Planificar puede reinterpretarse como empezar el dia sabiendo que tres cosas no se quieren sacrificar. 3. Hacerlo facil: reducir friccion, pasos y dificultad. La conducta debe ser pequena, disponible y simple de iniciar. 4. Hacerlo satisfactorio: generar una consecuencia inmediata que favorezca la repeticion. El registro visible del avance o una pequena recompensa ayudan a sostener el circuito. ## Aplicacion a gestion del tiempo Una mejora de gestion del tiempo deberia traducirse en un diseno conductual concreto. Ejemplos posibles son: revisar prioridades antes de abrir el correo, bloquear espacios de concentracion, quitar notificaciones durante trabajo profundo, preparar una revision semanal o cerrar el dia con una lista breve para el dia siguiente. El material advierte que las intenciones ambig",
+        "riesgo_inyeccion": false
+      },
+      {
+        "id": "corrida-06-gestion-tiempo-integrada-md-F001",
+        "archivo": "corrida-06-gestion-tiempo-integrada.md",
+        "texto": "# Fuente preparada - corrida 06 Origen general: materiales academicos de Gestion del Tiempo sobre presencia, movimiento Slow, habitos sostenibles y delegacion efectiva. Preparado para: UCEMA Deck Agent. Fecha de preparacion: 2026-09-12. Criterio de preparacion: integracion breve y publicable de cuatro PDFs reales aportados por el usuario. No reproduce los documentos completos. Se conservan ideas suficientes para reconstruir la propuesta del agente. ## Tesis integradora La gestion del tiempo no se reduce a hacer mas cosas en menos tiempo. Los materiales revisados proponen una mirada mas amplia: mejorar resultados requiere transitar el presente con mayor calidad, disenar habitos sostenibles y delegar mejor para concentrar energia en prioridades relevantes. ## Presencia y movimiento Slow El material sobre transito por el presente sostiene que la velocidad constante puede deteriorar la calid",
+        "riesgo_inyeccion": false
+      }
+    ]
+  },
+  {
+    "nombre": "buscar_fragmentos",
+    "argumentos": {
+      "consulta": "delegación efectiva líderes escalar mejor gestión del tiempo",
+      "max_resultados": 5
+    },
+    "resultado": [
+      {
+        "id": "corrida-06-gestion-tiempo-integrada-md-F001",
+        "archivo": "corrida-06-gestion-tiempo-integrada.md",
+        "texto": "# Fuente preparada - corrida 06 Origen general: materiales academicos de Gestion del Tiempo sobre presencia, movimiento Slow, habitos sostenibles y delegacion efectiva. Preparado para: UCEMA Deck Agent. Fecha de preparacion: 2026-09-12. Criterio de preparacion: integracion breve y publicable de cuatro PDFs reales aportados por el usuario. No reproduce los documentos completos. Se conservan ideas suficientes para reconstruir la propuesta del agente. ## Tesis integradora La gestion del tiempo no se reduce a hacer mas cosas en menos tiempo. Los materiales revisados proponen una mirada mas amplia: mejorar resultados requiere transitar el presente con mayor calidad, disenar habitos sostenibles y delegar mejor para concentrar energia en prioridades relevantes. ## Presencia y movimiento Slow El material sobre transito por el presente sostiene que la velocidad constante puede deteriorar la calid",
+        "riesgo_inyeccion": false
+      },
+      {
+        "id": "corrida-05-delegacion-lideres-md-F001",
+        "archivo": "corrida-05-delegacion-lideres.md",
+        "texto": "# Fuente preparada - corrida 05 Origen general: materiales academicos de Gestion del Tiempo y liderazgo sobre delegacion efectiva, basados en dos articulos de Harvard Business Review. Preparado para: UCEMA Deck Agent. Fecha de preparacion: 2026-09-12. Criterio de preparacion: sintesis breve y publicable de los PDFs aportados por el usuario. No reproduce los documentos completos. Se conservan ideas suficientes para reconstruir la decision del agente. ## Contexto Los materiales presentan la delegacion como una transicion critica del liderazgo. Un gerente puede ser valorado al inicio por seguir ejecutando tareas tacticas, pero cuando crecen las responsabilidades, el limite de impacto depende de activar a otras personas. Delegar no significa desprenderse sin control ni repartir tareas menores. Implica ampliar la presencia del lider a traves de las acciones de otros, de modo que las personas",
+        "riesgo_inyeccion": false
+      },
+      {
+        "id": "corrida-06-gestion-tiempo-integrada-md-F005",
+        "archivo": "corrida-06-gestion-tiempo-integrada.md",
+        "texto": "iar el impacto a traves de otros. Delegar bien permite al lider concentrarse en prioridades, desarrollar al equipo y reducir cuellos de botella. Para lograrlo debe explicar razones, aclarar expectativas, definir autonomia, proveer recursos, establecer checkpoints y tolerar errores como aprendizaje. La delegacion efectiva evita dos extremos: micromanagement y abandono. El lider no debe controlar cada paso ni desaparecer. Debe ajustar su participacion segun la necesidad del colaborador y la criticidad del resultado. ## Marco de aplicacion Una presentacion integradora podria proponer tres movimientos: 1. Elegir mejor: desacelerar para identificar prioridades y evitar confundir velocidad con avance. 2. Sostener mejor: convertir prioridades en habitos disenados mediante senales, facilidad y recompensas. 3. Escalar mejor: delegar responsabilidades con contexto, autonomia, recursos y seguimient",
+        "riesgo_inyeccion": false
+      },
+      {
+        "id": "corrida-04-gestion-tiempo-habitos-md-F002",
+        "archivo": "corrida-04-gestion-tiempo-habitos.md",
+        "texto": "e implementacion de la materia busca que cada participante elija aprendizajes relevantes para su gestion personal y los traduzca en acciones repetibles. El foco no esta en declarar una intencion general, como organizarse mejor, sino en disenar condiciones que aumenten la probabilidad de que una conducta ocurra. ## Habitos, resultados y sistemas Los habitos se presentan como conductas que, por repeticion, se vuelven progresivamente automaticas. Una accion aislada puede parecer menor, pero la repeticion acumulada durante semanas o meses puede modificar una trayectoria. En gestion del tiempo, pequenos habitos cotidianos producen efectos importantes. Revisar el correo cada diez minutos fragmenta la atencion. Dedicar unos minutos al inicio del dia para revisar prioridades puede mejorar la calidad de las decisiones posteriores. El material diferencia objetivos y sistemas. Un objetivo define el",
+        "riesgo_inyeccion": false
+      },
+      {
+        "id": "corrida-05-delegacion-lideres-md-F003",
+        "archivo": "corrida-05-delegacion-lideres.md",
+        "texto": "as involucrado que esencial. ## Por que delegar Delegar bien permite que el lider se concentre en prioridades mas importantes, desarrolle a su equipo y construya una cultura donde la delegacion forma parte del modo de operar. Tambien reduce cuellos de botella y crea capacidad organizacional. La delegacion efectiva exige pasar de hacer a liderar. El lider sigue siendo relevante, pero su valor aparece en dar proposito, contexto, criterios, recursos y seguimiento, no en ser intermediario obligatorio de cada decision. ## Principios para delegar bien Los materiales destacan varias practicas: 1. Comprender la resistencia propia antes de delegar. El lider debe explicitar que teme que ocurra y probar pequenos experimentos de bajo riesgo. 2. Definir de que es responsable cada persona y cuanta autonomia tiene. La autonomia puede incluir tarea, equipo, tecnica y tiempo, pero debe aclararse donde ex",
+        "riesgo_inyeccion": false
+      }
+    ]
+  },
+  {
+    "nombre": "buscar_fragmentos",
+    "argumentos": {
+      "consulta": "gestión del tiempo integrada presencia hábitos delegación resultados sobrecarga",
+      "max_resultados": 5
+    },
+    "resultado": [
+      {
+        "id": "corrida-06-gestion-tiempo-integrada-md-F001",
+        "archivo": "corrida-06-gestion-tiempo-integrada.md",
+        "texto": "# Fuente preparada - corrida 06 Origen general: materiales academicos de Gestion del Tiempo sobre presencia, movimiento Slow, habitos sostenibles y delegacion efectiva. Preparado para: UCEMA Deck Agent. Fecha de preparacion: 2026-09-12. Criterio de preparacion: integracion breve y publicable de cuatro PDFs reales aportados por el usuario. No reproduce los documentos completos. Se conservan ideas suficientes para reconstruir la propuesta del agente. ## Tesis integradora La gestion del tiempo no se reduce a hacer mas cosas en menos tiempo. Los materiales revisados proponen una mirada mas amplia: mejorar resultados requiere transitar el presente con mayor calidad, disenar habitos sostenibles y delegar mejor para concentrar energia en prioridades relevantes. ## Presencia y movimiento Slow El material sobre transito por el presente sostiene que la velocidad constante puede deteriorar la calid",
+        "riesgo_inyeccion": false
+      },
+      {
+        "id": "corrida-06-presencia-slow-md-F001",
+        "archivo": "corrida-06-presencia-slow.md",
+        "texto": "# Fuente preparada auxiliar - presencia y movimiento Slow Origen general: material academico de Gestion del Tiempo sobre transito por el presente, movimiento Slow y calidad de resultados. Preparado para: UCEMA Deck Agent. Fecha de preparacion: 2026-09-12. Criterio de preparacion: sintesis breve y publicable del PDF aportado por el usuario. No reproduce el documento completo. ## Idea central La calidad del transito por el presente impacta en la calidad de los resultados. Un ritmo de vida dominado por velocidad, conexion permanente y respuesta constante a estimulos puede generar eficiencia aparente, pero tambien agotamiento, menor reflexion y perdida de foco. ## Movimiento Slow El movimiento Slow se presenta como reaccion a la cultura de la velocidad. Su premisa es que lentitud no equivale a pereza ni ineficiencia, sino a calidad, disfrute y plenitud. Propone desacelerar, prestar atencion",
+        "riesgo_inyeccion": false
+      },
+      {
+        "id": "corrida-06-presencia-slow-md-F002",
+        "archivo": "corrida-06-presencia-slow.md",
+        "texto": "ntitud no equivale a pereza ni ineficiencia, sino a calidad, disfrute y plenitud. Propone desacelerar, prestar atencion a los detalles y tomar decisiones con mayor conciencia. En gestion del tiempo, el enfoque Slow invita a dejar de intentar hacer mas en menos tiempo y comenzar a hacer menos, pero con mayor calidad y atencion. Esto ayuda a evitar estres y agotamiento, y permite construir resultados mas solidos. ## Monotasking Una estrategia destacada es el monotasking: concentrarse en una tarea a la vez. El material contrasta esta practica con el multitasking, que puede disminuir concentracion, aumentar errores y extender el tiempo necesario para completar tareas. El monotasking facilita inmersion en la actividad, creatividad, calidad y satisfaccion al terminar una tarea antes de pasar a la siguiente. ## Presencia La presencia implica vivir y trabajar con atencion al momento actual, sin",
+        "riesgo_inyeccion": false
+      },
+      {
+        "id": "corrida-06-presencia-slow-md-F003",
+        "archivo": "corrida-06-presencia-slow.md",
+        "texto": "a antes de pasar a la siguiente. ## Presencia La presencia implica vivir y trabajar con atencion al momento actual, sin quedar capturado por ansiedad futura o rumiacion pasada. Estar presente ayuda a identificar prioridades, establecer objetivos significativos y asignar el tiempo de manera mas eficaz. La calma y la atencion cultivadas en el presente aumentan la capacidad de concentracion y dan una perspectiva mas amplia frente a desafios. ## Resultados a largo plazo El enfoque Slow no solo mejora la gestion diaria del tiempo. Tambien puede mejorar la calidad de aprendizaje, analisis, colaboracion y solucion de problemas. Al desacelerar, una persona puede profundizar, hacer conexiones relevantes y evitar decisiones superficiales. ## Limitaciones La fuente es reflexiva y conceptual. No contiene mediciones empiricas propias del participante. Cualquier recomendacion debe formularse como orie",
+        "riesgo_inyeccion": false
+      },
+      {
+        "id": "corrida-04-gestion-tiempo-habitos-md-F002",
+        "archivo": "corrida-04-gestion-tiempo-habitos.md",
+        "texto": "e implementacion de la materia busca que cada participante elija aprendizajes relevantes para su gestion personal y los traduzca en acciones repetibles. El foco no esta en declarar una intencion general, como organizarse mejor, sino en disenar condiciones que aumenten la probabilidad de que una conducta ocurra. ## Habitos, resultados y sistemas Los habitos se presentan como conductas que, por repeticion, se vuelven progresivamente automaticas. Una accion aislada puede parecer menor, pero la repeticion acumulada durante semanas o meses puede modificar una trayectoria. En gestion del tiempo, pequenos habitos cotidianos producen efectos importantes. Revisar el correo cada diez minutos fragmenta la atencion. Dedicar unos minutos al inicio del dia para revisar prioridades puede mejorar la calidad de las decisiones posteriores. El material diferencia objetivos y sistemas. Un objetivo define el",
+        "riesgo_inyeccion": false
+      }
+    ]
+  }
+]

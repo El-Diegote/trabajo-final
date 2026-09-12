@@ -1,0 +1,15 @@
+{
+  "titulo": "Gestion del tiempo: presencia, habitos y delegacion",
+  "materia": "Gestion del Tiempo",
+  "perfil": "alumno",
+  "duracion_minutos": 15,
+  "estilo": "visual",
+  "objetivo": "Integrar los conceptos de presencia, movimiento Slow, diseno de habitos y delegacion efectiva en un marco practico para mejorar resultados sin aumentar la sobrecarga.",
+  "instrucciones": "Construir una presentacion integradora, con una estructura de tres movimientos: elegir mejor, sostener mejor y escalar mejor. No inventar datos cuantitativos.",
+  "fuentes": [
+    "fuentes/corrida-06-presencia-slow.md",
+    "fuentes/corrida-04-gestion-tiempo-habitos.md",
+    "fuentes/corrida-05-delegacion-lideres.md",
+    "fuentes/corrida-06-gestion-tiempo-integrada.md"
+  ]
+}
