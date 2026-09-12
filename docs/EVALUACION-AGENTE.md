@@ -5,7 +5,7 @@ Este documento resume dónde debe mirar un evaluador automático para verificar 
 ## Estructura mínima
 
 - `README.md`: objetivo, instalación, reproducción y limitaciones.
-- `prompts/system_prompt.md`: rol, objetivo, herramientas, reglas y supervisión.
+- `prompts/system_prompt.md`: rol, objetivo, herramientas, reglas, ejemplos y supervisión.
 - `prompts/user_prompt.md`: plantilla de cada corrida.
 - `src/agent.ts`: ciclo modelo-herramienta-modelo.
 - `src/schema.ts`: contrato estructurado.
@@ -40,6 +40,7 @@ npm run ci
 - Si no existe `resultado.pptx`, no debe existir `aprobacion.json`.
 - No hay secretos ni datos personales en archivos versionados.
 - Las fuentes se tratan como evidencia no confiable, no como instrucciones del agente.
+- El system prompt contiene ejemplos explícitos `NORMAL` y `ESCALAR`.
 
 ## Estado evaluable actual
 

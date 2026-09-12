@@ -114,6 +114,14 @@ test("las entradas reales preparadas cargan fuentes fragmentables", async () => 
   }
 });
 
+test("el system prompt incluye ejemplos normal y escalar", async () => {
+  const prompt = await readFile("prompts/system_prompt.md", "utf8");
+  assert.match(prompt, /## 6\. Ejemplos/);
+  assert.match(prompt, /Ejemplo NORMAL/);
+  assert.match(prompt, /Ejemplo ESCALAR/);
+  assert.match(prompt, /requiere_aprobacion/);
+});
+
 const obligatoriosAuditoria = [
   "README.md",
   "AGENTS.md",
@@ -156,7 +164,13 @@ async function crearRepoAuditable() {
 
   for (const archivo of obligatoriosAuditoria) {
     await mkdir(path.dirname(path.join(root, archivo)), { recursive: true });
-    await writeFile(path.join(root, archivo), archivo.endsWith(".json") ? "{}\n" : "ok\n");
+    const contenido =
+      archivo === "prompts/system_prompt.md"
+        ? "## 6. Ejemplos\n\n### Ejemplo NORMAL\nstatus requiere_aprobacion\n\n### Ejemplo ESCALAR\nstatus requiere_aprobacion\n"
+        : archivo.endsWith(".json")
+          ? "{}\n"
+          : "ok\n";
+    await writeFile(path.join(root, archivo), contenido);
   }
 
   const corrida = path.join(root, "corridas", "corrida-01");
@@ -213,7 +227,7 @@ async function crearRepoAuditable() {
       run_id: "corrida-01",
       fecha: "2026-09-03T00:00:00.000Z",
       modelo: "gpt-test",
-      prompt_version: "v1",
+      prompt_version: "v1.1",
       prompt_sha256: "a".repeat(64),
       uso: { input_tokens: 100, output_tokens: 50, total_tokens: 150 },
       costo: {
@@ -274,7 +288,7 @@ test("la auditoría detecta run_id y costo inconsistentes", async () => {
         run_id: "otra-carpeta",
         fecha: "2026-09-03T00:00:00.000Z",
         modelo: "gpt-test",
-        prompt_version: "v1",
+        prompt_version: "v1.1",
         prompt_sha256: "a".repeat(64),
         uso: { input_tokens: 100, output_tokens: 50, total_tokens: 140 },
         costo: {

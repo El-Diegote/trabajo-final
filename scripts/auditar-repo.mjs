@@ -314,6 +314,18 @@ async function validarSecretos(root, errores) {
   }
 }
 
+async function validarSystemPrompt(root, errores) {
+  const contenido = await readFile(path.join(root, "prompts/system_prompt.md"), "utf8").catch(() => "");
+  if (!/^## 6\. Ejemplos/m.test(contenido)) {
+    errores.push("prompts/system_prompt.md no contiene una sección explícita de Ejemplos");
+  }
+  for (const requerido of ["Ejemplo NORMAL", "Ejemplo ESCALAR", "requiere_aprobacion"]) {
+    if (!contenido.includes(requerido)) {
+      errores.push(`prompts/system_prompt.md no contiene ${requerido}`);
+    }
+  }
+}
+
 export async function auditar(root = process.cwd()) {
   const errores = [];
   const advertencias = [];
@@ -336,6 +348,7 @@ export async function auditar(root = process.cwd()) {
     await validarCorrida(path.join(corridasDir, corrida), corrida, errores, root);
   }
 
+  await validarSystemPrompt(root, errores);
   await validarSecretos(root, errores);
   return { errores, advertencias, corridas };
 }
