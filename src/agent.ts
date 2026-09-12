@@ -204,7 +204,7 @@ async function main() {
         run_id: path.basename(outputDir),
         fecha: ahora,
         modelo: model,
-        prompt_version: "v1",
+        prompt_version: "v1.1",
         prompt_sha256: createHash("sha256").update(systemPrompt + userTemplate).digest("hex"),
         uso,
         costo: calcularCosto(uso),

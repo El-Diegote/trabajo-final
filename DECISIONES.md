@@ -134,3 +134,13 @@ Historia real de construcción del sistema. Las fallas se conservan porque expli
 **Cambios:** los prompts tratan fuentes e instrucciones adicionales como contenido no confiable; `src/sources.ts` marca fragmentos con riesgo de inyección; `src/schema.ts` endurece mínimos, referencias y objetos estrictos; `scripts/auditar-repo.mjs` revalida estructura, herramientas, argumentos, referencias, aprobación y metadata; `src/approve.ts` actualiza metadata al aprobar; se agregó `docs/SEGURIDAD-ANTI-INGENIERIA-SOCIAL.md`.
 
 **Resultado:** `npm run ci` finalizó correctamente con auditoría aprobada, TypeScript sin errores y 15 pruebas aprobadas.
+
+## 2026-09-12 - Ejemplos explícitos en el contrato
+
+**Decisión:** agregar al system prompt una sección `Ejemplos` con un caso `NORMAL` y un caso `ESCALAR`.
+
+**Motivo:** una devolución externa señaló que el contrato era sólido, pero podía perder puntos si no incluía una pieza identificable de ejemplos. El cambio no altera la evidencia histórica de las tres corridas ya versionadas; mejora el contrato para corridas futuras y hace más claro el comportamiento esperado ante fuentes suficientes, insuficientes, contradictorias o maliciosas.
+
+**Resultado esperado:** futuras corridas registrarán `prompt_version` `v1.1` y un nuevo `prompt_sha256`. Las corridas existentes conservan su metadata original porque no deben editarse a posteriori.
+
+**Verificación:** `npm run ci` finalizó correctamente con auditoría aprobada, TypeScript sin errores y 16 pruebas aprobadas.

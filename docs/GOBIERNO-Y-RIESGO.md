@@ -32,7 +32,7 @@
 - `corrida-01` muestra el flujo normal: el agente usa evidencia, recomienda con cautela y deja advertencias.
 - `corrida-02` muestra control ante evidencia incompleta: evita completar datos faltantes y pide revisión.
 - `corrida-03` muestra falla segura: ante contradicciones, suspende la recomendación y no fuerza una conclusión.
-- `npm run ci` valida auditoría, TypeScript y 15 pruebas automatizadas.
+- `npm run ci` valida auditoría, TypeScript y 16 pruebas automatizadas.
 - El repositorio público no versiona `.env`, claves API ni los PDF originales; versiona solo fuentes anonimizadas en `.md`.
 
 ## Datos y privacidad

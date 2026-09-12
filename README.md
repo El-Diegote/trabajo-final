@@ -16,7 +16,7 @@ Proponer un plan de slides adecuado al perfil, duración y estilo pedidos; funda
 
 ## Contrato y componentes
 
-- `prompts/system_prompt.md`: rol, objetivo, reglas, herramientas, salida y supervisión.
+- `prompts/system_prompt.md`: rol, objetivo, reglas, herramientas, ejemplos, salida y supervisión.
 - `prompts/user_prompt.md`: plantilla de entrada de cada corrida.
 - `src/agent.ts`: bucle agéntico con OpenAI Responses API y herramienta de búsqueda.
 - `src/schema.ts`: esquema JSON estricto del resultado.

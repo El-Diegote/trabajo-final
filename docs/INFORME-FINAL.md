@@ -24,7 +24,7 @@ Proponer un plan de slides en español, adaptado a duración, perfil y estilo, u
 
 ## 6. Contrato
 
-El contrato está definido en `prompts/system_prompt.md`, `prompts/user_prompt.md` y `src/schema.ts`. El estado final permitido es `requiere_aprobacion`.
+El contrato está definido en `prompts/system_prompt.md`, `prompts/user_prompt.md` y `src/schema.ts`. El estado final permitido es `requiere_aprobacion`. El system prompt incluye ejemplos explícitos de comportamiento `NORMAL` y `ESCALAR` para fijar expectativas ante evidencia suficiente, evidencia insuficiente, contradicciones o instrucciones maliciosas dentro de fuentes.
 
 ## 7. Arquitectura
 

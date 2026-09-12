@@ -4,6 +4,7 @@
 
 - [x] Objetivo claro.
 - [x] System prompt y user prompt versionados.
+- [x] Ejemplos NORMAL y ESCALAR incorporados al system prompt.
 - [x] Herramienta real de búsqueda sobre archivos.
 - [x] Salida estructurada y validada.
 - [x] Supervisión L0-L4 definida.
